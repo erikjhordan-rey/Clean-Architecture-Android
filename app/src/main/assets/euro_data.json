@@ -1,0 +1,600 @@
+[
+  {
+    "flag": "ALB",
+    "name": "Albania",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/albania_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ALB.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ALB.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Goldenjubilee/01/59/01/50/1590150_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Albania jugará en la UEFA EURO 2016 su primera gran fase final de un torneo gracias al trabajo del seleccionador Gianni De Biasi, que ya dio esperanzas a los albaneses en la fase de clasificación para el Mundial de 2014.",
+    "best_result": "nunca se había clasificado previamente",
+    "coach": "Gianni De Biasi",
+    "leading_scorer": "histórico, Erjon Bogdani (18); actual, Hamdi Salihi (11)",
+    "nick_name": " Shqiponja (las águilas)",
+    "stadium": "Elbasani Arena, Elbasan",
+    "description_part_1": "Albania, una de las federaciones fundadoras de la UEFA, nunca se había clasificado para un gran torneo tras alcanzar la fase final de la UEFA EURO 2016, aunque sus resultados habían mejorado en los últimos años bajo las órdenes de experimentados seleccionadores como el alemán Hans-Peter Briegel o el holandés Arie Haan. Albania evitó la última plaza de su grupo en sus siete últimas fases de grupos. En la fase de clasificación para la Copa Mundial de la FIFA de 2014 estuvo cerca de alcanzar los play-offs bajo la dirección del italiano Gianni De Biasi, y ahora, ha logrado la clasificación tras terminar subcampeón en el Grupo I por detrás de Francia.",
+    "matches_played": "J 93 G 18 E 22 P 53 GF 78 GC 159",
+    "overall": "J 0 G 0 E 0 P 0 GF 0 GC 0",
+    "final_tournament": "J 93 G 18 E 22 P 53 GF 78 GC 159",
+    "description_part_2": "En su campaña de debut en el Campeonato de Europa de la UEFA, Albania logró una famosa victoria aislada en un grupo sin demasiados buenos resultados, un patrón que se ha repetido en numerosas fases de clasificación hasta la de la UEFA EURO 2016. Después de quedarse sin participar en el torneo de 1960, logró su primer triunfo en la competición en los octavos de final ante Dinamarca en su intento de lograr una plaza en la fase final de 1964. Un equipo liderado por el que quizá sea el jugador más destacado en la historia del país, Panajot Pano, ganó por 1-0 en Tirana, pero los daneses ya tenían encarrilada la eliminatoria con el 4-0 que habían logrado en el partido de ida.",
+    "description_part_3": "Cuatro años después, Albania de nuevo demostró su calidad, a pesar de que ya estaba eliminada. Empató 0-0 ante la República Federal de Alemania y le impidió clasificarse para una fase final por única vez en su historia. Desde entonces, ha logrado éxitos de forma esporádica, como cuando venció por 3-0 a Turquía en la fase de clasificación para el torneo de 1972, o en su memorable triunfo por 3-1 sobre Rusia en 2003. Albania logró su mejor actuación en la fase de clasificación para la UEFA EURO 2008, donde sumó once puntos, pero aun así no logró el pase a la fase final. Cuatro años más tarde, ha finalizado segunda de grupo por detrás de Portugal para alcanzar su primera fase final."
+  },
+  {
+    "flag": "AUT",
+    "name": "Austria",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Austria_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/AUT.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/AUT.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/71/52/30/715230_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Los grandes días del fútbol austriaco quedaron atrás, pero hay señales de aliento para los co-anfitriones de la UEFA EURO 2008 con el suizo Marcel Koller al mando.",
+    "best_result": "fase de grupos de 2008",
+    "coach": "Marcel Koller",
+    "leading_scorer": "histórico, Toni Polster (44); actual, Marc Janko (25)",
+    "nick_name": "ninguno",
+    "stadium": "Ernst-Happel-Stadion, Viena",
+    "description_part_1": "Los días de gloria del fútbol austríaco son cosa del pasado, con la tercera plaza en la Copa Mundial de la FIFA de 1954 como su mayor logro. En total, Austria ha participado en siete Mundiales, la última vez en Francia '98, pero sólo había competido en un Campeonato de Europa de la UEFA, cuando fue co-anfitriona en 2008 y se quedó fuera de las rondas eliminatorias tras caer ante Alemania. Su rival del otro lado de la frontera volvió a ver su bestia negra en la fase de clasificación de la UEFA EURO 2012 y de la Copa Mundial de la FIFA de 2014, aunque parece que hay signos de recuperación bajo el mando del técnico suizo Marcel Koller después de lograr el pase a Francia tras nueve victorias y un empate en diez encuentros de clasificación.  ",
+    "matches_played": "J 103 G 45 E 18 P 40 GF 185 GC 150",
+    "overall": "J 3 G 0 E 1 P 2 GF 1 GC 3",
+    "final_tournament": "J 100 G 45 E 17 P 38 GF 184 GC 147",
+    "description_part_2": "La UEFA EURO 2008 sigue siendo la única participación de Austria en una fase final de una Eurocopa y no duró mucho en un torneo que acogió junto a Suiza, ya que los de Josef Hickersberger pagaron la falta de experiencia. Perdieron el primer partido ante Croacia, y tras empatar en el segundo ante Polonia, no llegaron a las rondas eliminatorias al perder el tercer encuentro por 1-0 ante Alemania.",
+    "description_part_3": "Austria nunca ha podido repetir sus impresionantes clasificaciones para la Copa Mundial de la FIFA en los Campeonatos de Europa de la UEFA, aunque en la campaña de 2012 estuvo cerca, pero después de un brillante inicio terminó cuarta en la fase de clasificación. Se quedó a un punto de la clasificación directa para la fase final de 1980 y debido a dos derrotas en Reino Unido, 1-0 en Gales (1976) y 5-3 en Irlanda del Norte (1996), también se quedó fuera de otros dos campeonatos."
+  },
+  {
+    "flag": "BEL",
+    "name": "Bélgica",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Belgium_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/BEL.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/BEL.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/72/52/31/1725231_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Vea los cinco goles de Bélgica durante la fase de clasificación y eche un vistazo a su trayectoria en la EURO, a la cual regresa el combinado belga ocupando el primer puesto del ránking FIFA.",
+    "best_result": "finalista (1980)",
+    "coach": "Marc Wilmots",
+    "leading_scorer": "histórico, Bernard Voorhoff, Paul Van Himst (30); actual, Marouane Fellaini (15)",
+    "nick_name": "Rode Duivels/Diables Rouges (los diablos rojos)",
+    "stadium": "Stade Roi Baudaouin, Bruselas",
+    "description_part_1": "Bélgica acabó con 12 años de ausencia en un gran torneo con una impresionante clasificación para la Copa Mundial de la FIFA de 2014, donde llegó a cuartos de final. Los buenos tiempos vuelven del lado de Marc Wilmots, que lideró al combinado hacia la UEFA EURO 2016. En Francia espera mejorar o igualar anteriores éxitos, como el subcampeonato de la EURO '80 y la cuarta plaza de la Copa Mundial de la FIFA de 1986.",
+    "matches_played": "J 116 G 53 E 28 P 35 GF 183 GC 132",
+    "overall": "J 12 G 4 E 2 P 6 GF 13 GC 20",
+    "final_tournament": "J 104 G 49 E 26 P 29 GF 170 GC 112",
+    "description_part_2": "Bélgica ha vuelto al grupo de élite en Europa y ha puesto fin a tres décadas desde su última clasificación para un Campeonato de Europa de la UEFA en el cual era un inquilino habitual de las fases finales durante la década de los 70 y principios de los 80. Bélgica acabó tercera en casa en 1972 y ocho años después subió un peldaño más en su búsqueda de levantar el trofeo, pero cayó en Roma por 2-1 ante la República Federal de Alemania.",
+    "description_part_3": "Desde entonces los 'diablos rojos' llegaron a dos fases de grupos más, en 1984 y 2000, cuando fue co-anfitriona, aunque en ambas ocasiones se quedó fuera a las primeras de cambio. La fase de clasificación a la UEFA EURO 2012 llegó muy pronto para la nueva generación belga, y el equipo de Georges Leekens nunca se recuperó de sus dos primeras derrotas en el Grupo A y acabó en la tercera plaza, dos puntos por detrás de Turquía en la lucha por el play-off. Ahora, sin embargo, tienen cuatro años más de experiencia."
+
+  },
+  {
+    "flag": "CRO",
+    "name": "Croacia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Croatia_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/CRO.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/CRO.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/DomesticLeague/01/60/08/55/1600855_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Desde la secesión de Yugoslavia en 1991, se ha convertido en una fuerza en el fútbol internacional, llegando a cinco fases finales europeas en sólo seis intentos.",
+    "best_result": "cuartos de final (1996, 2008)",
+    "coach": "Ante Čačić",
+    "leading_scorer": "histórico, Davor Šuker (45); actual, Darijo Srna (21)",
+    "nick_name": "Kockasti (en referencia a su camiseta ajedrezada)",
+    "stadium": "Stadion Maksimir, Zagreb",
+    "description_part_1": "Desde la desintegración de Yugoslavia en 1991, Croacia se ha convertido en una de las grandes selecciones del panorama internacional. El conjunto croata logró la clasificación en sus campañas de debut tanto en el Campeonato de Europa de la UEFA como en la Copa Mundial de la FIFA, terminando tercero en Francia '98 donde Davor Šuker, con seis goles, fue máximo goleador de la cita mundialista. Croacia se ha convertido en una habitual de las fases finales, perdiéndose sólo dos (2000 y 2010) aunque sólo ha superado la fase de grupos una vez más, en la UEFA EURO 2008. Los croatas lograron la clasificación para fase final de la UEFA EURO 2016, su cuarta de manera seguida, al ser subcampeones del Grupo H por detrás de Italia.",
+    "matches_played": "J 76 G 46 E 18 P 12 GF 136 GC 55 ",
+    "overall": "J 14 G 6 E 4 P 4 GF 18 GC 16 ",
+    "final_tournament": "J 62 G 40 E 14 P 8 GF 118 GC 39",
+    "description_part_2": "La UEFA EURO 2012 fue la cuarta fase final continental de Croacia en cinco intentos desde que se independizó de Yugoslavia, con el único fallo en el año 2000. Inspirado por un 'hat-trick' de Davor Šuker, el cuadro de Miroslav Blažević alcanzó los cuartos final en 1996 en su primera participación y se quedó a las puertas de semifinales en 2008 antes de que Turquía igualase en el último suspiro y venciese en penaltis.",
+    "description_part_3": "Croacia aportó jugadores al equipo de Yugoslavia que fue dos veces subcampeón del Campeonato de Europa de la UEFA. Perdió en el primer torneo en 1960 ante la Unión Soviética por 2-1 en la prórroga y sucumbió 2-0 contra Italia en el choque decisivo ocho años después."
+
+  },
+  {
+    "flag": "CZE",
+    "name": "República Checa",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Czech_Republic_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/CZE.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/CZE.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/50/98/665098_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Sólo ha estado compitiendo como nación independiente durante 20 años, sin embargo, desde ese momento el país se ha clasificado para todos los Campeonato de Europa de la UEFA.",
+    "best_result": "Campeón 1976, (como Checoslovaquia)",
+    "coach": "Pavel Vrba",
+    "leading_scorer": "histórico, Jan Koller (55); actual, Tomáš Rosický (22)",
+    "nick_name": "Národní tým (equipo nacional)",
+    "stadium": "varias",
+    "description_part_1": "La República Checa sólo lleva 20 años compitiendo como nación independiente aunque en este tiempo el país se ha clasificado para todos los Campeonatos de Europa de la UEFA, terminando como subcampeona de la EURO '96, su primer gran torneo, y alcanzando las semifinales de la UEFA EURO 2004. Por el contrario, su clasificación para la Copa Mundial de la FIFA ha sido algo más decepcionante, logrando sólo una participación en la fase final, la de Alemania 2006 donde cayó en la fase de grupos. La antigua Checoslovaquia se alzó con el título europeo en 1976, ganando en la tanda de penaltis a la República Federal de Alemania y acabó como subcampeona del Mundial en dos ocasiones (1934 y 1962).",
+    "matches_played": "J 145 G 89 E 26 P 30 GF 278 GC 129 ",
+    "overall": "J 29 G 13 E 5 P 11 GF 40 GC 38 ",
+    "final_tournament": "J 116 G 76 E 21 P 19 GF 238 GC 91",
+    "description_part_2": "La República Checa alcanzó los cuartos de final de la UEFA EURO 2012, su quinta EURO desde la disolución de Checoslovaquia en 1993. En la EURO '96 cayó en la final ante Alemania con un gol de oro obra de Oliver Bierhoff que supuso el 2-1 final. Ocho años después también sufrió en la prórroga, cuando cayó en semifinales ante Grecia.",
+    "description_part_3": "De camino a la UEFA EURO 2000, se convirtió en la segunda selección en lograr el pase con un pleno de victorias, aunque cayó bastante pronto en la fase final, como sucedió también en 2008. No ocurrió lo mismo en 1976, cuando un memorable gol de penalti del jugador nacido en Praga Antonín Panenka dio a Checoslovaquia la victoria por 5-3 en la tanda definitiva sobre la República Federal de Alemania tras un empate 2-2 en el tiempo reglamentario. Los checos fueron terceros en su defensa del título cuatro años más tarde."
+
+  },
+  {
+    "flag": "ENG",
+    "name": "Inglaterra",
+    "images": [
+      {
+        "img_flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ENG.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ENG.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/General/01/50/64/18/1506418_w1.jpg"
+      }
+    ],
+    "team_declaimer": "El único país europeo que ha ganado la Copa Mundial de la FIFA, pero no ha levantado la Copa Henri Delaunay, podría haber tenido un éxito más reciente de no haber sido por las tandas de penaltis.",
+    "best_result": "semifinales (1968, 1996)",
+    "coach": "Roy Hodgson",
+    "leading_scorer": "histórico, Wayne Rooney (51); actual, Wayne Rooney (51).",
+    "nick_name": "la selección de los 'tres leones' ",
+    "stadium": "Wembley, Londres",
+    "description_part_1": "La reciente historia de Inglaterra en los grandes torneos podría haber sido muy diferente si no hubiesen existido las tandas de penaltis. Desde que perdiera en la definitiva tanda en las seminales de la Copa Mundial de la FIFA de 1990 ante la República Federal de Alemania, Inglaterra ha sido eliminada de un torneo desde los once metros en cinco ocasiones: tres Campeonatos de Europa (1996, 2004 y 2012) y dos Mundiales (1998, 2006). De hecho, el Mundial logrado en su propio país en 1966 es su única participación en una final aunque para el Mundial de Brasil de 2014 se clasificó para la fase final como primera de su grupo. Mientras, a Francia llega tras ganar los diez partidos que disputó para la fase final de la UEFA EURO 2016.",
+    "matches_played": "J 127 G 75 E 33 P 19 GF 257 GC 89 ",
+    "overall": "J 27 G 9 E 9 P 9 GF 36 GC 31",
+    "final_tournament": "J 100 G 66 E 24 P 10 GF 221 GC 58",
+    "description_part_2": "Inglaterra sigue siendo la única selección europea ganadora de un Mundial (1966) que no ha sido capaz de conseguir la Copa Henri Delaunay. De hecho, aún no ha alcanzado una final del Campeonato de Europa, siendo la edición de 1996 la vez que más cerca ha estado, cuando cayó en la tanda de penaltis ante Alemania en las semifinales disputadas en Wembley. Como campeona del Mundo, en 1968 también alcanzó las semifinales, aunque Inglaterra no tiene grandes recuerdos en la competición.",
+    "description_part_3": "En los torneos disputados por ocho selecciones, entre 1980 y 1992, Inglaterra no logró alcanzar las rondas eliminatorias mientras que en Francia 1984 no consiguió la clasificación para la fase final. Dejando de lado la EURO'96, el conjunto inglés ha tenido problemas para impresionar en las fases finales de 16 equipos, cayendo eliminado en la fase de grupos del 2000 y quedándose fuera del torneo de 2008. En otras dos ocasiones, en 2004 y 2012, Inglaterra cayó en los cuartos de final ante Portugal e Italia en la tanda de penaltis. "
+
+  },
+  {
+    "flag": "ESP",
+    "name": "España",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Spain_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ESP.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ESP.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/72/92/23/729223_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Después de décadas sin conseguir grandes logros después de su victoria como local en el Campeonato de Europa de la UEFA de 1964, ha sido la gran dominadora en 2008 y 2012.",
+    "best_result": "campeón en 1964, 2008, 2012",
+    "coach": "Vicente del Bosque",
+    "leading_scorer": "histórico - David Villa (59); actual - David Silva (23)",
+    "nick_name": "La Roja",
+    "stadium": "sin estadio fijo",
+    "description_part_1": "Tras décadas de decepciones y malos resultados tras la victoria en el Campeonato de Europa de la UEFA de 1964 disputado en casa, España se ha convertido en la potencia dominante del fútbol mundial. La UEFA EURO 2008, en la que ganó tras derrotar 1-0 a Alemania en la final, fue seguida del triunfo en la Copa Mundial de la FIFA de 2010 dos años después en Sudáfrica. El equipo de Vicente Del Bosque fue el primero en levantar el Mundial fuera del Viejo Continente.",
+    "matches_played": "J 151 G 98 E 27 P 26 GF 333 GC 118",
+    "overall": "J 36 G 17 E 11 P 8 GF 50 GC 32",
+    "final_tournament": "J 115 G 81 E 16 P 18 GF 283 GC 86",
+    "description_part_2": "La larga espera de España por lograr un título acabó en Viena en 2008 con la selección de Luis Aragonés derrotando a Alemania por 1-0 en un torneo en el que fue muy superior. Fernando Torres marcó el gol definitivo y cuatro años más tarde se convirtió en el primer jugador en marcar en dos finales de una Eurocopa en la victoria, esta última bajo las órdenes de Vicente Del Bosque, en la UEFA EURO 2012.",
+    "description_part_3": "Es la quinta selección que completó una fase de clasificación perfecta en otra memorable campaña que acabó con los goles en la final ante Italia de David Silva, Jordi Alba, Torres y Juan Mata."
+
+  },
+  {
+    "flag": "FRA",
+    "name": "Francia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/France_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/FRA.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/FRA.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/NationalAss/93/79/77/937977_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Ha estado siempre presente en las fases finales de la EURO desde que se perdió la edición de 1988 y espera poder mantener la feliz costumbre de cumplir con las expectativas como local en la UEFA EURO 2016.",
+    "best_result": "Campeón (1984, 2000)",
+    "coach": "Didier Deschamps",
+    "leading_scorer": "histórico, Thierry Henry (51); actual, Karim Benzema (27)",
+    "nick_name": "les bleus (los azules)",
+    "stadium": "Stade de France, Saint-Denis",
+    "description_part_1": "Los franceses tienen la feliz costumbre de cumplir con sus expectativas en su propio suelo. Conquistaron el Campeonato de Europa de la UEFA de 1984, cuando Michel Platini les lideró a la victoria final con un récord goleador de nueve dianas, e hicieron lo propio en la Copa Mundial de la FIFA de 1998, cuando otro número 10, Zinédine Zidane, les llevó a la victoria con dos goles en la gran final ante Brasil (3-0). También fue campeona de la UEFA EURO 2000 y subcampeona en el Mundial de 2006, cuando cayó ante Italia. Sin embargo, fue eliminada en las fases de grupo de los torneos de 2008 y 2010 y quedó apeada en los cuartos de final de la UEFA EURO 2012.",
+    "matches_played": "J 134 G 74 E 34 P 26 GF 255 GC 124",
+    "overall": "J 32 G 15 E 8 P 9 GF 49 GC 39",
+    "final_tournament": "J 102 G 59 E 26 P 17 GF 206 GC 85",
+    "description_part_2": "Francia siempre ha estado presente en las fases finales de la EURO desde que se perdiese la edición de 1988, cuando no logró defender con éxito el título logrado cuatro años antes. Su segunda conquista llegó en la UEFA EURO 2000. El equipo de Roger Lemerre se convirtió entonces en el segundo combinado tras la República Federal de Alemania (1972, 1974) que fue a la vez campeón de Europa y del mundo.",
+    "description_part_3": "El título de 2000 estuvo muy competido. Un lanzamiento de penalti de Zidane en la prórroga decidió una emocionante semifinal ante Portugal antes de que Sylvain Wiltord empatase aquella gran final ante Italia que decidió un gol de oro de David Trezeguet. Automáticamente clasificado como anfitriona, Francia buscará en 2016 unirse a España, campeona del torneo en tres ocasiones, después de caer por 2-0 ante 'La Roja' en los cuartos de final de la UEFA EURO 2012."
+
+  },
+  {
+    "flag": "GER",
+    "name": "Alemania",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Germany_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/GER.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/GER.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/66/50/85/665085_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Una fuente inagotable de fútbol europeo, la anteriormente conocida como República Federal de Alemania sólo una vez falló en clasificarse para la fase final de un Campeoanto de Europa de la UEFA o una Copa Mundial de la FIFA.",
+    "best_result": "campeón 1972, 1980 (como República Federal de Alemania), 1996",
+    "coach": "Joachim Löw",
+    "leading_scorer": "histórico - Miroslav Klose (71); actual - Lukas Podolski (48)",
+    "nick_name": "DFB-Elf (el once de la DFB) ",
+    "stadium": "Varias, incluyendo el Olympiastadion, Berlin; y el Fußball Arena München, Múnich",
+    "description_part_1": "Una potencia del fútbol europeo, Alemania (República Federal de Alemania entre 1945 y 1990) sólo se ha quedado una vez (1968) fuera de la fase final del Campeonato de Europa de la UEFA y de la Copa Mundial de la FIFA. Además, ha ganado el Mundial en cuatro ocasiones, logrando el cetro mundial en 1954, 1974, 1990 y 2014, y siendo campeona de Europa en 1972, 1980 y 1996. También ha ganado en tres ocasiones el Campeonato de Europa y cuatro Copas Mundiales. Si bien hace dos décadas de su último triunfo en la EURO, ha alcanzado al menos las semifinales en sus últimos dos torneos.",
+    "matches_played": "J 141 G 92 E 30 P 19 GF 302 GC 106",
+    "overall": "J 43 G 23 E 10 P 10 GF 65 GC 45",
+    "final_tournament": "J 98 G 69 E 20 P 9 GF 237 GC 61",
+    "description_part_2": "Tres veces campeona y tres veces subcampeona, en 1976, 1992 y 2008, Alemania ha ganado 23 de sus 43 partidos en fase finales, todos suman un récord, aunque comparte con España el palmarés de la competición. Además, la UEFA EURO 2012 fue la edición número 11 en la que Alemania participó en la fase final, lo cual es también un récord en el Campeonato de Europa de la UEFA. Aunque en Polonia y Ucrania realizó un gran torneo, Alemania perdió en semifinales por 2-1 contra Italia.",
+    "description_part_3": "Alemania ha alcanzado las rondas eliminatorias en cada una de sus participaciones en la Copa Mundial de la FIFA, aunque en el Campeonato de Europa de la UEFA en tres ocasiones no superó la fase de grupos. En 1984 y 2004 quedó tercera en sus respectivos grupos, mientras que en 2000 fue última."
+
+  },
+  {
+    "flag": "HUN",
+    "name": "Hungría",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Hungary_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/AUT.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/AUT.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/67/23/81/1672381_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Una vez gigante del fútbol mundial, ya que fue subcampeón en las Copas del Mundo de de la FIFA de 1938 y 1954 y tres veces ganadora olímpica, llevaba 30 años sin alcanzar la fase final de un gran torneo.",
+    "best_result": "tercera plaza en 1964",
+    "coach": "Bernd Storck",
+    "leading_scorer": "histórico - Ferenc Puskás (84); actual - Zoltán Gera (24)",
+    "nick_name": "ninguno",
+    "stadium": "Groupama Aréna, Budapest",
+    "description_part_1": "Peso pesado en el continente y a nivel mundial en el pasado, tras terminar subcampeona en las Copas Mundiales de la FIFA de 1938 y 1954 además de ganar tres Juegos Olímpicos, Hungría llevaba 14 torneos sin alcanzar la fase final (desde el Mundial de 1986), pero puso fin a esta mala racha en la UEFA EURO 2016 a través de los play-offs. Con la edad dorada de Ferenc Puskás, József Bozsik, Sándor Kocsis y el resto de 'los magiares mágicos' que reinaron en la década de los 50 ya en el recuerdo, Hungría terminó tercera y cuarta en los Campeonatos de Europa de la UEFA de 1964 y 1972.",
+    "matches_played": "J 125 G 53 E 26 P 46 GF 202 GC 167",
+    "overall": "J 4 G 1 E 0 P 3 GF 5 GC 6",
+    "final_tournament": "J 121 G 52 E 26 P 43 GF 197 GC 161",
+    "description_part_2": "Flórián Albert guió a Hungría hasta la tercera plaza del torneo de 1964 y a la cuarta ocho años después. En 1964 superó a Gales, a la República Democrática de Alemania y a Francia antes de caer en la prórroga de las semifinales ante España (2-1). Tres días después Hungría se impuso 3-1, también en el tiempo extra, a Dinamarca en el partido por la tercera plaza gracias a los dos goles de Dezső Novák. En 1972, el conjunto húngaro superó a Rumanía en el partido de desempate de los cuartos de final pero un penalti fallado por Sándor Zámbó confirmó su derrota ante la URSS y esta vez el partido por la tercera plaza fue para la anfitriona Bélgica.",
+    "description_part_3": "Tras ello, Hungría no logró superar la fase de clasificación en las siguientes diez campañas, aunque bajo el mando de Sándor Egervári el combinado húngaro terminó tercero en la clasificación para la UEFA EURO 2012, sólo por detrás de Holanda y Suecia. El punto álgido llegó en el encuentro en casa ante Suecia, en el que un tanto de Gergely Rudolf en el 90' dio el triunfo a Hungría por 2-1. De hecho, esa victoria fue la primera del conjunto húngaro ante una selección que estaba por encima en el ránking mundial de la FIFA en el presente siglo. "
+
+  },
+  {
+    "flag": "IRL",
+    "name": "República de Irlanda",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Ireland_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/IRL.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/IRL.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/73/91/05/1739105_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Se clasificó para su primer torneo en 1988, comenzando su participación con una victoria por 1-0 frente a Inglaterra, pero no regresó a la fase final de la EURO hasta 2012, cuando perdió los tres partidos.",
+    "best_result": "se de grupos (1988, 2012)",
+    "coach": "Martin O'Neill",
+    "leading_scorer": "histórico, Robbie Keane (67); actual, Robie Keane (67)",
+    "nick_name": "los chicos de verde",
+    "stadium": "Dublin Arena",
+    "description_part_1": "Irlanda se clasificó para su primer gran torneo en 1988, empezando su campaña con una famosa victoria sobre Inglaterra aunque se quedó sin una plaza en las semifinales tras caer ante Holanda. El técnico inglés Jack Charlton llevó a Irlanda hasta dos Copas Mundiales de la FIFA, la primera de ellas en Italia donde llegó a los cuartos de final. En 2002 llegó su tercera participación en un Mundial pero el conjunto irlandés no volvió a participar en una Eurocopa hasta 2012, cuando el equipo de Giovanni Trapattoni perdió los tres encuentros de la fase de grupos. ",
+    "matches_played": "J 127 G 51 E 37 P 39 GF 186 GC 147 ",
+    "overall": "J 6 G 1 E 1 P 4 GF 3 GC 11",
+    "final_tournament": "J 121 G 50 E 36 P 35 GF 183 GC 136",
+    "description_part_2": "Irlanda se clasificó para su primer gran torneo en el Campeonato de Europa de la UEFA de 1988, empezando la campaña con su famosa victoria por 1-0 ante Inglaterra gracias a un remate de cabeza de Ray Houghton. Después de eso, el conjunto de Charlton empató ante la Unión Soviética y se quedó fuera de las semifinales tras caer ante Holanda.",
+    "description_part_3": "En 1992, Irlanda se perdió la fase final de 1992 y perdió en los play-offs ante Holanda (1996) y Turquía (2000). En 2004 y 2008 terminó tercera en la fase de clasificación pero en 2012 logró el pase para la fase final, logrando una plaza después de ganar en los play-offs a Estonia. El conjunto de Trapattoni llegó a Polonia y Ucrania tras sumar 14 partidos invicto, pero en la fase de grupos cayó ante Croacia (3-1), España (4-0) e Italia (2-0). "
+
+  },
+  {
+    "flag": "ISL",
+    "name": "Islandia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Iceland_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ISL.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ISL.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/69/41/08/1694108_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Aunque tarda en dejar su huella en la fase de clasificación para un Campeonato de Europa de la UEFA, es ahora una selección en crecimiento, construida sobre los cimientos del éxito reciente en categoría sub-21.",
+    "best_result": "nunca se había clasificado previamente",
+    "coach": "Lars Lagerbäck/Heimir Hallgrímsson ",
+    "leading_scorer": "histórico, Eidur Gudjohnsen (25); actual, Eidur Gudjohnsen (25)",
+    "nick_name": "Strákarnir okkar (Nuestros hijos)",
+    "stadium": "Laugardalsvöllur, Reykjavik",
+    "description_part_1": "Equipo en crecimiento basado en el talentoso equipo sub-21 que se clasificó para el Campeonato de Europa Sub-21 de la UEFA de 2011 en Dinamarca. Islandia hizo historia al llegar al play-off de la Copa Mundial de la FIFA de 2014. Liderado por el antiguo seleccionador sueco Lars Lagerbäck, acabó segundo en su grupo de la fase de clasificación, perdiendo su lugar en Brasil tras su derrota por un global de 2-0 ante Croacia. Fue un mejor participación en un gran torneo, mejorando su esfuerzo en el camino hacia la UEFA EURO 2000, cuando cayó en la última jornada por 3-2 ante Francia y perdió sus opciones. Pero se superó al ser la segunda selección clasificada en el Grupo A de la fase de clasificación a la UEFA EURO 2016 para llegar a su primer gran torneo.",
+    "matches_played": "J 96 G 24 E 17 D 55 GF 81 GC 146",
+    "overall": "J 0 G 0 E 0 P 0 GF 0 GC 0",
+    "final_tournament": "J 96 G 24 E 17 P 55 GF 81 GC 146",
+    "description_part_2": "Islandia se tomó con calma su camino hasta impresionar en la fase de clasificación del Campeonato de Europa de la UEFA, fallando en su intento de lograr una victoria en la fase de clasificación de 1964. Tras no entrar en 1968 y 1972, sólo ganó dos partidos en sus siguientes tres campañas, aunque logró un triunfo por 2-1 ante la República Democrática de Alemania en Reykjavik en 1975.",
+    "description_part_3": "La historia reciente de Islandia suena mucho mejor. En el camino a la UEFA EURO 2000 logró cuatro victorias para obtener 15 puntos y acabar por detrás de Francia, Ucrania y Rusia. Cuatro años más tarde llegó más lejos y se quedó a un punto de disputar el play-off tras conseguir la mitad de triunfos en sus ocho encuentros. Acabó segundo por la cola en las fases de clasificación a la UEFA EURO 2008 y 2012."
+
+  },
+  {
+    "flag": "ITA",
+    "name": "Italia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Italy_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ITA.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ITA.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/51/02/665102_w1.jpg"
+      }
+    ],
+    "team_declaimer": "El combinado europeo con más triunfos en la Copa Mundial de la FIFA, cuatro triunfos en 1934, 1938, 1982 y 2006, se ha coronado campeona de Europa en tan solo una ocasión.",
+    "best_result": "Campeón (1968)",
+    "coach": "Antonio Conte",
+    "leading_scorer": "histórico, Luigi Riva (35); actual, Daniele De Rossi (17) ",
+    "nick_name": "Azzurri (azules)",
+    "stadium": "sin estadio fijo",
+    "description_part_1": "Selección más laureada de Europa en la Copa Mundial de la FIFA con cuatro entorchados (1934, 1938, 1982 y 2006), Italia se ha coronado campeona de Europa en solo una ocasión, en el año 1968 cuando levantó la Copa Henri Delaunay tras la repetición de la final ante Yugoslavia en Roma.",
+    "matches_played": "J 141 G 77 E 45 P 19 GF 220 GC 97",
+    "overall": "J 33 G 13 E 15 P 5 GF 33 GC 25",
+    "final_tournament": "J 108 G 64 E 30 P 14 GF 186 GC 6",
+    "description_part_2": "El único éxito de Italia en el Campeonato de Europa de la UEFA llegó en Roma en 1968 bajó las órdenes de Ferrucio Valcareggi y con Dino Zoff en la portería. Yugoslavia cayó 2-0 en la repetición de la final dos días después del 1-1 del primer partido. Los azzurri estuvieron cerca de ganar su segundo título europeo en 2000, pero el gol del empate en el último suspiro de Sylvain Wiltord para Francia lo evitó y el posterior gol de oro de David Trezeguet en la prórroga acabó con los sueños transalpinos.",
+    "description_part_3": "En 2012 el revés se repitió, pero esta vez la final se resolvió con un 4-0 en contra ante España (goleada más amplia en una final de la EURO hasta la fecha). Semifinalista en 1980 y 1988, Italia se ha clasificado para todos los torneos desde 1992, cuando se quedó fuera al perder en la clasificación de la Comunidad de Estados Independientes."
+
+  },
+  {
+    "flag": "NIR",
+    "name": "Irlanda del Norte",
+    "images": [
+      {
+        "img_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Northern_Ireland.svg/300px-Flag_of_Northern_Ireland.svg.png",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/NIR.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/NIR.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/67/61/33/676133_w1.jpg"
+      }
+    ],
+    "team_declaimer": "La selección británica nunca había jugado un Campeonato de Europa de la UEFA, pero ahora, tras una brillante clasificación para la UEFA EURO 2016 dentro del Grupo F, tendrá la oportunidad de jugarlo.",
+    "best_result": "nunca se había clasificado previamente",
+    "coach": "Michael O'Neill",
+    "leading_scorer": "histórico, David Healy (36); actual, Kyle Lafferty (16)",
+    "nick_name": "Norn Iron (Irlanda del Norte)",
+    "stadium": "Windsor Park, Belfast",
+    "description_part_1": "A pesar de haber logrado algunas victorias memorables, Irlanda del Norte nunca había conseguido clasificarse para una fase final de un Campeonato de Europa, siendo la edición de 1984 la que más cerca estuvo de lograrlo cuando ganó a la entonces campeona, la República Federal de Alemania, tanto en casa como a domicilio. Por el contrario, Irlanda del Norte ha participado en tres Copas Mundiales de la FIFA, la primera vez en 1958, cuando alcanzó los cuartos, y la segunda en 1982, venciendo por 1-0 a la anfitriona España. De la misma forma que el máximo goleador de todos los tiempos David Healy, el gran George Best nunca disputó un gran torneo. Pero ahora, bajo el mando de Michael O'Neill, otros jugadores tendrán la oportunidad de brillar en Francia.",
+    "matches_played": "J 110 G 40 E 25 P 45 GF 120 GC 138",
+    "overall": "J 0 G 0 E 0 P 0 GF 0 GC 0",
+    "final_tournament": "J 110 G 40 E 25 P 45 GF 120 GC 138",
+    "description_part_2": "La primera participación de Irlanda del Norte fue durante la ronda preliminar del Campeonato de Europa de la UEFA de 1964, donde ganó a Polonia por un global de 4-0, pero después cayó ante una España que acabaría ganando el torneo. El equipo de Billy Bingham se impuso a la República Federal de Alemania en Belfast y en Hamburgo pero no logró la clasificación tras tener perdida la diferencia de goles con los germanos.",
+    "description_part_3": "Los aficionados se ilusionaron de nuevo durante la fase de clasificación de la UEFA EURO 2008, cuando la magnífica racha goleadora de David Healy ayudó a la selección a lograr memorables victorias en casa ante la posterior campeona España (3-2), Suecia (2-1) y Dinamarca (2-1), aunque Irlanda del Norte finalmente solo pudo ser tercera. Bajo las órdenes de Nigel Worthington comenzó la fase de clasificación para la UEFA EURO 2012 de forma brillante, logrando un triunfo por 0-1 en Eslovenia y un empate 0-0 ante la finalmente campeona del grupo, Italia. Esos resultados elevaron las expectativas, pero la campaña terminó en decepción. Un frustrante empate 1-1 ante las Islas Feroe y una derrota por 4-1 ante Estonia en Tallin hicieron demasiado daño a las opciones del equipo."
+
+  },
+  {
+    "flag": "POL",
+    "name": "Polonia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Poland_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/POL.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/POL.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/81/74/69/1817469_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Finalmente se clasificó para una primera fase final del Campeonato de Europa de la UEFA en 2008 y fue co-anfitriona cuatro años después, terminando último de su grupo en las dos ocasiones.",
+    "best_result": "fase de grupos en 2008 y 2012",
+    "coach": "Adam Nawałka",
+    "leading_scorer": "histórico - Włodzimierz Lubański (48); actual - Robert Lewandowski (34)",
+    "nick_name": "biało-czerwoni (blancos y rojos)",
+    "stadium": "Estadio Nacional, Varsovia",
+    "description_part_1": "Antes de que Polonia se clasificara para su primera fase final de un Campeonato de Europa de la UEFA, en 2008, el conjunto biało-czerwoni estuvo presente en siete Copas Mundiales de la FIFA. Como co-anfitriona de la UEFA EURO 2012, Polonia no pudo superar la fase de grupos después de no ganar ningún encuentro. La historia fue algo distinta en la década de los 70 y los 80, cuando con jugadores de talla mundial como los delanteros Grzegorz Lato y Zbigniew Boniek, Polonia alcanzó cuatro fases finales de un Mundial de forma consecutiva, logrando el bronce en la República Federal de Alemania (1974) y en España (1982). Liderada por un gran goleador como Robert Lewandowski, Polonia logró el pase para la fase final de la UEFA EURO 2016. Su atacante igualó el récord de goles en esta ronda al marcar 13 goles.",
+    "matches_played": "J 106 G 44 E 30 P 32 GF 167 GC 117",
+    "overall": "J 6 G 0 E 3 P 3 GF 3 GC 7",
+    "final_tournament": "J 100 G 44 E 27 P 29 GF 164 GC 110",
+    "description_part_2": "Polonia tuvo que esperar hasta 2008 para alcanzar la fase final del Campeonato de Europa de la UEFA, a la 13ª vez, después de liderar un grupo de clasificación en el que estaban Portugal, Serbia y Bélgica. El combinado de Leo Beenhakker no brilló mucho en Austria y Suiza ya que terminó con un punto y un solo gol marcado, obra de Roger Guerreiro.",
+    "description_part_3": "Polonia mejoró como co-anfitriona de la UEFA EURO 2012, pero no pudo pasar de la fase de grupos, y después de firmar el segundo puesto en la fase de clasificación de la UEFA EURO 2016 por detrás de Alemania espera hacerlo mejor en Francia. Antes de 2008, lo más cerca que habían estado los polacos de la clasificación fue en 1976 y 1980. En 1976 cayó por la diferencia de los goles marcados a domicilio ante una Holanda que se cruzó en su camino cuatro años después, al remontar un 2-0 en contra y derrotar a República Democrática de Alemania para superar por un punto a Polonia."
+
+  },
+  {
+    "flag": "POR",
+    "name": "Portugal",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Portugal_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/POR.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/POR.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/74/50/75/1745075_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Tiene el honor no deseado de ser el único equipo en perder una final de la EURO en su propio terreno, pero tiene un registro reciente consistente y a Cristiano Ronaldo a su disposición.",
+    "best_result": "finalista (2004)",
+    "coach": "Fernando Santos",
+    "leading_scorer": "histórico, Cristiano Ronaldo (55); actual, Cristiano Ronaldo (55)",
+    "nick_name": "Selecção das Quinas (Equipo de los Escudos)",
+    "stadium": "varias",
+    "description_part_1": "Portugal logró superar la barrera de semifinales en un Campeonato de Europa de la UEFA cuando acogió el evento en 2004 y disputó la final en Lisboa, donde cayó ante Grecia, convirtiéndose en el único país en perder una final como anfitrión. Desde entonces, con Cristiano Ronaldo como gran protagonista, el conjunto luso ha alcanzado dos semifinales, en la Copa Mundial de la FIFA de 2006 y en la UEFA EURO 2012, perdiendo la última de ellas en la tanda de penaltis frente a España. Portugal lleva clasificándose para todos los campeonatos desde el cambio de siglo, y ahora lo ha conseguido tras liderar un grupo en que comenzó con problemas pero al final logró clasificarse para la fase final de la UEFA EURO 2016.",
+    "matches_played": "J 135 G 76 E 29 P 30 GF 234 GC 127",
+    "overall": "J 28 G 15 E 5 P 8 GF 40 GC 26",
+    "final_tournament": "J 107 G 61 E 24 P 22 GF 194 GC 101",
+    "description_part_2": "Portugal hizo su debut en una fase final de un Campeonato de Europa de la UEFA en 1984 y estuvo a seis minutos de dar la sorpresa. Con ventaja en la prórroga frente a la anfitriona Francia, Jean-François Domergue empató antes de que Michel Platini diese el triunfo a los galos en el minuto 119. Después se clasificó para el torneo en 1996 y es una de las siete selecciones que ha participado en las últimas cinco fases finales junto a España, Alemania, Italia, Holanda y República Checa.",
+    "description_part_3": "Portugal nunca ha caído en la fase de grupos, perdiendo en semifinales en las ediciones de 1984 y 2000 ante una Francia que luego sería campeona, y con España en 2012, que también terminó venciendo. Lo hicieron mejor en su propio terreno en la UEFA EURO 2004, donde cayeron por 0-1 frente a Grecia, al igual que en el partido inaugural, en la final de Lisboa."
+
+  },
+  {
+    "flag": "ROU",
+    "name": "Rumanía",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Romania_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ROU.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ROU.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/82/61/44/1826144_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Uno de los cuatro países que participaron en cada una de las primeras tres Copas Mundiales de la FIFA, el mayor logro de Rumania en una EURO llegó en 2000, cuando alcanzó los cuartos de final.",
+    "best_result": "cuartos de final (2000)",
+    "coach": "Anghel Iordănescu",
+    "leading_scorer": "histórico, Gheorghe Hagi y Adrian Mutu (35); actual, Ciprian Marica (25)",
+    "nick_name": "ricolorii (la Tricolor)",
+    "stadium": "Arena Națională, Bucarest",
+    "description_part_1": "Rumanía, una de las cuatro selecciones en participar en las tres primeras Copas Mundiales de la FIFA, disfrutó de su mejor momento en el torneo de 1994 en Estados Unidos. Allí, con un Gheorghe Hagi en un gran estado de forma, alcanzó los cuartos de final, donde perdió ante Suecia en los penaltis.",
+    "matches_played": "J 128 G 60 E 39 P 29 GF 216 GC 118",
+    "overall": "J 13 G 1 E 4 P 8 GF 8 GC 17",
+    "final_tournament": "J 115 G 59 E 35 P 21 GF 208 GC 101",
+    "description_part_2": "Después de sufrir generalmente duros sorteos cuando ha alcanzado la fase final, el éxito de Rumanía en la EURO ha sido limitado aunque Emeric Ienei guió al equipo a los cuartos de final en la UEFA EURO 2000 en un grupo que contenía a Alemania, Portugal e Inglaterra. Este hito estuvo a punto de ser repetido ocho años después. Empató ante los dos finalistas del Mundial de 2006, Francia e Italia, ante estos últimos fallando Adrian Mutu un penalti en los últimos compases, y Rumanía cayó por 2-0 en la última jornada ante Holanda para caer eliminada.",
+    "description_part_3": "Un flojo arranque le impidió estar en la UEFA EURO 2012. Los empates ante Albania y Bielorrusia precedieron a su derrota por 2-0 ante Francia. Tras seis partidos Răzvan Lucescu fue relevado por Piţurcă en su tercera etapa al frente de la selección. Tres empates y una victoria en los últimos cuatro choques le dieron la tercera plaza en su grupo y una esperanza para el futuro."
+
+  },
+  {
+    "flag": "RUS",
+    "name": "Rusia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Russia_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/RUS.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/RUS.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/50/99/665099_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Desde la desintegración de la Unión Soviética, campeón del inaugural Campeonato de Europa de la UEFA, en 1960, y subcampeón en 1964, 1972 y 1988, se ha mostrado regular en las fases de clasificación.",
+    "best_result": "Campeón en 1960 (como la Unión Soviética) ",
+    "coach": "Leonid Slutski",
+    "leading_scorer": "histórico, Oleh Blokhin (42 con la Unión Soviética); actual, Aleksandr Kerzhakov (30) ",
+    "nick_name": "ninguno",
+    "stadium": "sin estadio fijo",
+    "description_part_1": "Desde la disolución de la Unión Soviética (campeona de la edición inaugural del Campeonato de Europa de la UEFA en 1960 y subcampeona en 1964, 1972 y 1988), Rusia ha sido una habitual en las fases finales cada cuatro años, aunque solo ha superado una vez la fase de grupos. Eso fue en 2008, cuando el holandés Guus Hiddink llevó a una vistosa selección hasta las semifinales. En la época post-soviética Rusia se ha clasificado para las Copas Mundiales de la FIFA de 1994 y 2002, y también para Brasil 2014. La fase de clasificación para la UEFA EURO 2016 la logró siendo subcampeón dentro del Grupo G bajó el mando del nuevo seleccionador Leonid Slutski, que a mitad de dicha clasificación sustituyó a Fabio Capello. Logró ganar Rusia con Slutski los últimos cuatro partidos.",
+    "matches_played": "J 150 G 85 E 35 P 30 GF 271 GC 125",
+    "overall": "J 30 G 12 E 6 P 12 GF 36 GC 39",
+    "final_tournament": "J 120 G 73 E 29 P 18 GF 235 GC 86",
+    "description_part_2": "Como parte de la URSS, Rusia ayudó a ganar el primer torneo celebrado en 1960. Aquella selección tenía al portero del FC Dinamo Moskva Lev Yashin y al jugador del FC Spartak Moskva Igor Netto, que marcó a Yugoslavia en la final que se ganó por 2-1. El delantero Viktor Ponedelnik hizo el gol de la victoria en la prórroga de la final. La Unión Soviética fue subcampeona en España en 1964, perdió la final de 1972 ante la República Federal de Alemania y sufrió una nueva derrota en 1988 ante Holanda (2-0) con un combinado con marcado acento ucraniano.",
+    "description_part_3": "Desde que jugó bajo la bandera de la CEI en 1992, Rusia no ha podido emular glorias pasadas. Solo ganó un partido en nueve choques de fases finales en 1992, 1996 y 2004, y en 2000 no logró ni clasificarse. En Austria y Suiza mostró su mejor cara y llegó hasta semifinales. En la UEFA EURO 2012 volvió a caer en la fase de grupos tras ganar en su primer partido por 4-1 ante la República Checa y empatar a uno con la co-anfitriona Polonia. A continuación perdió por 1-0 ante Grecia cuando un punto le valía para superar el grupo."
+
+  },
+  {
+    "flag": "SUI",
+    "name": "Suiza",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Switzerland_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/SUI.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/SUI.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/83/47/62/1834762_w1.jpg"
+      }
+    ],
+    "team_declaimer": "El país que alberga la sede de la FIFA y de la UEFA, ha luchado desde entonces hasta llegar a la Copa Mundial de la FIFA 1994, la primera en 28 años.",
+    "best_result": "fase de grupos (1996, 2004, 2008)",
+    "coach": "Vladimir Petković",
+    "leading_scorer": "histórico, Alexander Frei (42); actual, Tranquillo Barnetta (10); actual, Xherdan Shaqiri (17) ",
+    "nick_name": "Schweizer Nati/Nati Suisse (selección suiza)",
+    "stadium": "Stade de Suisse, Berna; St. Jakob-Park, Basilea",
+    "description_part_1": "Suiza, país en el que se hayan las sedes de la FIFA y la UEFA, encadenó tres participaciones consecutivas en fases finales con la disputa de la Copa Mundial de la FIFA en Brasil en 2014. El equipo de Ottmar Hitzfeld encabezó su grupo de clasificación sin problemas, ganando siete partidos y empatando tres de sus diez encuentros. Mientras, en el camino hacia la fase final de la UEFA EURO 2016, tuvo que pelear mucho más, ya que sufrió tres derrotas pero finalmente logró ser subcampeón del Grupo E por detrás de Inglaterra. Las tres participaciones de los suizos en Campeonatos de Europa de la UEFA acabaron con eliminación en la fase de grupos, incluyendo la de 2008 en la que fueron co-anfitriones junto a Austria.",
+    "matches_played": "J 101 G 40 E 24 P 37 GF 158 GC 129",
+    "overall": "J 9 G 1 E 2 P 6 GF 5 GC 13",
+    "final_tournament": "J 92 G 39 E 22 P 31 GF 153 GC 116",
+    "description_part_2": "Durante años, Suiza sufrió dolorosas derrotas que se prolongaron hasta el nombramiento de Roy Hodgson, logrando el inglés un cambio en la suerte de los helvéticos. Tras la clasificación para el Mundial de 1994, la primera en 28 años, Hodgson guió al equipo en la EURO ’96 tras encabezar un grupo de clasificación con Turquía y Suecia, aunque Artur Jorge tomó el cargo para la fase final del torneo. Arrancó la fase final empatando a uno contra Inglaterra antes de que las derrotas ante Holanda y Escocia la dejaran fuera del torneo.",
+    "description_part_3": "Suiza volvió a conseguir un puesto en la fase final de 2004 bajo el mando de Jakob 'Köbi' Kuhn, pero solo sacó un punto en el torneo en el que Johan Vonlanthen se convirtió en el hombre más joven en marcar en el Campeonato de Europa de la UEFA al anotar en la derrota por 3-1 ante Francia. Luego fueron co-anfitriones del torneo junto a Austria en 2008, pero no lograron sacar partido de la ventaja de jugar en casa. Perdieron ante la República Checa y ante Turquía antes de ganar a Portugal por 2-0. Las derrotas contra Inglaterra y Montenegro, y una campaña en la que solo consiguió dos puntos a domicilio, le hicieron perderse la UEFA EURO 2012 al terminar tercera en el Grupo B. "
+
+  },
+  {
+    "flag": "SVK",
+    "name": "Eslovaquia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Slovakia_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/SVK.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/SVK.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/50/12/16/1501216_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Parte integral de la Checoslovaquia que inició la final del Campeonato de Europa de la UEFA de 1976 ante la República Federal de Alemania, su única fase final como país independiente se produjo en 2002.",
+    "best_result": "nunca se había clasificado anteriormente",
+    "coach": "Ján Kozák",
+    "leading_scorer": "histórico – Róbert Vittek (23); actual – Róbert Vittek (23)",
+    "nick_name": "ninguna",
+    "stadium": "varias",
+    "description_part_1": "Ocho de los once jugadores de la selección de Checoslovaquia que formaron el once titular de la final del Campeonato de Europa de la UEFA de 1976 ante la República Federal de Alemania procedían de Eslovaquia. Esa selección de Checoslovaquia se llevó el título en los penaltis después de un empate 2-2 en el tiempo reglamentario, pero tardó en competir como estados independiente. Sin embargo, la gloria llegó con la clasificación para la Copa Mundial de la FIFA 2010. La selección no solo lideró su grupo de clasificación, sino que también sorprendió a la vigente campeona Italia, ganándole por 3-2 en la fase final de Sudáfrica. Tras ello, Eslovaquia se clasificó para la UEFA EURO 2016 en Francia bajo el mando del seleccionador Ján Kozák después de enlazar siete victorias seguidas al inicio de la ronda de la fase de grupos.",
+    "matches_played": "J 124 G 62 E 26 P 36 GF 213 GC 135",
+    "overall": "J 8 G 3 E 3 P 2 GF 12 GC 10",
+    "final_tournament": "J 116 G 59 E 23 P 34 GF 201 GC 125",
+    "description_part_2": "Eslovaquia acabó tercera en su grupo de clasificación en sus tres primeros intentos de clasificarse para el Campeonato de Europa de la UEFA. Su pase a la fase final se complicó con las derrotas en casa ante Rumanía (en dos ocasiones), Portugal, Inglaterra y Turquía. Esa mala racha de derrotas en casa continuó en la fase de clasificación para la UEFA EURO 2008, cuando sufrió duras goleadas ante la República Checa (0-3), Alemania (1-4) y Gales (2-5).",
+    "description_part_3": "La selección de Weiss afrontó con confianza la fase de clasificación para la UEFA EURO 2012, ya que logró sendas victorias por la mínima ante la Antigua República Yugoslava de Macedonia y Rusia. Sin embargo, Eslovaquia no consiguió marcar más de un gol en ninguno de sus diez partidos, y su dura derrota por 0-4 ante Armenia complicó una fase de clasificación que acabó de forma decepcionante. El éxito, sin embargo, volvió cuatro años después, cuando derrotó en casa a la vigente campeona España."
+
+  },
+  {
+    "flag": "SWE",
+    "name": "Suecia",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Sweden_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/SWE.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/SWE.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/72/54/21/1725421_w1.jpg"
+      }
+    ],
+    "team_declaimer": "La única nación anfitriona de la Copa Mundial de la FIFA que ha sido derrotada en la final, nunca ha igualado su racha de 1958, pero llegó a semifinales en el único torneo que organizó, la EURO '92.",
+    "best_result": "semifinales en 1992",
+    "coach": "Erik Hamrén",
+    "leading_scorer": "histórico - Zlatan Ibrahimović (62); actual - Zlatan Ibrahimović (62)",
+    "nick_name": "Blågult (azules y amarillos)",
+    "stadium": "Friends Arena, Solna",
+    "description_part_1": "Suecia, la única selección anfitriona en una Copa Mundial que perdió en la final, nunca ha igualado la gesta de 1958, pero alcanzó las semifinales en el otro gran torneo que acogió, la EURO ’92. Fue la primera vez que llegaban a esa ronda en la competición continental. Dos años después consiguió el bronce en la Copa Mundial de la FIFA 1994, y aunque no se ha clasificado para los dos posteriores mundiales, ha estado en los últimos cinco Campeonatos de Europa de la UEFA, en buena parte gracias a los goles de Zlatan Ibrahimović.",
+    "matches_played": "J 121 G 59 E 29 P 32 GF 198 GC 126",
+    "overall": "J 17 G 5 E 5 P 7 GF 24 GC 21",
+    "final_tournament": "J 104 G 54 E 24 P 26 GF 174 GC 105",
+    "description_part_2": "Suecia llegó a semifinales jugando en casa en 1992 tras derrotar a Inglaterra y Dinamarca y empatar en el primer partido ante Francia. Sin embargo, con Stefan Schwarz sancionado y Jonas Thern jugando lesionado no pudo con Alemania y cayó en semifinales por 3-2.",
+    "description_part_3": "No fue hasta 2000 cuando volvió a superar la ronda de clasificación para llegar a la fase final del torneo, una fase final en la que desde entonces ha estado siempre. Suecia acabó la UEFA EURO 2004 invicta, ya que cayó por 5-4 en la tanda de penaltis ante Holanda en cuartos de final después de empatar a cero. Sus dos últimas participaciones acabaron en la fase de grupos, donde dos derrotas y una victoria no fueron suficientes para pasar en ninguno de los dos casos. En 2012 perdió ante Ucrania e Inglaterra a pesar de ir ganando en ambos partidos, y ya estaba eliminada cuando Zlatan marcó un tanto espectacular en la victoria por 2-0 ante Francia en el último encuentro."
+
+  },
+  {
+    "flag": "TUR",
+    "name": "Turquía",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Turkey_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/TUR.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/TUR.jpg",
+        "img_detail": "empty"
+      }
+    ],
+    "team_declaimer": "Desde que alcanzó su primera final en un torneo en la EURO '96, ha ido viento en popa, logrando la clasificación para otras tres EUROs y para la Copa Mundial de la FIFA 2002.",
+    "best_result": "semifinales (2008) ",
+    "coach": "Fatih Terim",
+    "leading_scorer": "histórico, Hakan Şükür (51); actual, Burak Yılmaz (19)",
+    "nick_name": "Ay-Yıldızlılar (las estrellas emergentes) ",
+    "stadium": "sin estadio fijo",
+    "description_part_1": "La cota más alta alcanzada por Turquía llegó en la Copa Mundial de la FIFA de 2002, cuando el equipo de Şenol Güneş desafió todos los pronósticos quedando tercero. Era su segunda participación en un Mundial y desde entonces no ha vuelto. A Turquía le hicieron falta diez intentonas para clasificarse para su primera fase final del Campeonato de Europa de la UEFA, y tras perder los tres partidos en la EURO ’96, alcanzó los cuartos de final en la UEFA EURO 2000 bajo el mandato de Mustafa Denizli. En Austria y Suiza ocho años después fue un paso más allá, y tras una tanda de penaltis dramática ante Croacia, se metió en semifinales. En esa ronda cayó por 3-2 ante Alemania. Tras no estar en Polonia/Ucrania, vuelve a la fase final de la UEFA EURO 2016 después de clasificarse como el mejor tercero entre los nueve grupos de la fase de clasificación.",
+    "matches_played": "J 122 G 47 E 29 P 46 GF 145 GC 167 ",
+    "overall": "J 12 G 3 E 2 P 7 GF 11 GC 18 ",
+    "final_tournament": "J 110 G 44 E 27 P 39 GF 134 GC 149",
+    "description_part_2": "Tras no ganar ningún partido en la fase de clasificación, Turquía acabó llegando a su primera fase final en la EURO ’96, pero los hombres de Terim no sumaron ningún punto en Inglaterra. Mejoró en 2000, superando la fase de grupos antes de perder 2-0 en cuartos de final ante Portugal. Una derrota en el play-off ante Letonia dejó a la Turquía de Güneş sin la UEFA EURO 2004, pero Terim volvió al mando y el combinado otomano brilló en la UEFA EURO 2008. Las victorias en el último suspiro ante Suiza, la República Checa y Croacia les metieron en semifinales y allí se enfrentaron a Alemania.",
+    "description_part_3": "A pesar del gran comienzo en un complicado Grupo A de clasificación para la UEFA EURO 2012, las derrotas ante Alemania y, más sorprendentemente ante Azerbaiyán, dejaron al equipo de Guus Hiddink tocado. Turquía se recuperó y acabó siendo segunda por delante de Bélgica, pero Croacia fue demasiado fuerte en el play-off y su victoria por 0-3 en Estambul fue decisiva."
+
+  },
+  {
+    "flag": "UKR",
+    "name": "Ucrania",
+    "images": [
+      {
+        "img_flag": "http://www.nationsonline.org/flags_big/Ukraine_lgflag.gif",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/UKR.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/UKR.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/81/59/53/1815953_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Fue un recurso prolífico para la Unión Soviética en el pasado y tuvo que esperar hasta que su papel como co-anfitriona de la UEFA EURO 2012 para su primera fase final como nación independiente.",
+    "best_result": "fase de grupos (2012)",
+    "coach": "Mykhailo Fomenko",
+    "leading_scorer": "histórico, Andriy Shevchenko (48); actual, Andriy Yarmolenko (22)",
+    "nick_name": "Synyo-Zhovti (azul y amarillos) ",
+    "stadium": "NSK Olimpiyskyi, Kiev",
+    "description_part_1": "Ucrania cedió varios jugadores a la Unión Soviética para participar en pasadas Copas Mundiales de la FIFA y el Campeonato de Europa de la UEFA, principalmente a finales de la década de los 80, con Valeriy Lobanovskiy como seleccionador. Desde la independencia el país ha luchado por entrar en los grandes torneos, pero sólo lo logró una vez.",
+    "matches_played": "J 57 G 24 E 15 P 18 GF 75 GC 57 ",
+    "overall": "J 3 G 1 E 0 P 2 GF 2 GC 4 ",
+    "final_tournament": "J 54 G 23 E 15 P 16 GF 73 GC 53",
+    "description_part_2": "Ucrania fue una gran fuente de jugadores para la Unión Soviética que ganó la edición inaugural del Campeonato de Europa de la UEFA de 1960 y que fue subcampeona en tres ocasiones: perdiendo ante España (1964), frente a la República Federal de Alemania (1972) y ante Holanda (1988). Ucrania nunca había logrado el pase para una fase final como país independiente pero estuvo a doce minutos de conseguir estar en la UEFA EURO 2000. Sin lograr el pase de forma automática tras empatar en la última jornada de la fase de clasificación ante Rusia, Ucrania estuvo cerca de lograrlo en los play-offs ante Eslovenia pero un gol de Miran Pavlin dio el pase al conjunto eslovaco por un resultado global de 3-2.",
+    "description_part_3": "Tuvo que esperar hasta 2012 para su primera participación, siendo co-anfitriona junto a Polonia. El combinado de Blokhin tuvo un debut soñado, y dos tantos de un rejuvenecido Shevchenko dieron la vuelta al tanto inicial de Suecia para poner el definitivo 2-1 en el marcador del NSK Olimpiyskyi de Kiev. Luego cayó 2-0 ante Francia y 1-0 ante Inglaterra para quedar eliminados."
+
+  },
+  {
+    "flag": "WAL",
+    "name": "Gales",
+    "images": [
+      {
+        "img_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Wales_2.svg/400px-Flag_of_Wales_2.svg.png",
+        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/WAL.jpg",
+        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/WAL.jpg",
+        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/General/01/90/99/05/1909905_w1.jpg"
+      }
+    ],
+    "team_declaimer": "Tras más de medio siglo desde su última participación en un gran torneo, el combinado de Gareth Bale ha protagonizado una exitosa campaña de clasificación para la UEFA EURO 2016.",
+    "best_result": "nunca se ha clasificado",
+    "coach": "Chris Coleman",
+    "leading_scorer": "histórico, Ian Rush (28); actual, Gareth Bale (19)",
+    "nick_name": "dreigiau (dragones)",
+    "stadium": "Cardiff City Stadium, Millennium Stadium, Cardiff",
+    "description_part_1": "Ha pasado más de medio siglo desde que Gales participó en su último gran torneo, la Copa Mundial de la FIFA de 1958 celebrada en Suecia, en la que un equipo con un inspirado John Charles llegó a los cuartos de final. En 1976, el combinado galés alcanzó los cuartos de final en el Campeonato de Europa de la UEFA pero perdió en la eliminatoria a doble partido frente a Yugoslavia y se quedó fuera de la fase final de cuatro equipos. Desde entonces han surgido jugadores de primer nivel, como Ian Rush o Ryan Giggs, pero Gales nunca había logrado estar entre las grandes selecciones del continente y ahora, con Gareth Bale al frente, el combinado estará en la UEFA EURO 2016 y pondrá fin a 58 años de espera.",
+    "matches_played": "J 104 G 41 E 21 P 42 GF 125 GC 133",
+    "overall": "J 0 G 0 E 0 P 0 GF 0 GC 0",
+    "final_tournament": "J 104 G 41 E 21 P 42 GF 125 GC 133",
+    "description_part_2": "Yugoslavia fue siempre la 'bestia negra' de Gales en los Campeonatos de Europa de la UEFA, negándole una plaza en la fase final de cuatro equipos del torneo de 1976 y dejando a los dragones fuera de la fase final de 1984. Una victoria en el último partido en casa le hubiese dado el pase, pero el empate de Mehmed Baždarević en el minuto 81 dio a los visitantes una plaza en la fase final.",
+    "description_part_3": "No fue hasta la UEFA EURO 2004 cuando Gales estuvo otra vez cerca. El play-off ante Rusia fue esquivo tras empatar 0-0 en Moscú y caer 0-1 en casa. La fase de clasificación de la UEFA EURO 2012 resultó ser una campaña más problemática, con los resultados prometedores en el terreno de juego ensombrecidos por la muerte del seleccionador Gary Speed en noviembre de 2011."
+
+  }
+]

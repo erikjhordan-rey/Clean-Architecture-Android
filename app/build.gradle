@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+  compileSdkVersion 23
+  buildToolsVersion "23.0.2"
+
+  defaultConfig {
+    applicationId "com.example.jhordan.euro_cleanarchitecture"
+    minSdkVersion 17
+    targetSdkVersion 23
+    versionCode 1
+    versionName "1.0"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  testCompile 'junit:junit:4.12'
+
+  //Dependencies
+
+  compile supportDependencies.appCompat
+  compile supportDependencies.design
+  compile supportDependencies.supportAnnotation
+
+  compile retrofitDependencies.gson
+
+  compile daggerDependencies.dagger
+  compile daggerDependencies.daggerCompiler
+  apt     daggerDependencies.daggerAnnotations
+
+  compile rxDependencies.rxJava
+  compile rxDependencies.rxAndroid
+
+  compile glide
+}

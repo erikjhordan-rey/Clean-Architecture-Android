@@ -1,0 +1,101 @@
+ext {
+    //Version
+    supportVersion = '23.3.0'
+    retrofitVersion = '2.0.1'
+    rxJavaVersion = '1.1.0'
+    rxAndroidVersion = '1.1.0'
+    circleImageVersion = '1.3.0'
+    butterknifeVersion = '7.0.1'
+    glideVersion = '3.7.0'
+    daggerVersion = '2.0.2'
+    glassFishVersion = '10.0-b28'
+
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    robolectricVersion = '3.0'
+    hamcrestVersion = '1.1'
+
+    testVersion = '0.4.1'
+    testEspressoVersion = '2.2.1'
+
+    //Packages
+    supportPackage = 'com.android.support'
+    retrofitPackage = 'com.squareup.retrofit2'
+    okHttpPackage = 'com.squareup.okhttp3'
+    reactivePackage = 'io.reactivex'
+    hdodenhofPackage = 'de.hdodenhof'
+    jakeWhartonPackage = 'com.jakewharton'
+    glidePackage = 'com.github.bumptech.glide'
+    daggerPackage = 'com.google.dagger'
+    glassFishPackage = 'org.glassfish'
+
+    junitPackage = 'junit'
+    mockitoPackage = 'org.mockito'
+    robolectricPackage = 'org.robolectric'
+    hamcrestPackage = 'org.hamcrest'
+
+    testPackage = 'com.android.support.test'
+    testEspressoPackage = 'com.android.support.test.espresso'
+
+    //Support Libraries dependencies
+    supportDependencies = [
+            design           : buildDependency(supportPackage, 'design', supportVersion),
+            recyclerView     : buildDependency(supportPackage, 'recyclerview-v7', supportVersion),
+            cardView         : buildDependency(supportPackage, 'cardview-v7', supportVersion),
+            appCompat        : buildDependency(supportPackage, 'appcompat-v7', supportVersion),
+            supportAnnotation: buildDependency(supportPackage, 'support-annotations', supportVersion),
+            palette          : buildDependency(supportPackage, 'palette-v7', supportVersion),
+            percent          : buildDependency(supportPackage, 'percent', supportVersion)
+    ]
+
+    //Retrofit Libraries dependencies
+    retrofitDependencies = [
+            retrofit: buildDependency(retrofitPackage, 'retrofit', retrofitVersion),
+            gson    : buildDependency(retrofitPackage, 'converter-gson', retrofitVersion),
+            rxJava  : buildDependency(retrofitPackage, 'adapter-rxjava', retrofitVersion),
+            loggingInterceptor : buildDependency(okHttpPackage, 'logging-interceptor', '3.0.0-RC1')
+    ]
+
+    //RX Libraries dependencies
+    rxDependencies = [
+            rxJava   : buildDependency(reactivePackage, 'rxjava', rxJavaVersion),
+            rxAndroid: buildDependency(reactivePackage, 'rxandroid', rxAndroidVersion)
+    ]
+
+    //Dagger Libraries dependencies
+    daggerDependencies = [
+        dagger             : buildDependency(daggerPackage,'dagger',daggerVersion),
+        daggerCompiler     : buildDependency(daggerPackage,'dagger-compiler',daggerVersion),
+        daggerAnnotations  : buildDependency(glassFishPackage,'javax.annotation',glassFishVersion)
+    ]
+
+    //General Libraries dependencies
+    circleImageView = buildDependency(hdodenhofPackage, 'circleimageview', circleImageVersion)
+    butterknife = buildDependency(jakeWhartonPackage, 'butterknife', butterknifeVersion)
+    glide = buildDependency(glidePackage, 'glide', glideVersion)
+
+    //Testing
+    testingDependencies = [
+            junit       : buildDependency(junitPackage, 'junit', junitVersion),
+            mockito     : buildDependency(mockitoPackage, 'mockito-core', mockitoVersion),
+            robolectric : buildDependency(robolectricPackage, 'robolectric',   robolectricVersion),
+            hamcrest    : buildDependency(hamcrestPackage, 'hamcrest-library',   hamcrestVersion)
+    ]
+
+    testingSupportLibraryDependencies = [
+            runner : buildDependency(testPackage, 'runner', testVersion),
+            rules  : buildDependency(testPackage, 'rules', testVersion)
+
+    ]
+
+    testingEspressoDependencies  = [
+            espressoCore     :buildDependency(testEspressoPackage, 'espresso-core', testEspressoVersion),
+            espressoContrib  :buildDependency(testEspressoPackage, 'espresso-contrib', testEspressoVersion),
+            espressoIntents  :buildDependency(testEspressoPackage, 'espresso-intents', testEspressoVersion)
+    ]
+
+}
+
+String buildDependency(String pack, String dependency, String version) {
+    return "${pack}:${dependency}:${version}"
+}
