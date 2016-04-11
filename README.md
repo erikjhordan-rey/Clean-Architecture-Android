@@ -26,7 +26,7 @@ Libraries used on the sample project
 I created my own implementation of Clean Architecture and I want to thank you how much I've learned from these magnificent developers.
 
 * [Uncle Bob - The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-* [Karumi - Rosie](https://github.com/Karumi/Rosie)
+* [Karumi Team - Rosie](https://github.com/Karumi/Rosie)
 * [Fernando Cejas - Clean Architecture Sample](https://github.com/android10/Android-CleanArchitecture)
 
 
