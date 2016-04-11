@@ -1,5 +1,8 @@
 <resources>
   <string name="app_name">Euro2016 - Clean Architecture</string>
+
+  <string name="action_code">Show me Code</string>
+  <string name="action_blog">Read the Post / Blog</string>
   <string name="large_text">
     "Material is the metaphor.\n\n"
 
@@ -89,5 +92,5 @@
     "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
     "when a user tries to pick up one of cards.\n\n"
   </string>
-  <string name="action_settings">Settings</string>
+
 </resources>

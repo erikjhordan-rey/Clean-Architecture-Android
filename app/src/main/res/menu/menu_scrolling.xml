@@ -2,9 +2,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".view.ScrollingActivity">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
+  <item
+      android:id="@+id/action_code"
+      android:orderInCategory="100"
+      android:title="@string/action_code"
+      app:showAsAction="never"/>
+  <item
+      android:id="@+id/action_blog"
+      android:orderInCategory="100"
+      android:title="@string/action_blog"
+      app:showAsAction="never"/>
 </menu>

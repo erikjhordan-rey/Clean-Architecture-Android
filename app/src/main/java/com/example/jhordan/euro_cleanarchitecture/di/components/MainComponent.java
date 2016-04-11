@@ -18,13 +18,13 @@ package com.example.jhordan.euro_cleanarchitecture.di.components;
 
 import android.content.Context;
 import com.example.jhordan.euro_cleanarchitecture.di.modules.MainModule;
-import com.example.jhordan.euro_cleanarchitecture.view.ScrollingActivity;
+import com.example.jhordan.euro_cleanarchitecture.view.activity.TeamsActivity;
 import dagger.Component;
 import javax.inject.Singleton;
 
 @Singleton @Component(modules = MainModule.class) public interface MainComponent {
 
-  void inject(ScrollingActivity activity);
+  void inject(TeamsActivity activity);
 
   Context context();
 }

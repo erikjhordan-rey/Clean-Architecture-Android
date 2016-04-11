@@ -29,7 +29,7 @@ public class GetEuroTeamByFlag extends UseCase {
     this.teamsRepository = teamsRepository;
   }
 
-  public void setFlag(String flag) {
+  public void searchTeamByFlag(String flag) {
     this.flag = flag;
   }
 

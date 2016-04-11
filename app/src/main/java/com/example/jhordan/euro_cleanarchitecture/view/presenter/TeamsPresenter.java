@@ -20,15 +20,20 @@ import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.DefaultSubscriber;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
+import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
 import java.util.List;
 import javax.inject.Inject;
 
 public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
 
   private GetEuroTeams getEuroTeams;
+  private TeamViewModelToTeamMapper mapper;
 
-  @Inject public TeamsPresenter(@NonNull GetEuroTeams getEuroTeams) {
+  @Inject public TeamsPresenter(@NonNull GetEuroTeams getEuroTeams,
+      @NonNull TeamViewModelToTeamMapper mapper) {
     this.getEuroTeams = getEuroTeams;
+    this.mapper = mapper;
   }
 
   @Override public void initialize() {
@@ -37,22 +42,24 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     getEuroTeams.execute(new TeamLisSubscriber());
   }
 
-  public void onTeamClicked(Team team) {
-    getView().openSuperHeroScreen(team);
+  public void onTeamClicked(TeamViewModel team) {
+    getView().openTeamScreen(team);
   }
 
   private final class TeamLisSubscriber extends DefaultSubscriber<List<Team>> {
     @Override public void onCompleted() {
-      getView().hideEmptyCase();
+      getView().hideLoading();
     }
 
     @Override public void onError(Throwable e) {
-      getView().hideEmptyCase();
+      getView().hideLoading();
       e.printStackTrace();
     }
 
     @Override public void onNext(List<Team> teamList) {
-      getView().showEuroTeams(teamList);
+      getView().hideLoading();
+      List<TeamViewModel> teamViewModels = mapper.reverseMap(teamList);
+      getView().showEuroTeams(teamViewModels);
     }
   }
 
@@ -60,8 +67,8 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
 
     void hideEmptyCase();
 
-    void showEuroTeams(List<Team> teamList);
+    void showEuroTeams(List<TeamViewModel> teamList);
 
-    void openSuperHeroScreen(Team team);
+    void openTeamScreen(TeamViewModel team);
   }
 }

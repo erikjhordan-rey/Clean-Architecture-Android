@@ -24,7 +24,7 @@ public class TeamEntity {
   @SerializedName("flag") private String teamFlag;
   @SerializedName("name") private String teamName;
   @SerializedName("images") private List<ImageEntity> images;
-  @SerializedName("team_declaimer") private String desclaimer;
+  @SerializedName("team_declaimer") private String disclaimer;
   @SerializedName("best_result") private String bestResult;
   @SerializedName("coach") private String coach;
   @SerializedName("leading_scorer") private String leadingScorer;
@@ -49,8 +49,8 @@ public class TeamEntity {
     return images;
   }
 
-  public String getDesclaimer() {
-    return desclaimer;
+  public String getDisclaimer() {
+    return disclaimer;
   }
 
   public String getBestResult() {

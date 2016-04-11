@@ -19,6 +19,12 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
+
+  packagingOptions {
+    exclude 'META-INF/services/javax.annotation.processing.Processor'
+  }
+
+
 }
 
 dependencies {
@@ -41,4 +47,8 @@ dependencies {
   compile rxDependencies.rxAndroid
 
   compile glide
+  compile butterknife
+  compile circleImageView
+
+  compile 'com.squareup.picasso:picasso:2.5.2'
 }
