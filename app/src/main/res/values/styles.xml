@@ -18,4 +18,36 @@
 
   <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+  <style name="Header.Title" parent="None">
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    <item name="android:textColor">@android:color/white</item>
+
+  </style>
+
+
+  <style name="Header.Date" parent="None">
+    <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    <item name="android:textColor">@android:color/white</item>
+
+  </style>
+
+  <style name="AppTheme.TextViewTitle">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/spacing_small</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="AppTheme.TextViewValue">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:freezesText">true</item>
+  </style>
+
+  <style name="None"/>
+
 </resources>

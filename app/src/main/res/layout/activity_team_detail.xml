@@ -1,7 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-</LinearLayout>
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <com.example.jhordan.euro_cleanarchitecture.view.widget.HeaderView
+        android:id="@+id/header_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        />
+
+  </android.support.design.widget.AppBarLayout>
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_medium"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+      <ImageView
+          android:id="@+id/image_detail_history"
+          android:layout_width="match_parent"
+          android:layout_height="256dp"
+          android:contentDescription="@string/text_history"
+          android:scaleType="fitXY"
+          />
+
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_best_result"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <TextView
+          android:id="@+id/label_best_result"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_coach"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <TextView
+          android:id="@+id/label_coach"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_leading_scorer"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <TextView
+          android:id="@+id/label_leading_scorer"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_stadium"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <TextView
+          android:id="@+id/label_stadium"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+
+      <TextView
+          android:id="@+id/label_description_1"
+          android:layout_marginTop="@dimen/spacing_medium"
+          style="@style/AppTheme.TextViewValue"
+
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:layout_marginTop="@dimen/spacing_large"
+          android:text="@string/text_history"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:layout_marginTop="@dimen/spacing_medium"
+          android:text="@string/text_matches"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_matches_played"
+          style="@style/AppTheme.TextViewTitle"
+          android:layout_marginTop="@dimen/spacing_large"
+          />
+
+      <TextView
+          android:id="@+id/label_matches_played"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_overall"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <TextView
+          android:id="@+id/label_overall"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+      <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:text="@string/text_final_tournament"
+          style="@style/AppTheme.TextViewTitle"
+          />
+
+      <TextView
+          android:id="@+id/label_final_tournament"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+      <ImageView
+          android:id="@+id/image_detail_profile"
+          android:layout_width="match_parent"
+          android:layout_height="256dp"
+          android:layout_marginTop="@dimen/spacing_large"
+          android:contentDescription="@string/text_image_profile_content"
+          android:scaleType="fitXY"
+          />
+
+      <TextView
+          android:id="@+id/label_description_2"
+          android:layout_marginTop="@dimen/spacing_medium"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+      <TextView
+          android:id="@+id/label_description_3"
+          android:layout_marginTop="@dimen/spacing_medium"
+          style="@style/AppTheme.TextViewValue"
+          />
+
+    </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

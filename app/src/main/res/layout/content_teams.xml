@@ -13,7 +13,6 @@
       android:id="@+id/list_teams"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:text="@string/large_text"
       android:visibility="gone"
       />
 
