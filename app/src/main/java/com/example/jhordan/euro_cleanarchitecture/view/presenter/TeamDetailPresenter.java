@@ -13,64 +13,62 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.DefaultSubscriber;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
-import java.util.List;
 import javax.inject.Inject;
 
-public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
+public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 
-  private GetEuroTeams getEuroTeams;
-  private TeamViewModelToTeamMapper mapper;
+  private final GetEuroTeamByFlag getEuroTeamByFlag;
+  private final TeamViewModelToTeamMapper mapper;
+  private String teamFlag;
 
-  @Inject public TeamsPresenter(@NonNull GetEuroTeams getEuroTeams,
+  @Inject public TeamDetailPresenter(@NonNull GetEuroTeamByFlag getEuroTeamByFlag,
       @NonNull TeamViewModelToTeamMapper mapper) {
-    this.getEuroTeams = getEuroTeams;
+    this.getEuroTeamByFlag = getEuroTeamByFlag;
     this.mapper = mapper;
   }
 
   @Override public void initialize() {
     super.initialize();
-    getView().showLoading();
-    getEuroTeams.execute(new TeamLisSubscriber());
+    getEuroTeamByFlag.searchTeamByFlag(teamFlag);
+    getEuroTeamByFlag.execute(new TeamSubscriber());
   }
 
-  public void onTeamClicked(TeamViewModel team) {
-    getView().openTeamScreen(team);
-  }
+  private final class TeamSubscriber extends DefaultSubscriber<Team> {
 
-  private final class TeamLisSubscriber extends DefaultSubscriber<List<Team>> {
     @Override public void onCompleted() {
-      getView().hideLoading();
+      super.onCompleted();
     }
 
     @Override public void onError(Throwable e) {
-      getView().hideLoading();
+      super.onError(e);
       e.printStackTrace();
     }
 
-    @Override public void onNext(List<Team> teamList) {
-      List<TeamViewModel> teamViewModels = mapper.reverseMap(teamList);
-      getView().showEuroTeams(teamViewModels);
+    @Override public void onNext(Team team) {
+      super.onNext(team);
+      TeamViewModel teamViewModel = mapper.reverseMap(team);
+      getView().showTeam(teamViewModel);
     }
   }
 
-  public void destroy() {
-    this.getEuroTeams.unsubscribe();
+  public void setTeamFlag(String teamFlag) {
+    this.teamFlag = teamFlag;
+  }
+
+  public void destroy(){
+    this.getEuroTeamByFlag.unsubscribe();
     setView(null);
   }
 
   public interface View extends Presenter.View {
-
-    void showEuroTeams(List<TeamViewModel> teamList);
-
-    void openTeamScreen(TeamViewModel team);
+    void showTeam(TeamViewModel teamViewModel);
   }
 }

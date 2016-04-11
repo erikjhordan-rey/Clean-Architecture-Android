@@ -1,3 +1,19 @@
+/*
+ * Copyright (C) 2016 Erik Jhordan Rey.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.example.jhordan.euro_cleanarchitecture.view.activity;
 
 import android.content.Intent;
@@ -42,6 +58,11 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
     return R.layout.activity_teams;
   }
 
+  @Override protected void onDestroy() {
+    super.onDestroy();
+    presenter.destroy();
+  }
+
   @Override public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.menu_scrolling, menu);
     return true;
@@ -52,7 +73,7 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
     int id = item.getItemId();
 
     if (id == R.id.action_code) {
-      String repositoryURL = "https://erikcaffrey.github.io/2016/01/28/clean-architecture/";
+      final String repositoryURL = "https://erikcaffrey.github.io/2016/01/28/clean-architecture/";
       startActivityActionView(repositoryURL);
     } else {
       String blogURL = "";
@@ -62,23 +83,18 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
     return super.onOptionsItemSelected(item);
   }
 
-  @Override public void hideEmptyCase() {
-
-  }
-
   @Override public void showEuroTeams(List<TeamViewModel> teamList) {
     adapter.addAll(teamList);
     adapter.notifyDataSetChanged();
   }
 
   @Override public void openTeamScreen(TeamViewModel team) {
-    Toast.makeText(TeamsActivity.this, team.getName(), Toast.LENGTH_SHORT).show();
+    TeamDetailsActivity.open(TeamsActivity.this, team.getFlag());
   }
 
   @Override public void showLoading() {
     teamProgress.setVisibility(View.VISIBLE);
     teamList.setVisibility(View.GONE);
-
   }
 
   @Override public void hideLoading() {
@@ -92,7 +108,8 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
 
   private void initializeRecyclerView() {
     teamList.setLayoutManager(new LinearLayoutManager(this));
-    teamList.addItemDecoration(new DividerItemDecoration(TeamsActivity.this,DividerItemDecoration.VERTICAL_LIST));
+    teamList.addItemDecoration(
+        new DividerItemDecoration(TeamsActivity.this, DividerItemDecoration.VERTICAL_LIST));
     teamList.setHasFixedSize(true);
     teamList.setAdapter(adapter);
   }
