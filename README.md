@@ -23,7 +23,7 @@ Libraries used on the sample project
 
 ## Inspiring 
 
-I created my own implementation of Clean Architecture andI want to thank you how much I've learned from these magnificent developers.
+I created my own implementation of Clean Architecture and I want to thank you how much I've learned from these magnificent developers.
 
 * [Uncle Bob - The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 * [Karumi - Rosie](https://github.com/Karumi/Rosie)
