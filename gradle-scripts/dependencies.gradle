@@ -6,7 +6,7 @@ ext {
     rxAndroidVersion = '1.1.0'
     circleImageVersion = '1.3.0'
     butterknifeVersion = '7.0.1'
-    glideVersion = '3.7.0'
+    picassoVersion = '2.5.2'
     daggerVersion = '2.0.2'
     glassFishVersion = '10.0-b28'
 
@@ -25,10 +25,9 @@ ext {
     reactivePackage = 'io.reactivex'
     hdodenhofPackage = 'de.hdodenhof'
     jakeWhartonPackage = 'com.jakewharton'
-    glidePackage = 'com.github.bumptech.glide'
+    picassoPackage = 'com.squareup.picasso'
     daggerPackage = 'com.google.dagger'
     glassFishPackage = 'org.glassfish'
-
     junitPackage = 'junit'
     mockitoPackage = 'org.mockito'
     robolectricPackage = 'org.robolectric'
@@ -72,7 +71,7 @@ ext {
     //General Libraries dependencies
     circleImageView = buildDependency(hdodenhofPackage, 'circleimageview', circleImageVersion)
     butterknife = buildDependency(jakeWhartonPackage, 'butterknife', butterknifeVersion)
-    glide = buildDependency(glidePackage, 'glide', glideVersion)
+    picasso = buildDependency(picassoPackage, 'picasso', picassoVersion)
 
     //Testing
     testingDependencies = [
