@@ -10,7 +10,10 @@ Libraries used on the sample project
 * [AppCompat, CardView, RecyclerView and DesignLibrary][2]
 * [RxJava & RxAndroid][3]
 * [Dagger 2][4]
-* working on tests, Sorry for inconvenience wait it soon!!!!!!
+* [Junit][5]
+* [Mockito][6]
+* [Espresso][7]
+* I`m working on tests, Sorry for inconvenience wait it soon!!!!!!
 
 
 # Demo
@@ -20,6 +23,9 @@ Libraries used on the sample project
 [2]: http://developer.android.com/intl/es/tools/support-library/index.html
 [3]: https://github.com/ReactiveX/RxAndroid
 [4]: https://github.com/google/dagger
+[5]: http://developer.android.com/intl/es/reference/junit/framework/package-summary.html
+[6]: http://mockito.org/
+[7]: https://google.github.io/android-testing-support-library/docs/espresso/
 
 ## Inspiring 
 
