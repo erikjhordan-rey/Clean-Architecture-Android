@@ -18,11 +18,15 @@ package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GetEuroTeamByFlagTest {
 
@@ -34,12 +38,21 @@ public class GetEuroTeamByFlagTest {
 
   @Before public void setup() {
     MockitoAnnotations.initMocks(this);
-    getEuroTeamByFlag = new GetEuroTeamByFlag(repository);
+    getEuroTeamByFlag = givenATeamByFlagUseCase();
+  }
+
+  @Test public void givenAConcreteUseCaseOfGetEuroTeamByFlag() {
+    assertThat(getEuroTeamByFlag, instanceOf(GetEuroTeamByFlag.class));
   }
 
   @Test public void getTeamByFlagObservableFromRepository() {
     getEuroTeamByFlag.searchTeamByFlag(ANY_FLAG_OF_EURO_TEAMS);
     getEuroTeamByFlag.buildObservableUseCase();
     Mockito.verify(repository).team(ANY_FLAG_OF_EURO_TEAMS);
+    Mockito.verifyNoMoreInteractions(repository);
+  }
+
+  private GetEuroTeamByFlag givenATeamByFlagUseCase() {
+    return new GetEuroTeamByFlag(repository);
   }
 }

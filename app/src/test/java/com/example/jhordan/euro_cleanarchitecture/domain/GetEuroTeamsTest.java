@@ -17,12 +17,25 @@
 package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
+import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
+import com.example.jhordan.euro_cleanarchitecture.rx.RxAssertions;
+import java.util.ArrayList;
+import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import rx.Observable;
 
+import static junit.framework.Assert.*;
+
+import rx.Subscriber;
+import rx.functions.Action1;
+import rx.observers.TestSubscriber;
+
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
 
@@ -34,12 +47,20 @@ public class GetEuroTeamsTest {
 
   @Before public void setUp() {
     MockitoAnnotations.initMocks(this);
-    getEuroTeams = new GetEuroTeams(repository);
+    getEuroTeams = givenATeamListUseCase();
+  }
+
+  @Test public void givenAConcreteUseCaseOfGetEuroTeam() {
+    assertThat(getEuroTeams, instanceOf(GetEuroTeams.class));
   }
 
   @Test public void getTeamListObservableFromRepository() {
     getEuroTeams.buildObservableUseCase();
     verify(repository).teamList();
     verifyNoMoreInteractions(repository);
+  }
+
+  private GetEuroTeams givenATeamListUseCase() {
+    return new GetEuroTeams(repository);
   }
 }
