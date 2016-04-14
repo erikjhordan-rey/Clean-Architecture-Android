@@ -45,7 +45,6 @@ public class TeamViewHolder extends RecyclerView.ViewHolder {
 
   public void render(TeamViewModel team) {
     onItemClick(team);
-    System.out.println(team.getPictureOfHeader());
     renderTeamHeaderImage(team.getPictureOfHeader());
     renderTeamFlagImage(team.getPictureOfFlag());
     renderTeamName(team.getName());

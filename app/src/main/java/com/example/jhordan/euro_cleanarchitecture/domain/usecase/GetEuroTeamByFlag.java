@@ -33,7 +33,7 @@ public class GetEuroTeamByFlag extends UseCase {
     this.flag = flag;
   }
 
-  @Override protected Observable buildObservableUseCase() {
+  @Override public Observable buildObservableUseCase() {
     return this.teamsRepository.team(flag);
   }
 

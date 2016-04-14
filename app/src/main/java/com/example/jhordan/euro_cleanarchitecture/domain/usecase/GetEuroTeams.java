@@ -28,7 +28,7 @@ public class GetEuroTeams extends UseCase {
     this.teamsRepository = teamsRepository;
   }
 
-  @Override protected Observable buildObservableUseCase() {
+  @Override public Observable buildObservableUseCase() {
     return this.teamsRepository.teamList();
   }
 }
