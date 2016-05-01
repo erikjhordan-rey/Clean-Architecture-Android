@@ -31,9 +31,6 @@ import rx.Observable;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
-/**
- * 01/05/16.
- */
 public class TeamLocalApiDataSourceTest extends ApplicationTestCase {
 
   private static final String ANY_FLAG_OF_TEAM_ENTITY = "ESP";
@@ -64,8 +61,8 @@ public class TeamLocalApiDataSourceTest extends ApplicationTestCase {
   }
 
   @Test public void givenAnObservableTeamEntity() {
-    TeamEntity fakeUserEntity = new TeamEntity();
-    Observable<TeamEntity> fakeObservable = Observable.just(fakeUserEntity);
+    TeamEntity fakeEntity = new TeamEntity();
+    Observable<TeamEntity> fakeObservable = Observable.just(fakeEntity);
     given(localApi.teamEntity(ANY_FLAG_OF_TEAM_ENTITY)).willReturn(fakeObservable);
   }
 }
