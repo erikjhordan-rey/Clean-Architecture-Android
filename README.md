@@ -12,8 +12,9 @@ Libraries used on the sample project
 * [Dagger 2][4]
 * [Junit][5]
 * [Mockito][6]
-* [Espresso][7]
-* I`m working on tests, Sorry for inconvenience wait it soon!!!!!!
+* [Espresso][7] (I`m working on tests UI using this library, Sorry for inconvenience wait it soon!!!!!!)
+* [Robolectric][8]
+* [Hamcrest][9]
 
 
 # Demo
@@ -26,6 +27,8 @@ Libraries used on the sample project
 [5]: http://developer.android.com/intl/es/reference/junit/framework/package-summary.html
 [6]: http://mockito.org/
 [7]: https://google.github.io/android-testing-support-library/docs/espresso/
+[8]: http://robolectric.org/
+[9]: http://hamcrest.org/
 
 ## Inspiring 
 
