@@ -18,7 +18,6 @@ package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

@@ -96,4 +96,66 @@ public class TeamEntity {
   public String getGetDescription3() {
     return getDescription3;
   }
+
+  //create setters for test
+
+  public void setTeamFlag(String teamFlag) {
+    this.teamFlag = teamFlag;
+  }
+
+  public void setTeamName(String teamName) {
+    this.teamName = teamName;
+  }
+
+  public void setImages(List<ImageEntity> images) {
+    this.images = images;
+  }
+
+  public void setDisclaimer(String disclaimer) {
+    this.disclaimer = disclaimer;
+  }
+
+  public void setBestResult(String bestResult) {
+    this.bestResult = bestResult;
+  }
+
+  public void setCoach(String coach) {
+    this.coach = coach;
+  }
+
+  public void setLeadingScorer(String leadingScorer) {
+    this.leadingScorer = leadingScorer;
+  }
+
+  public void setNickName(String nickName) {
+    this.nickName = nickName;
+  }
+
+  public void setStadium(String stadium) {
+    this.stadium = stadium;
+  }
+
+  public void setGetdescription1(String getdescription1) {
+    this.getdescription1 = getdescription1;
+  }
+
+  public void setMatchesPlayed(String matchesPlayed) {
+    this.matchesPlayed = matchesPlayed;
+  }
+
+  public void setTeamOverall(String teamOverall) {
+    this.teamOverall = teamOverall;
+  }
+
+  public void setFinalTournament(String finalTournament) {
+    this.finalTournament = finalTournament;
+  }
+
+  public void setGetDescription2(String getDescription2) {
+    this.getDescription2 = getDescription2;
+  }
+
+  public void setGetDescription3(String getDescription3) {
+    this.getDescription3 = getDescription3;
+  }
 }

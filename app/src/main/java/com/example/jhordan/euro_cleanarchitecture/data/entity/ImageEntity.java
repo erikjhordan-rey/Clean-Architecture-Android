@@ -40,4 +40,22 @@ public class ImageEntity {
   public String getImageDetail() {
     return imageDetail;
   }
+
+  //create setters for test
+
+  public void setImageDetail(String imageDetail) {
+    this.imageDetail = imageDetail;
+  }
+
+  public void setImageHeader(String imageHeader) {
+    this.imageHeader = imageHeader;
+  }
+
+  public void setImageProfile(String imageProfile) {
+    this.imageProfile = imageProfile;
+  }
+
+  public void setImageFlag(String imageFlag) {
+    this.imageFlag = imageFlag;
+  }
 }

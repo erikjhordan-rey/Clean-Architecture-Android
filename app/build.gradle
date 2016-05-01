@@ -54,6 +54,7 @@ dependencies {
   testCompile testingDependencies.junit
   testCompile testingDependencies.mockito
   testCompile testingDependencies.hamcrest
+  testCompile testingDependencies.robolectric
 
   // Android Testing Support Library's runner and rules
 
