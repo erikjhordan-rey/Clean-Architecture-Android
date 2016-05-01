@@ -12,7 +12,7 @@ Libraries used on the sample project
 * [Dagger 2][4]
 * [Junit][5]
 * [Mockito][6]
-* [Espresso][7] (I`m working on tests UI using this library, Sorry for inconvenience wait it soon!!!!!!)
+* [Espresso][7] (I`m working on UI tests  using this library, Sorry for inconvenience wait it soon!!!!!!)
 * [Robolectric][8]
 * [Hamcrest][9]
 
