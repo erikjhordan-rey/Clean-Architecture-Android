@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.euro_cleanarchitecture.data.repository;
+package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
