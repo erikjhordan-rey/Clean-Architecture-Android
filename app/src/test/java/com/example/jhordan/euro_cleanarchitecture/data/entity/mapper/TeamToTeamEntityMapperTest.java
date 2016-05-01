@@ -21,7 +21,6 @@ import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.google.gson.JsonSyntaxException;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
