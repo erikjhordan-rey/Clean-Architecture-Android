@@ -1,4 +1,4 @@
-# Euro-CleanArchitecture on Android.
+# Clean Architecture on Android. (EUROCUP 2016)
 
 Example Android Clean Architecture used to explain how to use this architecture (rules) in our android applications.
 This example was created to support an article explanation that I have written about how to architect android application using the Uncle Bob's clean architecture. [Aplicando Clean Architecture en Android][1] (spanish).
