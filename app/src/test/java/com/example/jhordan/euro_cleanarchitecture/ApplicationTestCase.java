@@ -1,6 +1,5 @@
-package com.example.jhordan.euro_cleanarchitecture.data;
+package com.example.jhordan.euro_cleanarchitecture;
 
-import com.example.jhordan.euro_cleanarchitecture.BuildConfig;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;

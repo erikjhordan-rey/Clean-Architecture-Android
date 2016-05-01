@@ -16,7 +16,7 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.entity.mapper;
 
-import com.example.jhordan.euro_cleanarchitecture.data.ApplicationTestCase;
+import com.example.jhordan.euro_cleanarchitecture.ApplicationTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;

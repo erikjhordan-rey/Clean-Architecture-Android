@@ -15,7 +15,7 @@
  */
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
-import com.example.jhordan.euro_cleanarchitecture.data.ApplicationTestCase;
+import com.example.jhordan.euro_cleanarchitecture.ApplicationTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.DataSource;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamDataSourceFactory;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalApiDataSource;
