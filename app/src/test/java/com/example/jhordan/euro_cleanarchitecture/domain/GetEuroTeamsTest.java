@@ -17,22 +17,11 @@
 package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
-import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
-import com.example.jhordan.euro_cleanarchitecture.rx.RxAssertions;
-import java.util.ArrayList;
-import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import rx.Observable;
-
-import static junit.framework.Assert.*;
-
-import rx.Subscriber;
-import rx.functions.Action1;
-import rx.observers.TestSubscriber;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.MatcherAssert.assertThat;

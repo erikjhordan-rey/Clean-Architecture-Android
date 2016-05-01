@@ -37,6 +37,7 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 
   @Override public void initialize() {
     super.initialize();
+    getView().showLoading();
     getEuroTeamByFlag.searchTeamByFlag(teamFlag);
     getEuroTeamByFlag.execute(new TeamSubscriber());
   }
@@ -45,11 +46,13 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 
     @Override public void onCompleted() {
       super.onCompleted();
+      getView().hideLoading();
     }
 
     @Override public void onError(Throwable e) {
       super.onError(e);
       e.printStackTrace();
+      getView().hideLoading();
     }
 
     @Override public void onNext(Team team) {
