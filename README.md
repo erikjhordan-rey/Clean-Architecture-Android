@@ -39,6 +39,10 @@ I created my own implementation of Clean Architecture and I want to thank you ho
 * [Fernando Cejas - Clean Architecture Sample](https://github.com/android10/Android-CleanArchitecture)
 
 
+Do you want to contribute?
+--------------------------
+
+Feel free to report or add any useful feature, I will be glad to improve it with your help, before submitting your code please check the [codestyle](https://github.com/square/java-code-styles).
 
 
 Developed By
