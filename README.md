@@ -3,7 +3,7 @@
 Example Android Clean Architecture used to explain how to use this architecture (rules) in our android applications.
 This example was created to support an article explanation that I have written about how to architect android application using the Uncle Bob's clean architecture. [Aplicando Clean Architecture en Android][1] (spanish).
 
-![](https://aa1a5cf3c6e3569b77b29843c3f5b6ba8b369090.googledrive.com/host/0B9hNKr5AY4xXTXktOS11VlBaemM/euro.png)
+![](./art/euro.png)
 
 Libraries used on the sample project
 ------------------------------------
@@ -18,7 +18,7 @@ Libraries used on the sample project
 
 
 # Demo
-![](https://aa1a5cf3c6e3569b77b29843c3f5b6ba8b369090.googledrive.com/host/0B9hNKr5AY4xXTXktOS11VlBaemM/Telecine_2016-04-11-09-46-01.gif)
+![](./art/Telecine_2016-04-11-09-46-01.gif)
 
 [1]: http://erikcaffrey.github.io/2016/01/28/clean-architecture/
 [2]: http://developer.android.com/intl/es/tools/support-library/index.html
