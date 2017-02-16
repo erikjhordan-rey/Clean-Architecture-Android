@@ -20,7 +20,7 @@ Libraries used on the sample project
 # Demo
 ![](./art/Telecine_2016-04-11-09-46-01.gif)
 
-[1]: http://erikcaffrey.github.io/2016/01/28/clean-architecture/
+[1]: https://erikcaffrey.github.io/ANDROID-clean-architecture/
 [2]: http://developer.android.com/intl/es/tools/support-library/index.html
 [3]: https://github.com/ReactiveX/RxAndroid
 [4]: https://github.com/google/dagger
