@@ -3,17 +3,16 @@ apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
-  compileSdkVersion 24
-  buildToolsVersion "23.0.3"
+  compileSdkVersion 25
+  buildToolsVersion '25.0.2'
 
   defaultConfig {
     applicationId "com.example.jhordan.euro_cleanarchitecture"
     minSdkVersion 17
-    targetSdkVersion 24
+    targetSdkVersion 25
     versionCode 1
     versionName "1.0"
     multiDexEnabled true
-    testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
   }
   buildTypes {
     release {
@@ -28,7 +27,6 @@ android {
 }
 
 dependencies {
-  compile fileTree(dir: 'libs', include: ['*.jar'])
 
   //Dependencies
 
@@ -56,27 +54,6 @@ dependencies {
   testCompile testingDependencies.hamcrest
   testCompile testingDependencies.robolectric
 
-  // Android Testing Support Library's runner and rules
-
-  androidTestCompile testingSupportLibraryDependencies.runner
-  androidTestCompile testingSupportLibraryDependencies.rules
-
-  // Espresso UI Testing dependencies.
-
-  androidTestCompile testingEspressoDependencies.espressoCore
-  // androidTestCompile testingEspressoDependencies.espressoContrib
-  androidTestCompile testingEspressoDependencies.espressoIntents
-
-  androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.2.1') {
-    exclude module: 'support-annotations'
-    exclude module: 'support-v4'
-    exclude module: 'support-v13'
-    exclude module: 'recyclerview-v7'
-  }
-  /*
-       Resolves dependency versions across test and production APKs, specifically, transitive
-       dependencies. This is required since Espresso internally has a dependency on support-annotations.
-   */
 }
 configurations.all {
   resolutionStrategy.force "com.android.support:support-annotations:23.1.1"
