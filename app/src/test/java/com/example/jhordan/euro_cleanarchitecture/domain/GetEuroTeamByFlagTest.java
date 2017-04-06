@@ -30,10 +30,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GetEuroTeamByFlagTest {
 
   private static final String ANY_FLAG_OF_EURO_TEAMS = "ESP";
-
-  private GetEuroTeamByFlag getEuroTeamByFlag;
-
   @Mock TeamsRepository repository;
+  private GetEuroTeamByFlag getEuroTeamByFlag;
 
   @Before public void setup() {
     MockitoAnnotations.initMocks(this);

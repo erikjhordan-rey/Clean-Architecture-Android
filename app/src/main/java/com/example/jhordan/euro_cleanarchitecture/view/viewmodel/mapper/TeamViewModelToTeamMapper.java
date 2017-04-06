@@ -23,7 +23,8 @@ import javax.inject.Inject;
 
 public class TeamViewModelToTeamMapper extends Mapper<TeamViewModel, Team> {
 
-  @Inject public TeamViewModelToTeamMapper(){}
+  @Inject public TeamViewModelToTeamMapper() {
+  }
 
   @Override public Team map(TeamViewModel value) {
     throw new UnsupportedOperationException();

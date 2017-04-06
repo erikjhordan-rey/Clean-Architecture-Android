@@ -16,8 +16,8 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper;
 
-import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
+import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 

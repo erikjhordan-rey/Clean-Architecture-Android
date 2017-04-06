@@ -18,26 +18,19 @@ package com.example.jhordan.euro_cleanarchitecture.view.activity;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 import butterknife.Bind;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamDataSourceFactory;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
 import com.example.jhordan.euro_cleanarchitecture.view.adapter.TeamsAdapter;
 import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
 import com.example.jhordan.euro_cleanarchitecture.view.widget.DividerItemDecoration;
 import java.util.List;
 import javax.inject.Inject;
@@ -45,11 +38,9 @@ import javax.inject.Inject;
 public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
 
   @Inject TeamsPresenter presenter;
-  private TeamsAdapter adapter;
-
   @Bind(R.id.list_teams) RecyclerView teamList;
   @Bind(R.id.progress_team) ProgressBar teamProgress;
-
+  private TeamsAdapter adapter;
 
   @Override public void initView() {
     super.initView();
@@ -131,7 +122,9 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
   }
 
   private void disableTitleFromToolbar() {
-    if (getSupportActionBar() != null) getSupportActionBar().setDisplayShowTitleEnabled(false);
+    if (getSupportActionBar() != null) {
+      getSupportActionBar().setDisplayShowTitleEnabled(false);
+    }
   }
 
   private void startActivityActionView(String url) {

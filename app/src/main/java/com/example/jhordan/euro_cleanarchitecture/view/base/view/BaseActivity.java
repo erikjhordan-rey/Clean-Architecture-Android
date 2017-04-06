@@ -9,18 +9,16 @@ import com.example.jhordan.euro_cleanarchitecture.R;
 
 /**
  * <p>
- *     BaseActivity contains some modifications to the native AppCompatActivity.
- *     Mainly, it use ButterKnife for view binding and it automatically check if
- *     toolbar exists.
+ * BaseActivity contains some modifications to the native AppCompatActivity.
+ * Mainly, it use ButterKnife for view binding and it automatically check if
+ * toolbar exists.
  * </p>
  */
 public abstract class BaseActivity extends AppCompatActivity {
 
-
   private Toolbar mToolbar;
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
+  @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(getLayoutId());
     setupToolbar();
@@ -29,9 +27,11 @@ public abstract class BaseActivity extends AppCompatActivity {
   }
 
   /**
-   * Use this method to initialize view components. This method is called after {@link BaseActivity#bindViews()}
-   * */
-  public void initView() {}
+   * Use this method to initialize view components. This method is called after {@link
+   * BaseActivity#bindViews()}
+   */
+  public void initView() {
+  }
 
   /**
    * Its common use a toolbar within activity, if it exists in the
@@ -51,8 +51,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     ButterKnife.bind(this);
   }
 
-  @Nullable
-  public Toolbar getToolbar(){
+  @Nullable public Toolbar getToolbar() {
     return mToolbar;
   }
 

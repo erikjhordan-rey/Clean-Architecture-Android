@@ -53,8 +53,5 @@ dependencies {
   testCompile testingDependencies.mockito
   testCompile testingDependencies.hamcrest
   testCompile testingDependencies.robolectric
+}
 
-}
-configurations.all {
-  resolutionStrategy.force "com.android.support:support-annotations:23.1.1"
-}

@@ -30,11 +30,11 @@ public abstract class UseCase {
   protected UseCase() {
   }
 
-  @SuppressWarnings("unchecked") public void execute(Subscriber UseCaseSubscriber) {
+  @SuppressWarnings("unchecked") public void execute(Subscriber subscriber) {
     this.subscription = this.buildObservableUseCase()
         .subscribeOn(Schedulers.io())
         .observeOn(AndroidSchedulers.mainThread())
-        .subscribe(UseCaseSubscriber);
+        .subscribe(subscriber);
   }
 
   /**

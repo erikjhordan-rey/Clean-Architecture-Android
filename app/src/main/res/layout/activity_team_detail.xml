@@ -116,9 +116,9 @@
           />
 
       <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+          android:layout_marginTop="@dimen/spacing_large"
           android:text="@string/text_matches_played"
           style="@style/AppTheme.TextViewTitle"
-          android:layout_marginTop="@dimen/spacing_large"
           />
 
       <TextView

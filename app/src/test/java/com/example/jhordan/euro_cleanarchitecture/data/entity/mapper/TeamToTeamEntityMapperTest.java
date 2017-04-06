@@ -16,7 +16,7 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.entity.mapper;
 
-import com.example.jhordan.euro_cleanarchitecture.ApplicationTestCase;
+import com.example.jhordan.euro_cleanarchitecture.EuroTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;
@@ -30,14 +30,12 @@ import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TeamToTeamEntityMapperTest extends ApplicationTestCase {
+public class TeamToTeamEntityMapperTest extends EuroTestCase {
 
   private final static String FAKE_TEAM_FLAG = "ALB";
   private final static String FAKE_TEAM_NAME = "Albania";
-
-  private TeamToTeamEntityMapper teamToTeamEntityMapper;
-
   @Rule public ExpectedException expectedException = ExpectedException.none();
+  private TeamToTeamEntityMapper teamToTeamEntityMapper;
 
   @Before public void setUp() {
     teamToTeamEntityMapper = new TeamToTeamEntityMapper();

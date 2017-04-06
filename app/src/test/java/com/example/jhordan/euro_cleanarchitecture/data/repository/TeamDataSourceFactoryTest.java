@@ -15,7 +15,7 @@
  */
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
-import com.example.jhordan.euro_cleanarchitecture.ApplicationTestCase;
+import com.example.jhordan.euro_cleanarchitecture.EuroTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.DataSource;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamDataSourceFactory;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalApiDataSource;
@@ -28,16 +28,14 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TeamDataSourceFactoryTest extends ApplicationTestCase {
+public class TeamDataSourceFactoryTest extends EuroTestCase {
   private TeamDataSourceFactory teamDataSourceFactory;
 
-  @Before
-  public void setUp(){
+  @Before public void setUp() {
     teamDataSourceFactory = new TeamDataSourceFactory(RuntimeEnvironment.application);
   }
 
-  @Test
-  public void givenAnInstanceTeamsLocalApiDataSource() {
+  @Test public void givenAnInstanceTeamsLocalApiDataSource() {
     DataSource dataSource = teamDataSourceFactory.createDataSource();
     assertThat(dataSource, is(notNullValue()));
     assertThat(dataSource, is(instanceOf(TeamsLocalApiDataSource.class)));

@@ -42,6 +42,19 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
     getEuroTeamByFlag.execute(new TeamSubscriber());
   }
 
+  public void setTeamFlag(String teamFlag) {
+    this.teamFlag = teamFlag;
+  }
+
+  public void destroy() {
+    this.getEuroTeamByFlag.unsubscribe();
+    setView(null);
+  }
+
+  public interface View extends Presenter.View {
+    void showTeam(TeamViewModel teamViewModel);
+  }
+
   private final class TeamSubscriber extends DefaultSubscriber<Team> {
 
     @Override public void onCompleted() {
@@ -60,18 +73,5 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
       TeamViewModel teamViewModel = mapper.reverseMap(team);
       getView().showTeam(teamViewModel);
     }
-  }
-
-  public void setTeamFlag(String teamFlag) {
-    this.teamFlag = teamFlag;
-  }
-
-  public void destroy(){
-    this.getEuroTeamByFlag.unsubscribe();
-    setView(null);
-  }
-
-  public interface View extends Presenter.View {
-    void showTeam(TeamViewModel teamViewModel);
   }
 }

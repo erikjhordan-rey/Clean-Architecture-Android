@@ -30,9 +30,8 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 
 public class GetEuroTeamsTest {
 
-  private GetEuroTeams getEuroTeams;
-
   @Mock TeamsRepository repository;
+  private GetEuroTeams getEuroTeams;
 
   @Before public void setUp() {
     MockitoAnnotations.initMocks(this);
