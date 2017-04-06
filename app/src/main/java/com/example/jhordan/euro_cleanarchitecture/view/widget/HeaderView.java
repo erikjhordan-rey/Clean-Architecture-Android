@@ -28,6 +28,9 @@ import com.example.jhordan.euro_cleanarchitecture.R;
 
 public class HeaderView extends LinearLayout {
 
+  @Bind(R.id.txt_header_title) TextView titleLabel;
+  @Bind(R.id.txt_header_subtitle) TextView subTitleLabel;
+
   public HeaderView(Context context) {
     super(context);
   }
@@ -39,9 +42,6 @@ public class HeaderView extends LinearLayout {
   public HeaderView(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
-
-  @Bind(R.id.txt_header_title) TextView titleLabel;
-  @Bind(R.id.txt_header_subtitle) TextView subTitleLabel;
 
   @Override protected void onFinishInflate() {
     super.onFinishInflate();

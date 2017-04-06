@@ -33,7 +33,8 @@ import rx.functions.Func1;
   private final TeamToTeamEntityMapper teamToTeamEntityMapper;
   private final DataSource dataSource;
 
-  @Inject public TeamsRepository(@NonNull TeamDataSourceFactory teamDataSourceFactory, @NonNull TeamToTeamEntityMapper teamToTeamEntityMapper) {
+  @Inject public TeamsRepository(@NonNull TeamDataSourceFactory teamDataSourceFactory,
+      @NonNull TeamToTeamEntityMapper teamToTeamEntityMapper) {
     this.teamToTeamEntityMapper = teamToTeamEntityMapper;
     this.dataSource = teamDataSourceFactory.createDataSource();
   }
@@ -53,5 +54,4 @@ import rx.functions.Func1;
       }
     });
   }
-
 }

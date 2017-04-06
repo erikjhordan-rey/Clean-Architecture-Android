@@ -46,6 +46,18 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     getView().openTeamScreen(team);
   }
 
+  public void destroy() {
+    this.getEuroTeams.unsubscribe();
+    setView(null);
+  }
+
+  public interface View extends Presenter.View {
+
+    void showEuroTeams(List<TeamViewModel> teamList);
+
+    void openTeamScreen(TeamViewModel team);
+  }
+
   private final class TeamLisSubscriber extends DefaultSubscriber<List<Team>> {
     @Override public void onCompleted() {
       getView().hideLoading();
@@ -60,17 +72,5 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
       List<TeamViewModel> teamViewModels = mapper.reverseMap(teamList);
       getView().showEuroTeams(teamViewModels);
     }
-  }
-
-  public void destroy() {
-    this.getEuroTeams.unsubscribe();
-    setView(null);
-  }
-
-  public interface View extends Presenter.View {
-
-    void showEuroTeams(List<TeamViewModel> teamList);
-
-    void openTeamScreen(TeamViewModel team);
   }
 }

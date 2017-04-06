@@ -22,8 +22,8 @@ import rx.Observable;
 
 public class GetEuroTeamByFlag extends UseCase {
 
-  private String flag = "";
   private final TeamsRepository teamsRepository;
+  private String flag = "";
 
   @Inject public GetEuroTeamByFlag(TeamsRepository teamsRepository) {
     this.teamsRepository = teamsRepository;
@@ -36,5 +36,4 @@ public class GetEuroTeamByFlag extends UseCase {
   @Override public Observable buildObservableUseCase() {
     return this.teamsRepository.team(flag);
   }
-
 }

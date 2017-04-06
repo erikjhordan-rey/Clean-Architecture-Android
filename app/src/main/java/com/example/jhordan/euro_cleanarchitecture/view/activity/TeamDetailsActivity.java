@@ -52,6 +52,12 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
   @Bind(R.id.label_description_2) TextView labelDescription2;
   @Bind(R.id.label_description_3) TextView labelDescription3;
 
+  public static void open(Context context, String superHeroName) {
+    Intent intent = new Intent(context, TeamDetailsActivity.class);
+    intent.putExtra(TEAM_FLAG_KEY, superHeroName);
+    context.startActivity(intent);
+  }
+
   @Override public void initView() {
     super.initView();
     initializeToolbar();
@@ -76,7 +82,9 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
   }
 
   @Override public boolean onOptionsItemSelected(MenuItem item) {
-    if (item.getItemId() == android.R.id.home) onBackPressed();
+    if (item.getItemId() == android.R.id.home) {
+      onBackPressed();
+    }
     return super.onOptionsItemSelected(item);
   }
 
@@ -85,19 +93,15 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
     presenter.destroy();
   }
 
-  public static void open(Context context, String superHeroName) {
-    Intent intent = new Intent(context, TeamDetailsActivity.class);
-    intent.putExtra(TEAM_FLAG_KEY, superHeroName);
-    context.startActivity(intent);
-  }
-
   private String getTeamFlagKey() {
     return getIntent().getExtras().getString(TEAM_FLAG_KEY);
   }
 
   @Override public void showTeam(TeamViewModel teamViewModel) {
 
-    if (getToolbar() != null) getToolbar().setTitle(teamViewModel.getName());
+    if (getToolbar() != null) {
+      getToolbar().setTitle(teamViewModel.getName());
+    }
     detailHeader.initializeHeader(teamViewModel.getDisclaimer(), teamViewModel.getNickName());
     getImage(teamViewModel.getPictureOfDetail(), imageDetailHistory);
     labelBestResult.setText(teamViewModel.getBestResult());
@@ -123,7 +127,9 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
           ContextCompat.getColor(TeamDetailsActivity.this, R.color.colorPrimaryDark));
     }
 
-    if (getSupportActionBar() != null) getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    if (getSupportActionBar() != null) {
+      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
   }
 
   @Override public void showLoading() {

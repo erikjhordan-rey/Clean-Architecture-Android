@@ -31,7 +31,7 @@ public class EuroApplication extends Application {
   }
 
   private void initializeInjector() {
-   mainComponent = DaggerMainComponent.builder().mainModule(new MainModule(this)).build();
+    mainComponent = DaggerMainComponent.builder().mainModule(new MainModule(this)).build();
   }
 
   public MainComponent getMainComponent() {

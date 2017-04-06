@@ -16,7 +16,7 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
-import com.example.jhordan.euro_cleanarchitecture.ApplicationTestCase;
+import com.example.jhordan.euro_cleanarchitecture.EuroTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalApi;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalApiDataSource;
@@ -31,7 +31,7 @@ import rx.Observable;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
-public class TeamLocalApiDataSourceTest extends ApplicationTestCase {
+public class TeamLocalApiDataSourceTest extends EuroTestCase {
 
   private static final String ANY_FLAG_OF_TEAM_ENTITY = "ESP";
 

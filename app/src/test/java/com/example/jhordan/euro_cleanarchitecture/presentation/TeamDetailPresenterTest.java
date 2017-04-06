@@ -36,14 +36,10 @@ import static org.mockito.Mockito.verify;
 @RunWith(MockitoJUnitRunner.class) public class TeamDetailPresenterTest {
 
   private static final String ANY_FLAG_OF_TEAM_ENTITY = "ESP";
-
-  private TeamDetailPresenter presenter;
-
   @Mock GetEuroTeamByFlag getEuroTeamByFlag;
-
   @Mock TeamViewModelToTeamMapper mapper;
-
   @Mock TeamDetailPresenter.View view;
+  private TeamDetailPresenter presenter;
 
   @Before public void setUp() {
     MockitoAnnotations.initMocks(this);
