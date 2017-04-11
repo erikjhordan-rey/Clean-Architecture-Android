@@ -17,7 +17,7 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.DefaultSubscriber;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.UseCaseObserver;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
@@ -35,11 +35,11 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
     this.mapper = mapper;
   }
 
-  @Override public void initialize() {
+  @SuppressWarnings("unchecked") @Override public void initialize() {
     super.initialize();
     getView().showLoading();
     getEuroTeamByFlag.searchTeamByFlag(teamFlag);
-    getEuroTeamByFlag.execute(new TeamSubscriber());
+    getEuroTeamByFlag.execute(new TeamObserver());
   }
 
   public void setTeamFlag(String teamFlag) {
@@ -47,7 +47,7 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
   }
 
   public void destroy() {
-    this.getEuroTeamByFlag.unsubscribe();
+    this.getEuroTeamByFlag.dispose();
     setView(null);
   }
 
@@ -55,21 +55,17 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
     void showTeam(TeamViewModel teamViewModel);
   }
 
-  private final class TeamSubscriber extends DefaultSubscriber<Team> {
+  private final class TeamObserver extends UseCaseObserver<Team> {
 
-    @Override public void onCompleted() {
-      super.onCompleted();
+    @Override public void onComplete() {
       getView().hideLoading();
     }
 
     @Override public void onError(Throwable e) {
-      super.onError(e);
-      e.printStackTrace();
       getView().hideLoading();
     }
 
     @Override public void onNext(Team team) {
-      super.onNext(team);
       TeamViewModel teamViewModel = mapper.reverseMap(team);
       getView().showTeam(teamViewModel);
     }

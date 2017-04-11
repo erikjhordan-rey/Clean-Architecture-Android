@@ -22,6 +22,10 @@ import com.example.jhordan.euro_cleanarchitecture.data.repository.Repository;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import dagger.Module;
 import dagger.Provides;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 @Module public class MainModule {
@@ -32,11 +36,19 @@ import javax.inject.Singleton;
     this.euroApplication = euroApplication;
   }
 
-  @Provides @Singleton public Context provideApplicationContext() {
+  @Provides @Singleton Context provideApplicationContext() {
     return euroApplication;
   }
 
-  @Provides @Singleton public Repository provideRepository(TeamsRepository teamsRepository) {
+  @Provides @Singleton Repository provideRepository(TeamsRepository teamsRepository) {
     return teamsRepository;
+  }
+
+  @Provides @Named("executor_thread") Scheduler provideExecutorThread() {
+    return Schedulers.io();
+  }
+
+  @Provides @Named("ui_thread") Scheduler provideUiThread() {
+    return AndroidSchedulers.mainThread();
   }
 }

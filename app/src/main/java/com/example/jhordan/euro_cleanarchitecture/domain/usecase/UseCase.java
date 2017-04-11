@@ -16,35 +16,41 @@
 
 package com.example.jhordan.euro_cleanarchitecture.domain.usecase;
 
-import rx.Observable;
-import rx.Subscriber;
-import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
-import rx.subscriptions.Subscriptions;
+import io.reactivex.Observable;
+import io.reactivex.Scheduler;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.observers.DisposableObserver;
 
-public abstract class UseCase {
+abstract class UseCase<T> {
 
-  private Subscription subscription = Subscriptions.empty();
+  private final CompositeDisposable compositeDisposable;
+  private final Scheduler executorThread;
+  private final Scheduler uiThread;
 
-  protected UseCase() {
+  UseCase(Scheduler executorThread, Scheduler uiThread) {
+    this.executorThread = executorThread;
+    this.uiThread = uiThread;
+    compositeDisposable = new CompositeDisposable();
   }
 
-  @SuppressWarnings("unchecked") public void execute(Subscriber subscriber) {
-    this.subscription = this.buildObservableUseCase()
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-        .subscribe(subscriber);
+  public void execute(DisposableObserver<T> disposableObserver) {
+
+    if (disposableObserver == null) {
+      throw new IllegalArgumentException("disposableObserver must not be null");
+    }
+
+    final Observable<T> observable =
+        this.createObservableUseCase().subscribeOn(executorThread).observeOn(uiThread);
+
+    DisposableObserver observer = observable.subscribeWith(disposableObserver);
+    compositeDisposable.add(observer);
   }
 
-  /**
-   * Unsubscribes from current {@link rx.Subscription}.
-   */
-  public void unsubscribe() {
-    if (!subscription.isUnsubscribed()) {
-      subscription.unsubscribe();
+  public void dispose() {
+    if (!compositeDisposable.isDisposed()) {
+      compositeDisposable.dispose();
     }
   }
 
-  protected abstract Observable buildObservableUseCase();
+  protected abstract Observable<T> createObservableUseCase();
 }

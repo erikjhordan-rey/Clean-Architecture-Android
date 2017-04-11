@@ -18,7 +18,7 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.DefaultSubscriber;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.UseCaseObserver;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
@@ -36,10 +36,10 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     this.mapper = mapper;
   }
 
-  @Override public void initialize() {
+  @SuppressWarnings("unchecked") @Override public void initialize() {
     super.initialize();
     getView().showLoading();
-    getEuroTeams.execute(new TeamLisSubscriber());
+    getEuroTeams.execute(new TeamListObserver());
   }
 
   public void onTeamClicked(TeamViewModel team) {
@@ -47,7 +47,7 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
   }
 
   public void destroy() {
-    this.getEuroTeams.unsubscribe();
+    this.getEuroTeams.dispose();
     setView(null);
   }
 
@@ -58,8 +58,9 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     void openTeamScreen(TeamViewModel team);
   }
 
-  private final class TeamLisSubscriber extends DefaultSubscriber<List<Team>> {
-    @Override public void onCompleted() {
+  private final class TeamListObserver extends UseCaseObserver<List<Team>> {
+
+    @Override public void onComplete() {
       getView().hideLoading();
     }
 

@@ -15,7 +15,6 @@
  */
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
-import com.example.jhordan.euro_cleanarchitecture.EuroTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.DataSource;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamDataSourceFactory;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalApiDataSource;
@@ -28,7 +27,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TeamDataSourceFactoryTest extends EuroTestCase {
+public class TeamDataSourceFactoryTest {
   private TeamDataSourceFactory teamDataSourceFactory;
 
   @Before public void setUp() {

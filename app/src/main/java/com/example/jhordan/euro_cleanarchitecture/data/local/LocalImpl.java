@@ -20,13 +20,14 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamEntityJsonMapper;
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
-import rx.Observable;
-import rx.Subscriber;
 
 public class LocalImpl implements LocalApi {
 
@@ -39,14 +40,15 @@ public class LocalImpl implements LocalApi {
   }
 
   @Override public Observable<List<TeamEntity>> teamEntityList() {
-    return Observable.create(new Observable.OnSubscribe<List<TeamEntity>>() {
-      @Override public void call(Subscriber<? super List<TeamEntity>> subscriber) {
+    return Observable.create(new ObservableOnSubscribe<List<TeamEntity>>() {
+      @Override public void subscribe(ObservableEmitter<List<TeamEntity>> emitter)
+          throws Exception {
         List<TeamEntity> teamEntityList = getAll();
         if (teamEntityList != null) {
-          subscriber.onNext(teamEntityList);
-          subscriber.onCompleted();
+          emitter.onNext(teamEntityList);
+          emitter.onComplete();
         } else {
-          subscriber.onError(
+          emitter.onError(
               new Throwable("Error getting team data list from the local json (euro_data.json)"));
         }
       }
@@ -54,14 +56,14 @@ public class LocalImpl implements LocalApi {
   }
 
   @Override public Observable<TeamEntity> teamEntity(final String flag) {
-    return Observable.create(new Observable.OnSubscribe<TeamEntity>() {
-      @Override public void call(Subscriber<? super TeamEntity> subscriber) {
+    return Observable.create(new ObservableOnSubscribe<TeamEntity>() {
+      @Override public void subscribe(ObservableEmitter<TeamEntity> emitter) throws Exception {
         TeamEntity teamEntity = getByFlag(flag);
         if (teamEntity != null) {
-          subscriber.onNext(teamEntity);
-          subscriber.onCompleted();
+          emitter.onNext(teamEntity);
+          emitter.onComplete();
         } else {
-          subscriber.onError(new Throwable(
+          emitter.onError(new Throwable(
               "Error getting team data by flag from the local json (euro_data.json)"));
         }
       }
@@ -72,14 +74,14 @@ public class LocalImpl implements LocalApi {
    * This method works to obtain a collection of data {@link TeamEntity}.
    */
 
-  public List<TeamEntity> getAll() {
+  private List<TeamEntity> getAll() {
     return teamEntityJsonMapper.transformTeamEntityCollection(getResponseFromLocalJson());
   }
 
   /**
    * This method works to obtain a TeamEntity  {@link TeamEntity}  by its flag.
    */
-  public TeamEntity getByFlag(String flag) {
+  private TeamEntity getByFlag(String flag) {
     TeamEntity result = null;
     for (TeamEntity entity : getAll()) {
       if (entity.getTeamFlag().equals(flag)) {

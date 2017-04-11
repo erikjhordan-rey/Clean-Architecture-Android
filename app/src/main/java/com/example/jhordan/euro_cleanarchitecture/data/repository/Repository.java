@@ -17,8 +17,9 @@
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
+import io.reactivex.Observable;
 import java.util.List;
-import rx.Observable;
+
 
 public interface Repository {
   /**

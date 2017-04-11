@@ -22,11 +22,11 @@ import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.Dat
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamDataSourceFactory;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
+import io.reactivex.Observable;
+import io.reactivex.functions.Function;
 import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
-import rx.Observable;
-import rx.functions.Func1;
 
 @Singleton public class TeamsRepository implements Repository {
 
@@ -40,16 +40,16 @@ import rx.functions.Func1;
   }
 
   @Override public Observable<List<Team>> teamList() {
-    return dataSource.teamEntityList().map(new Func1<List<TeamEntity>, List<Team>>() {
-      @Override public List<Team> call(List<TeamEntity> teamEntities) {
+    return dataSource.teamEntityList().map(new Function<List<TeamEntity>, List<Team>>() {
+      @Override public List<Team> apply(List<TeamEntity> teamEntities) throws Exception {
         return teamToTeamEntityMapper.reverseMap(teamEntities);
       }
     });
   }
 
   @Override public Observable<Team> team(String flag) {
-    return dataSource.teamEntity(flag).map(new Func1<TeamEntity, Team>() {
-      @Override public Team call(TeamEntity teamEntity) {
+    return dataSource.teamEntity(flag).map(new Function<TeamEntity, Team>() {
+      @Override public Team apply(TeamEntity teamEntity) throws Exception {
         return teamToTeamEntityMapper.reverseMap(teamEntity);
       }
     });

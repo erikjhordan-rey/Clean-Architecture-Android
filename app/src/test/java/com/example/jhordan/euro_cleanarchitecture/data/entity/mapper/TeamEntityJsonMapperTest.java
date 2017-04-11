@@ -16,7 +16,6 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.entity.mapper;
 
-import com.example.jhordan.euro_cleanarchitecture.EuroTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamEntityJsonMapper;
@@ -30,7 +29,7 @@ import org.junit.rules.ExpectedException;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TeamEntityJsonMapperTest extends EuroTestCase {
+public class TeamEntityJsonMapperTest {
 
   @Rule public ExpectedException expectedException = ExpectedException.none();
   private TeamEntityJsonMapper teamEntityJsonMapper;
