@@ -17,15 +17,20 @@
 package com.example.jhordan.euro_cleanarchitecture.domain.usecase;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
+import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
+import io.reactivex.Observable;
+import io.reactivex.Scheduler;
 import javax.inject.Inject;
-import rx.Observable;
+import javax.inject.Named;
 
-public class GetEuroTeamByFlag extends UseCase {
+public class GetEuroTeamByFlag extends UseCase<Team> {
 
   private final TeamsRepository teamsRepository;
   private String flag = "";
 
-  @Inject public GetEuroTeamByFlag(TeamsRepository teamsRepository) {
+  @Inject public GetEuroTeamByFlag(@Named("executor_thread") Scheduler executorThread,
+      @Named("ui_thread") Scheduler uiThread, TeamsRepository teamsRepository) {
+    super(executorThread, uiThread);
     this.teamsRepository = teamsRepository;
   }
 
@@ -33,7 +38,7 @@ public class GetEuroTeamByFlag extends UseCase {
     this.flag = flag;
   }
 
-  @Override public Observable buildObservableUseCase() {
+  @Override public Observable<Team> createObservableUseCase() {
     return this.teamsRepository.team(flag);
   }
 }

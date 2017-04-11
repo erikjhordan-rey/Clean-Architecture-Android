@@ -17,8 +17,8 @@
 package com.example.jhordan.euro_cleanarchitecture.data.local;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
+import io.reactivex.Observable;
 import java.util.List;
-import rx.Observable;
 
 public interface LocalApi {
   /**

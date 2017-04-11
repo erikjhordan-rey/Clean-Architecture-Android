@@ -15,19 +15,16 @@
  */
 package com.example.jhordan.euro_cleanarchitecture.domain.usecase;
 
-/**
- * Default subscriber base class to be used whenever you want default error handling.
- */
-public class DefaultSubscriber<T> extends rx.Subscriber<T> {
-  @Override public void onCompleted() {
-    // no-op by default.
+import io.reactivex.observers.DisposableObserver;
+
+public abstract class UseCaseObserver<T> extends DisposableObserver<T> {
+
+  @Override public void onComplete() {
   }
 
   @Override public void onError(Throwable e) {
-    // no-op by default.
   }
 
   @Override public void onNext(T t) {
-    // no-op by default.
   }
 }

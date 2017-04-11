@@ -16,22 +16,22 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
-import com.example.jhordan.euro_cleanarchitecture.EuroTestCase;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalApi;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalApiDataSource;
+import io.reactivex.Observable;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import rx.Observable;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
-public class TeamLocalApiDataSourceTest extends EuroTestCase {
+@RunWith(MockitoJUnitRunner.class) public class TeamLocalApiDataSourceTest {
 
   private static final String ANY_FLAG_OF_TEAM_ENTITY = "ESP";
 
@@ -40,7 +40,6 @@ public class TeamLocalApiDataSourceTest extends EuroTestCase {
   private TeamsLocalApiDataSource localApiDataSource;
 
   @Before public void setUp() {
-    MockitoAnnotations.initMocks(this);
     localApiDataSource = new TeamsLocalApiDataSource(localApi);
   }
 

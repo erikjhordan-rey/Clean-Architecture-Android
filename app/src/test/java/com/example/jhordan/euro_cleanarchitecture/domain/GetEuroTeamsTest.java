@@ -18,23 +18,25 @@ package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
+import io.reactivex.schedulers.Schedulers;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
 
-public class GetEuroTeamsTest {
+@RunWith(MockitoJUnitRunner.class)public class GetEuroTeamsTest {
 
   @Mock TeamsRepository repository;
   private GetEuroTeams getEuroTeams;
 
   @Before public void setUp() {
-    MockitoAnnotations.initMocks(this);
     getEuroTeams = givenATeamListUseCase();
   }
 
@@ -43,12 +45,12 @@ public class GetEuroTeamsTest {
   }
 
   @Test public void getTeamListObservableFromRepository() {
-    getEuroTeams.buildObservableUseCase();
+    getEuroTeams.createObservableUseCase();
     verify(repository).teamList();
     verifyNoMoreInteractions(repository);
   }
 
   private GetEuroTeams givenATeamListUseCase() {
-    return new GetEuroTeams(repository);
+    return new GetEuroTeams(Schedulers.trampoline(), Schedulers.trampoline(),repository);
   }
 }

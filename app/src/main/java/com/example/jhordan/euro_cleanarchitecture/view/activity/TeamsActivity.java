@@ -71,10 +71,10 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
     int id = item.getItemId();
 
     if (id == R.id.action_code) {
-      final String repositoryURL = "https://erikcaffrey.github.io/2016/01/28/clean-architecture/";
+      final String repositoryURL = "https://github.com/erikcaffrey/Clean-Architecture-Android";
       startActivityActionView(repositoryURL);
     } else {
-      String blogURL = "";
+      String blogURL = "https://erikcaffrey.github.io/ANDROID-clean-architecture/";
       startActivityActionView(blogURL);
     }
 
