@@ -24,6 +24,10 @@ android {
     exclude 'META-INF/LICENSE'
     exclude 'META-INF/LICENSE.txt'
   }
+
+  configurations {
+    all*.exclude group: 'org.hamcrest', module: 'hamcrest-core'
+  }
 }
 
 dependencies {
@@ -45,9 +49,7 @@ dependencies {
 
   compile circleImageView
   compile picasso
-  compile (gson){
-    exclude group: 'org.hamcrest', module: 'hamcrest-core'
-  }
+  compile gson
 
   //Testing
   compile testingDependencies.junit
