@@ -22,7 +22,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
@@ -33,9 +33,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class TeamViewHolder extends RecyclerView.ViewHolder {
 
   private final TeamsPresenter teamsPresenter;
-  @Bind(R.id.image_header) ImageView headerImage;
-  @Bind(R.id.image_flag) CircleImageView flagImage;
-  @Bind(R.id.label_name) TextView nameLabel;
+  @BindView(R.id.image_header) ImageView headerImage;
+  @BindView(R.id.image_flag) CircleImageView flagImage;
+  @BindView(R.id.label_name) TextView nameLabel;
 
   public TeamViewHolder(@NonNull View itemView, @NonNull TeamsPresenter teamsPresenter) {
     super(itemView);

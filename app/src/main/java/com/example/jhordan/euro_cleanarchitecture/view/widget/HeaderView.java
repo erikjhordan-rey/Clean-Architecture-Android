@@ -22,14 +22,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.example.jhordan.euro_cleanarchitecture.R;
 
 public class HeaderView extends LinearLayout {
 
-  @Bind(R.id.txt_header_title) TextView titleLabel;
-  @Bind(R.id.txt_header_subtitle) TextView subTitleLabel;
+  @BindView(R.id.txt_header_title) TextView titleLabel;
+  @BindView(R.id.txt_header_subtitle) TextView subTitleLabel;
 
   public HeaderView(Context context) {
     super(context);

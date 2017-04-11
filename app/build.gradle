@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'me.tatarka.retrolambda'
 
 android {
   compileSdkVersion 25
@@ -23,35 +21,36 @@ android {
 
   packagingOptions {
     exclude 'META-INF/services/javax.annotation.processing.Processor'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/LICENSE.txt'
   }
 }
 
 dependencies {
 
   //Dependencies
-
   compile supportDependencies.appCompat
   compile supportDependencies.design
   compile supportDependencies.supportAnnotation
 
-  compile retrofitDependencies.gson
-
-  compile daggerDependencies.dagger
-  compile daggerDependencies.daggerCompiler
-  apt daggerDependencies.daggerAnnotations
+  compile             daggerDependencies.dagger
+  annotationProcessor daggerDependencies.daggerCompiler
+  provided daggerDependencies.daggerAnnotations
 
   compile rxDependencies.rxJava
   compile rxDependencies.rxAndroid
 
-  compile picasso
   compile butterknife
+  compile butterknifeProcessor
+
   compile circleImageView
+  compile picasso
+  compile gson
 
   //Testing
-
-  testCompile testingDependencies.junit
-  testCompile testingDependencies.mockito
-  testCompile testingDependencies.hamcrest
-  testCompile testingDependencies.robolectric
+  compile testingDependencies.junit
+  compile testingDependencies.mockito
+  compile testingDependencies.hamcrest
+  compile testingDependencies.robolectric
 }
 

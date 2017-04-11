@@ -23,7 +23,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
-import butterknife.Bind;
+import butterknife.BindView;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
@@ -38,19 +38,19 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
   private final static String TEAM_FLAG_KEY = "team_flag_key";
   @Inject TeamDetailPresenter presenter;
 
-  @Bind(R.id.header_detail) HeaderView detailHeader;
-  @Bind(R.id.image_detail_history) ImageView imageDetailHistory;
-  @Bind(R.id.label_best_result) TextView labelBestResult;
-  @Bind(R.id.label_coach) TextView labelCoach;
-  @Bind(R.id.label_leading_scorer) TextView labelLeadingScorer;
-  @Bind(R.id.label_stadium) TextView labelStadium;
-  @Bind(R.id.label_description_1) TextView labelDescription1;
-  @Bind(R.id.label_matches_played) TextView labelMatchesPlayed;
-  @Bind(R.id.label_overall) TextView labelOverall;
-  @Bind(R.id.label_final_tournament) TextView labelFinalTournament;
-  @Bind(R.id.image_detail_profile) ImageView imageDetailProfile;
-  @Bind(R.id.label_description_2) TextView labelDescription2;
-  @Bind(R.id.label_description_3) TextView labelDescription3;
+  @BindView(R.id.header_detail) HeaderView detailHeader;
+  @BindView(R.id.image_detail_history) ImageView imageDetailHistory;
+  @BindView(R.id.label_best_result) TextView labelBestResult;
+  @BindView(R.id.label_coach) TextView labelCoach;
+  @BindView(R.id.label_leading_scorer) TextView labelLeadingScorer;
+  @BindView(R.id.label_stadium) TextView labelStadium;
+  @BindView(R.id.label_description_1) TextView labelDescription1;
+  @BindView(R.id.label_matches_played) TextView labelMatchesPlayed;
+  @BindView(R.id.label_overall) TextView labelOverall;
+  @BindView(R.id.label_final_tournament) TextView labelFinalTournament;
+  @BindView(R.id.image_detail_profile) ImageView imageDetailProfile;
+  @BindView(R.id.label_description_2) TextView labelDescription2;
+  @BindView(R.id.label_description_3) TextView labelDescription3;
 
   public static void open(Context context, String superHeroName) {
     Intent intent = new Intent(context, TeamDetailsActivity.class);

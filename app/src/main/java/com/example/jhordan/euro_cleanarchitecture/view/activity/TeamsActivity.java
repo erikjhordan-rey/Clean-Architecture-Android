@@ -24,7 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
-import butterknife.Bind;
+import butterknife.BindView;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.adapter.TeamsAdapter;
@@ -38,8 +38,8 @@ import javax.inject.Inject;
 public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
 
   @Inject TeamsPresenter presenter;
-  @Bind(R.id.list_teams) RecyclerView teamList;
-  @Bind(R.id.progress_team) ProgressBar teamProgress;
+  @BindView(R.id.list_teams) RecyclerView teamList;
+  @BindView(R.id.progress_team) ProgressBar teamProgress;
   private TeamsAdapter adapter;
 
   @Override public void initView() {
