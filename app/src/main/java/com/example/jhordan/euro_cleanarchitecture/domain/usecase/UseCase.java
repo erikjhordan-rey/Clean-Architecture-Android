@@ -35,7 +35,7 @@ abstract class UseCase<T> {
 
   public void execute(DisposableObserver<T> disposableObserver) {
 
-    if(disposableObserver == null){
+    if (disposableObserver == null) {
       throw new IllegalArgumentException("disposableObserver must not be null");
     }
 

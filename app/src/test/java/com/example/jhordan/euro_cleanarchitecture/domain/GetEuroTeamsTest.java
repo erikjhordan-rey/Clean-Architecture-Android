@@ -23,7 +23,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
@@ -31,7 +30,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
 
-@RunWith(MockitoJUnitRunner.class)public class GetEuroTeamsTest {
+@RunWith(MockitoJUnitRunner.class) public class GetEuroTeamsTest {
 
   @Mock TeamsRepository repository;
   private GetEuroTeams getEuroTeams;
@@ -51,6 +50,6 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
   }
 
   private GetEuroTeams givenATeamListUseCase() {
-    return new GetEuroTeams(Schedulers.trampoline(), Schedulers.trampoline(),repository);
+    return new GetEuroTeams(Schedulers.trampoline(), Schedulers.trampoline(), repository);
   }
 }
