@@ -21,4 +21,4 @@ licenses:
 
 script:
   - ./gradlew clean
-  - ./gradlew checkstyle assemble testDebug
+  - ./gradlew checkstyle assemble testDebug --stacktrace
