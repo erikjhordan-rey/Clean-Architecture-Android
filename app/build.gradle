@@ -12,6 +12,7 @@ android {
     versionName "1.0"
     multiDexEnabled true
   }
+
   buildTypes {
     release {
       minifyEnabled false
@@ -26,14 +27,7 @@ android {
   }
 
   dexOptions {
-    preDexLibraries true
     javaMaxHeapSize "3g"
-    incremental true
-    dexInProcess = true
-  }
-
-  configurations {
-    all*.exclude group: 'org.hamcrest', module: 'hamcrest-core'
   }
 }
 
