@@ -31,7 +31,6 @@ import com.example.jhordan.euro_cleanarchitecture.view.adapter.TeamsAdapter;
 import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
-import com.example.jhordan.euro_cleanarchitecture.view.widget.DividerItemDecoration;
 import java.util.List;
 import javax.inject.Inject;
 
@@ -106,8 +105,8 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
 
   private void initializeRecyclerView() {
     teamList.setLayoutManager(new LinearLayoutManager(this));
-    teamList.addItemDecoration(
-        new DividerItemDecoration(TeamsActivity.this, DividerItemDecoration.VERTICAL_LIST));
+    teamList.addItemDecoration(new android.support.v7.widget.DividerItemDecoration(this,
+        android.support.v7.widget.DividerItemDecoration.VERTICAL));
     teamList.setHasFixedSize(true);
     teamList.setAdapter(adapter);
   }

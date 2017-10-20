@@ -20,4 +20,5 @@ licenses:
     - 'google-gdk-license-.+'
 
 script:
-  - ./gradlew checkstyle assemble testDebug
+  - ./gradlew clean
+  - ./gradlew checkstyle assemble testDebug --stacktrace
