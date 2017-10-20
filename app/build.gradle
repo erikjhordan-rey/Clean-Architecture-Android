@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 25
-  buildToolsVersion '25.0.2'
+  compileSdkVersion 26
+  buildToolsVersion '26.0.2'
 
   defaultConfig {
     applicationId "com.example.jhordan.euro_cleanarchitecture"
     minSdkVersion 17
-    targetSdkVersion 25
+    targetSdkVersion 26
     versionCode 1
     versionName "1.0"
     multiDexEnabled true
@@ -33,7 +33,6 @@ android {
 
 dependencies {
 
-  //Dependencies
   compile supportDependencies.appCompat
   compile supportDependencies.design
   compile supportDependencies.supportAnnotation
@@ -52,7 +51,6 @@ dependencies {
   compile picasso
   compile gson
 
-  //Testing
   compile testingDependencies.junit
   compile testingDependencies.mockito
   compile testingDependencies.hamcrest
