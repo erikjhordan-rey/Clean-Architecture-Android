@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 26
-  buildToolsVersion '26.0.2'
+  compileSdkVersion 27
+  buildToolsVersion '27.0.1'
 
   defaultConfig {
     applicationId "com.example.jhordan.euro_cleanarchitecture"
     minSdkVersion 17
-    targetSdkVersion 26
+    targetSdkVersion 27
     versionCode 1
     versionName "1.0"
     multiDexEnabled true
@@ -26,34 +26,38 @@ android {
     exclude 'META-INF/LICENSE.txt'
   }
 
-  dexOptions {
-    javaMaxHeapSize "3g"
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  lintOptions {
+    abortOnError false
   }
 }
 
 dependencies {
 
-  compile supportDependencies.appCompat
-  compile supportDependencies.design
-  compile supportDependencies.supportAnnotation
+  implementation supportDependencies.appCompat
+  implementation supportDependencies.design
+  implementation supportDependencies.supportAnnotation
 
-  compile             daggerDependencies.dagger
+  implementation             daggerDependencies.dagger
   annotationProcessor daggerDependencies.daggerCompiler
-  provided daggerDependencies.daggerAnnotations
 
-  compile rxDependencies.rxJava
-  compile rxDependencies.rxAndroid
+  implementation rxDependencies.rxJava
+  implementation rxDependencies.rxAndroid
 
-  compile butterknife
-  compile butterknifeProcessor
+  implementation butterknife
+  annotationProcessor butterknifeProcessor
 
-  compile circleImageView
-  compile picasso
-  compile gson
+  implementation circleImageView
+  implementation picasso
+  implementation gson
 
-  compile testingDependencies.junit
-  compile testingDependencies.mockito
-  compile testingDependencies.hamcrest
-  compile testingDependencies.robolectric
+  testImplementation testingDependencies.junit
+  testImplementation testingDependencies.mockito
+  testImplementation testingDependencies.hamcrest
+  testImplementation testingDependencies.robolectric
 }
 
