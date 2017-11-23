@@ -26,15 +26,15 @@ import javax.inject.Named;
 
 public class GetEuroTeams extends UseCase<List<Team>> {
 
-  private final Repository teamsRepository;
+  private final Repository repository;
 
   @Inject public GetEuroTeams(@Named("executor_thread") Scheduler executorThread,
-      @Named("ui_thread") Scheduler uiThread, Repository teamsRepository) {
+      @Named("ui_thread") Scheduler uiThread, Repository repository) {
     super(executorThread, uiThread);
-    this.teamsRepository = teamsRepository;
+    this.repository = repository;
   }
 
   @Override public Observable<List<Team>> createObservableUseCase() {
-    return this.teamsRepository.teamList();
+    return this.repository.teamList();
   }
 }
