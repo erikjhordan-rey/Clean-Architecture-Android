@@ -28,7 +28,8 @@ public class GetEuroTeamByFlag extends UseCase<Team> {
     private final Repository repository;
     private String flag = "";
 
-    @Inject public GetEuroTeamByFlag(@Named("executor_thread") Scheduler executorThread, @Named("ui_thread") Scheduler uiThread,
+    @Inject public GetEuroTeamByFlag(@Named("executor_thread") Scheduler executorThread,
+        @Named("ui_thread") Scheduler uiThread,
         Repository repository) {
         super(executorThread, uiThread);
         this.repository = repository;
