@@ -46,7 +46,7 @@ Feel free to report or add any useful feature, I will be glad to improve it with
 Developed By
 ------------
 
-* Erik González  - <erikcaffrey10@gmail.com>
+* Erik Jhordan Rey  - <erikjhordan.rey@gmail.com>
 
 License
 -------
