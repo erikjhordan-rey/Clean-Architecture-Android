@@ -8,11 +8,13 @@ env:
 android:
   components:
      - tools
-     - build-tools-27.0.1
      - platform-tools
-     - extra-android-m2repository
-     - extra-google-android-support
+     - build-tools-27.0.2
      - android-27
+     - extra-android-support
+     - extra-google-google_play_services
+     - extra-google-m2repository
+     - extra-android-m2repository
 
 licenses:
     - 'android-sdk-preview-license-.+'
