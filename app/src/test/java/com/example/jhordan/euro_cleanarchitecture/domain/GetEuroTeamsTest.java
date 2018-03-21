@@ -32,7 +32,7 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
 
 @RunWith(MockitoJUnitRunner.class) public class GetEuroTeamsTest {
 
-  @Mock TeamsRepository repository;
+  @Mock private TeamsRepository repository;
   private GetEuroTeams getEuroTeams;
 
   @Before public void setUp() {

@@ -35,7 +35,7 @@ import static org.mockito.Mockito.verify;
 
   private static final String ANY_FLAG_OF_TEAM_ENTITY = "ESP";
 
-  @Mock LocalApi localApi;
+  @Mock private LocalApi localApi;
 
   private TeamsLocalApiDataSource localApiDataSource;
 

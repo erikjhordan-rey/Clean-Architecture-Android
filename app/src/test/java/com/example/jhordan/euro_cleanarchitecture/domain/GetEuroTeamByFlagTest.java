@@ -32,7 +32,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @RunWith(MockitoJUnitRunner.class) public class GetEuroTeamByFlagTest {
 
   private static final String ANY_FLAG_OF_EURO_TEAMS = "ESP";
-  @Mock TeamsRepository repository;
+  @Mock private TeamsRepository repository;
   private GetEuroTeamByFlag getEuroTeamByFlag;
 
   @Before public void setup() {

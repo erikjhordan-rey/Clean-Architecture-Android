@@ -97,8 +97,6 @@ public class TeamEntity {
     return nickName;
   }
 
-  //create setters for test
-
   public void setNickName(String nickName) {
     this.nickName = nickName;
   }
