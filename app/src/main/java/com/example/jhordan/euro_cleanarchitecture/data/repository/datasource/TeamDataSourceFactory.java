@@ -23,10 +23,6 @@ import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.map
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-/*
- * you can create other places where retrieve data and here you
- * will write the logic to know what origin data you should use.
- */
 @Singleton public class TeamDataSourceFactory {
 
   private final Context context;
@@ -35,7 +31,7 @@ import javax.inject.Singleton;
     this.context = context;
   }
 
-  public TeamsLocalApiDataSource createDataSource() {
+  public DataSource createDataSource() {
     TeamEntityJsonMapper teamEntityJsonMapper = new TeamEntityJsonMapper();
     LocalImpl local = new LocalImpl(context, teamEntityJsonMapper);
     return new TeamsLocalApiDataSource(local);

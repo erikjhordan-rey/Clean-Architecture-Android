@@ -20,18 +20,9 @@ import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import io.reactivex.Observable;
 import java.util.List;
 
-
 public interface Repository {
-  /**
-   * Get an 'Observable<List<Team>>'  which will emit a List of {@link Team}.
-   */
-  Observable<List<Team>> teamList();
 
-  /**
-   * Get an  'Observable<Team>' which will emit a {@link Team} by its flag.
-   *
-   * @param flag The flag to retrieve team data.
-   */
+  Observable<List<Team>> teamList();
 
   Observable<Team> team(final String flag);
 }

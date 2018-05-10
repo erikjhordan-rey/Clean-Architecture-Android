@@ -21,16 +21,8 @@ import io.reactivex.Observable;
 import java.util.List;
 
 public interface LocalApi {
-  /**
-   * Get an 'Observable<List<TeamEntity>>'  which will emit a List of {@link TeamEntity}.
-   */
-  Observable<List<TeamEntity>> teamEntityList();
 
-  /**
-   * Get an  'Observable<TeamEntity>' which will emit a {@link TeamEntity} by its flag.
-   *
-   * @param flag The flag to retrieve team data.
-   */
+  Observable<List<TeamEntity>> teamEntityList();
 
   Observable<TeamEntity> teamEntity(final String flag);
 }

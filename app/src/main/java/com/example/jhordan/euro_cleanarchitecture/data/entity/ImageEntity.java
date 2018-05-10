@@ -41,8 +41,6 @@ public class ImageEntity {
     this.imageProfile = imageProfile;
   }
 
-  //create setters for test
-
   public String getImageHeader() {
     return imageHeader;
   }

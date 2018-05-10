@@ -17,10 +17,10 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.UseCaseObserver;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
+import io.reactivex.observers.DisposableObserver;
 import javax.inject.Inject;
 
 public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
@@ -39,7 +39,20 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
     super.initialize();
     getView().showLoading();
     getEuroTeamByFlag.searchTeamByFlag(teamFlag);
-    getEuroTeamByFlag.execute(new TeamObserver());
+    getEuroTeamByFlag.execute(new DisposableObserver<Team>() {
+      @Override public void onComplete() {
+        getView().hideLoading();
+      }
+
+      @Override public void onError(Throwable e) {
+        getView().hideLoading();
+      }
+
+      @Override public void onNext(Team team) {
+        TeamViewModel teamViewModel = mapper.reverseMap(team);
+        getView().showTeam(teamViewModel);
+      }
+    });
   }
 
   public void setTeamFlag(String teamFlag) {
@@ -53,21 +66,5 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 
   public interface View extends Presenter.View {
     void showTeam(TeamViewModel teamViewModel);
-  }
-
-  private final class TeamObserver extends UseCaseObserver<Team> {
-
-    @Override public void onComplete() {
-      getView().hideLoading();
-    }
-
-    @Override public void onError(Throwable e) {
-      getView().hideLoading();
-    }
-
-    @Override public void onNext(Team team) {
-      TeamViewModel teamViewModel = mapper.reverseMap(team);
-      getView().showTeam(teamViewModel);
-    }
   }
 }

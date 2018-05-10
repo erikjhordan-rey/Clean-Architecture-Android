@@ -18,10 +18,10 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import android.support.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.UseCaseObserver;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
+import io.reactivex.observers.DisposableObserver;
 import java.util.List;
 import javax.inject.Inject;
 
@@ -39,7 +39,22 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
   @SuppressWarnings("unchecked") @Override public void initialize() {
     super.initialize();
     getView().showLoading();
-    getEuroTeams.execute(new TeamListObserver());
+    getEuroTeams.execute(new DisposableObserver<List<Team>>() {
+
+      @Override public void onNext(List<Team> teams) {
+        List<TeamViewModel> teamViewModels = mapper.reverseMap(teams);
+        getView().showEuroTeams(teamViewModels);
+      }
+
+      @Override public void onError(Throwable e) {
+        getView().hideLoading();
+        e.printStackTrace();
+      }
+
+      @Override public void onComplete() {
+        getView().hideLoading();
+      }
+    });
   }
 
   public void onTeamClicked(TeamViewModel team) {
@@ -56,22 +71,5 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     void showEuroTeams(List<TeamViewModel> teamList);
 
     void openTeamScreen(TeamViewModel team);
-  }
-
-  private final class TeamListObserver extends UseCaseObserver<List<Team>> {
-
-    @Override public void onComplete() {
-      getView().hideLoading();
-    }
-
-    @Override public void onError(Throwable e) {
-      getView().hideLoading();
-      e.printStackTrace();
-    }
-
-    @Override public void onNext(List<Team> teamList) {
-      List<TeamViewModel> teamViewModels = mapper.reverseMap(teamList);
-      getView().showEuroTeams(teamViewModels);
-    }
   }
 }

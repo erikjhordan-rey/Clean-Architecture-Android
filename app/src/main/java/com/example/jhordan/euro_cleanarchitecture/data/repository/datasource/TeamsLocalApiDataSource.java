@@ -18,13 +18,11 @@ package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalApi;
+
 import io.reactivex.Observable;
+
 import java.util.List;
 
-
-/**
- * {@link DataSource} implementation based on read local json file from assets (euro_data.json).
- */
 public class TeamsLocalApiDataSource implements DataSource {
 
   private final LocalApi localApi;

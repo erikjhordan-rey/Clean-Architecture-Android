@@ -17,24 +17,14 @@
 package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
-import io.reactivex.Observable;
+
 import java.util.List;
 
-/**
- * Represents a data store where data is retrieved.
- */
+import io.reactivex.Observable;
+
 public interface DataSource {
 
-  /**
-   * Get an 'Observable<List<TeamEntity>>'  which will emit a List of {@link TeamEntity}.
-   */
   Observable<List<TeamEntity>> teamEntityList();
-
-  /**
-   * Get an  'Observable<TeamEntity>' which will emit a {@link TeamEntity} by its flag.
-   *
-   * @param flag The flag to retrieve team data.
-   */
 
   Observable<TeamEntity> teamEntity(final String flag);
 }
