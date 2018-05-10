@@ -1,9 +1,9 @@
 ext {
 
   //Version
-  supportVersion = '27.0.2'
+  supportVersion = '27.1.1'
 
-  rxJavaVersion = '2.1.5'
+  rxJavaVersion = '2.1.7'
   rxAndroidVersion = '2.0.1'
 
   circleImageVersion = '1.3.0'
