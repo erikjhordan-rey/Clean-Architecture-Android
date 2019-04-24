@@ -30,20 +30,20 @@ import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.squareup.picasso.Picasso;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class TeamViewHolder extends RecyclerView.ViewHolder {
+class TeamViewHolder extends RecyclerView.ViewHolder {
 
   private final TeamsPresenter teamsPresenter;
   @BindView(R.id.image_header) ImageView headerImage;
   @BindView(R.id.image_flag) CircleImageView flagImage;
   @BindView(R.id.label_name) TextView nameLabel;
 
-  public TeamViewHolder(@NonNull View itemView, @NonNull TeamsPresenter teamsPresenter) {
+  TeamViewHolder(@NonNull View itemView, @NonNull TeamsPresenter teamsPresenter) {
     super(itemView);
     this.teamsPresenter = teamsPresenter;
     ButterKnife.bind(this, itemView);
   }
 
-  public void render(TeamViewModel team) {
+  void render(TeamViewModel team) {
     onItemClick(team);
     renderTeamHeaderImage(team.getPictureOfHeader());
     renderTeamFlagImage(team.getPictureOfFlag());
@@ -51,11 +51,7 @@ public class TeamViewHolder extends RecyclerView.ViewHolder {
   }
 
   private void onItemClick(final TeamViewModel teamViewModel) {
-    itemView.setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        teamsPresenter.onTeamClicked(teamViewModel);
-      }
-    });
+    itemView.setOnClickListener(v -> teamsPresenter.onTeamClicked(teamViewModel));
   }
 
   private void renderTeamHeaderImage(String urlHeaderImage) {

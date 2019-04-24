@@ -4,10 +4,10 @@
     "name": "Albania",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/albania_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ALB.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ALB.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Goldenjubilee/01/59/01/50/1590150_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/albania_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/ALB.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/ALB.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Goldenjubilee/01/59/01/50/1590150_w1.jpg"
       }
     ],
     "team_declaimer": "Albania jugará en la UEFA EURO 2016 su primera gran fase final de un torneo gracias al trabajo del seleccionador Gianni De Biasi, que ya dio esperanzas a los albaneses en la fase de clasificación para el Mundial de 2014.",
@@ -28,10 +28,10 @@
     "name": "Austria",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Austria_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/AUT.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/AUT.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/71/52/30/715230_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Austria_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/AUT.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/AUT.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/71/52/30/715230_w1.jpg"
       }
     ],
     "team_declaimer": "Los grandes días del fútbol austriaco quedaron atrás, pero hay señales de aliento para los co-anfitriones de la UEFA EURO 2008 con el suizo Marcel Koller al mando.",
@@ -52,10 +52,10 @@
     "name": "Bélgica",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Belgium_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/BEL.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/BEL.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/72/52/31/1725231_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Belgium_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/BEL.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/BEL.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/72/52/31/1725231_w1.jpg"
       }
     ],
     "team_declaimer": "Vea los cinco goles de Bélgica durante la fase de clasificación y eche un vistazo a su trayectoria en la EURO, a la cual regresa el combinado belga ocupando el primer puesto del ránking FIFA.",
@@ -77,10 +77,10 @@
     "name": "Croacia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Croatia_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/CRO.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/CRO.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/DomesticLeague/01/60/08/55/1600855_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Croatia_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/CRO.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/CRO.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/DomesticLeague/01/60/08/55/1600855_w1.jpg"
       }
     ],
     "team_declaimer": "Desde la secesión de Yugoslavia en 1991, se ha convertido en una fuerza en el fútbol internacional, llegando a cinco fases finales europeas en sólo seis intentos.",
@@ -102,10 +102,10 @@
     "name": "República Checa",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Czech_Republic_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/CZE.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/CZE.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/50/98/665098_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Czech_Republic_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/CZE.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/CZE.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/50/98/665098_w1.jpg"
       }
     ],
     "team_declaimer": "Sólo ha estado compitiendo como nación independiente durante 20 años, sin embargo, desde ese momento el país se ha clasificado para todos los Campeonato de Europa de la UEFA.",
@@ -128,9 +128,9 @@
     "images": [
       {
         "img_flag": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1280px-Flag_of_England.svg.png",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ENG.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ENG.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/General/01/50/64/18/1506418_w1.jpg"
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/ENG.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/ENG.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/General/01/50/64/18/1506418_w1.jpg"
       }
     ],
     "team_declaimer": "El único país europeo que ha ganado la Copa Mundial de la FIFA, pero no ha levantado la Copa Henri Delaunay, podría haber tenido un éxito más reciente de no haber sido por las tandas de penaltis.",
@@ -152,10 +152,10 @@
     "name": "España",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Spain_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ESP.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ESP.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/72/92/23/729223_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Spain_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/ESP.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/ESP.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/72/92/23/729223_w1.jpg"
       }
     ],
     "team_declaimer": "Después de décadas sin conseguir grandes logros después de su victoria como local en el Campeonato de Europa de la UEFA de 1964, ha sido la gran dominadora en 2008 y 2012.",
@@ -177,10 +177,10 @@
     "name": "Francia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/France_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/FRA.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/FRA.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/NationalAss/93/79/77/937977_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/France_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/FRA.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/FRA.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/NationalAss/93/79/77/937977_w1.jpg"
       }
     ],
     "team_declaimer": "Ha estado siempre presente en las fases finales de la EURO desde que se perdió la edición de 1988 y espera poder mantener la feliz costumbre de cumplir con las expectativas como local en la UEFA EURO 2016.",
@@ -202,10 +202,10 @@
     "name": "Alemania",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Germany_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/GER.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/GER.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/66/50/85/665085_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Germany_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/GER.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/GER.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/66/50/85/665085_w1.jpg"
       }
     ],
     "team_declaimer": "Una fuente inagotable de fútbol europeo, la anteriormente conocida como República Federal de Alemania sólo una vez falló en clasificarse para la fase final de un Campeoanto de Europa de la UEFA o una Copa Mundial de la FIFA.",
@@ -227,10 +227,10 @@
     "name": "Hungría",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Hungary_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/AUT.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/AUT.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/67/23/81/1672381_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Hungary_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/AUT.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/AUT.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/67/23/81/1672381_w1.jpg"
       }
     ],
     "team_declaimer": "Una vez gigante del fútbol mundial, ya que fue subcampeón en las Copas del Mundo de de la FIFA de 1938 y 1954 y tres veces ganadora olímpica, llevaba 30 años sin alcanzar la fase final de un gran torneo.",
@@ -252,10 +252,10 @@
     "name": "República de Irlanda",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Ireland_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/IRL.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/IRL.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/73/91/05/1739105_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Ireland_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/IRL.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/IRL.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/73/91/05/1739105_w1.jpg"
       }
     ],
     "team_declaimer": "Se clasificó para su primer torneo en 1988, comenzando su participación con una victoria por 1-0 frente a Inglaterra, pero no regresó a la fase final de la EURO hasta 2012, cuando perdió los tres partidos.",
@@ -277,10 +277,10 @@
     "name": "Islandia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Iceland_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ISL.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ISL.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/69/41/08/1694108_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Iceland_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/ISL.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/ISL.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/69/41/08/1694108_w1.jpg"
       }
     ],
     "team_declaimer": "Aunque tarda en dejar su huella en la fase de clasificación para un Campeonato de Europa de la UEFA, es ahora una selección en crecimiento, construida sobre los cimientos del éxito reciente en categoría sub-21.",
@@ -302,10 +302,10 @@
     "name": "Italia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Italy_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ITA.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ITA.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/51/02/665102_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Italy_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/ITA.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/ITA.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/51/02/665102_w1.jpg"
       }
     ],
     "team_declaimer": "El combinado europeo con más triunfos en la Copa Mundial de la FIFA, cuatro triunfos en 1934, 1938, 1982 y 2006, se ha coronado campeona de Europa en tan solo una ocasión.",
@@ -328,9 +328,9 @@
     "images": [
       {
         "img_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Northern_Ireland.svg/300px-Flag_of_Northern_Ireland.svg.png",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/NIR.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/NIR.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/67/61/33/676133_w1.jpg"
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/NIR.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/NIR.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/67/61/33/676133_w1.jpg"
       }
     ],
     "team_declaimer": "La selección británica nunca había jugado un Campeonato de Europa de la UEFA, pero ahora, tras una brillante clasificación para la UEFA EURO 2016 dentro del Grupo F, tendrá la oportunidad de jugarlo.",
@@ -352,10 +352,10 @@
     "name": "Polonia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Poland_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/POL.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/POL.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/81/74/69/1817469_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Poland_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/POL.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/POL.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/81/74/69/1817469_w1.jpg"
       }
     ],
     "team_declaimer": "Finalmente se clasificó para una primera fase final del Campeonato de Europa de la UEFA en 2008 y fue co-anfitriona cuatro años después, terminando último de su grupo en las dos ocasiones.",
@@ -377,10 +377,10 @@
     "name": "Portugal",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Portugal_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/POR.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/POR.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/74/50/75/1745075_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Portugal_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/POR.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/POR.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/74/50/75/1745075_w1.jpg"
       }
     ],
     "team_declaimer": "Tiene el honor no deseado de ser el único equipo en perder una final de la EURO en su propio terreno, pero tiene un registro reciente consistente y a Cristiano Ronaldo a su disposición.",
@@ -402,10 +402,10 @@
     "name": "Rumanía",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Romania_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/ROU.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/ROU.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/82/61/44/1826144_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Romania_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/ROU.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/ROU.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/82/61/44/1826144_w1.jpg"
       }
     ],
     "team_declaimer": "Uno de los cuatro países que participaron en cada una de las primeras tres Copas Mundiales de la FIFA, el mayor logro de Rumania en una EURO llegó en 2000, cuando alcanzó los cuartos de final.",
@@ -427,10 +427,10 @@
     "name": "Rusia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Russia_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/RUS.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/RUS.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/50/99/665099_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Russia_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/RUS.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/RUS.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/EURO/66/50/99/665099_w1.jpg"
       }
     ],
     "team_declaimer": "Desde la desintegración de la Unión Soviética, campeón del inaugural Campeonato de Europa de la UEFA, en 1960, y subcampeón en 1964, 1972 y 1988, se ha mostrado regular en las fases de clasificación.",
@@ -452,10 +452,10 @@
     "name": "Suiza",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Switzerland_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/SUI.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/SUI.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/83/47/62/1834762_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Switzerland_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/SUI.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/SUI.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/83/47/62/1834762_w1.jpg"
       }
     ],
     "team_declaimer": "El país que alberga la sede de la FIFA y de la UEFA, ha luchado desde entonces hasta llegar a la Copa Mundial de la FIFA 1994, la primera en 28 años.",
@@ -477,10 +477,10 @@
     "name": "Eslovaquia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Slovakia_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/SVK.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/SVK.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/50/12/16/1501216_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Slovakia_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/SVK.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/SVK.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/50/12/16/1501216_w1.jpg"
       }
     ],
     "team_declaimer": "Parte integral de la Checoslovaquia que inició la final del Campeonato de Europa de la UEFA de 1976 ante la República Federal de Alemania, su única fase final como país independiente se produjo en 2002.",
@@ -502,10 +502,10 @@
     "name": "Suecia",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Sweden_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/SWE.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/SWE.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/72/54/21/1725421_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Sweden_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/SWE.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/SWE.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/72/54/21/1725421_w1.jpg"
       }
     ],
     "team_declaimer": "La única nación anfitriona de la Copa Mundial de la FIFA que ha sido derrotada en la final, nunca ha igualado su racha de 1958, pero llegó a semifinales en el único torneo que organizó, la EURO '92.",
@@ -527,9 +527,9 @@
     "name": "Turquía",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Turkey_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/TUR.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/TUR.jpg",
+        "img_flag": "https://www.nationsonline.org/flags_big/Turkey_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/TUR.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/TUR.jpg",
         "img_detail": "empty"
       }
     ],
@@ -552,10 +552,10 @@
     "name": "Ucrania",
     "images": [
       {
-        "img_flag": "http://www.nationsonline.org/flags_big/Ukraine_lgflag.gif",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/UKR.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/UKR.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/81/59/53/1815953_w1.jpg"
+        "img_flag": "https://www.nationsonline.org/flags_big/Ukraine_lgflag.gif",
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/UKR.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/UKR.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/Comp_Matches/01/81/59/53/1815953_w1.jpg"
       }
     ],
     "team_declaimer": "Fue un recurso prolífico para la Unión Soviética en el pasado y tuvo que esperar hasta que su papel como co-anfitriona de la UEFA EURO 2012 para su primera fase final como nación independiente.",
@@ -578,9 +578,9 @@
     "images": [
       {
         "img_flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Flag_of_Wales_2.svg/400px-Flag_of_Wales_2.svg.png",
-        "img_profile": "http://img.uefa.com/imgml/2016/euro/teams/profile/S/WAL.jpg",
-        "img_header": "http://img.uefa.com/imgml/2016/euro/teams/header/m/WAL.jpg",
-        "img_detail": "http://img.uefa.com/MultimediaFiles/Photo/competitions/General/01/90/99/05/1909905_w1.jpg"
+        "img_profile": "https://img.uefa.com/imgml/2016/euro/teams/profile/S/WAL.jpg",
+        "img_header": "https://img.uefa.com/imgml/2016/euro/teams/header/m/WAL.jpg",
+        "img_detail": "https://img.uefa.com/MultimediaFiles/Photo/competitions/General/01/90/99/05/1909905_w1.jpg"
       }
     ],
     "team_declaimer": "Tras más de medio siglo desde su última participación en un gran torneo, el combinado de Gareth Bale ha protagonizado una exitosa campaña de clasificación para la UEFA EURO 2016.",

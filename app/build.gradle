@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 27
-  buildToolsVersion '27.0.3'
+  compileSdkVersion 28
 
   defaultConfig {
     applicationId "com.example.jhordan.euro_cleanarchitecture"
     minSdkVersion 17
-    targetSdkVersion 27
+    targetSdkVersion 28
     versionCode 1
     versionName "1.0"
     multiDexEnabled true

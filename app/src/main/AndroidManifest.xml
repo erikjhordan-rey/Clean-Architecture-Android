@@ -3,6 +3,7 @@
     package="com.example.jhordan.euro_cleanarchitecture">
 
   <uses-permission android:name="android.permission.INTERNET"/>
+
   <application
       android:name=".EuroApplication"
       android:allowBackup="true"
@@ -10,6 +11,7 @@
       android:label="@string/app_name"
       android:largeHeap="true"
       android:supportsRtl="true"
+      android:usesCleartextTraffic="true"
       android:theme="@style/AppTheme">
     <activity
         android:name=".view.activity.TeamsActivity"
@@ -17,6 +19,7 @@
         android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
+        <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>

@@ -38,12 +38,13 @@ public class TeamsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     teamList = new ArrayList<>();
   }
 
-  @Override public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+  @NonNull
+  @Override public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
     View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.team_row, parent, false);
     return new TeamViewHolder(view, presenter);
   }
 
-  @Override public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+  @Override public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
     TeamViewHolder teamViewHolder = (TeamViewHolder) holder;
     TeamViewModel team = teamList.get(position);
     teamViewHolder.render(team);

@@ -133,10 +133,10 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
   }
 
   @Override public void showLoading() {
-    // I´m thinking...
+    // I did a bad design.
   }
 
   @Override public void hideLoading() {
-    // I´m thinking...
+    // I did a bad design.
   }
 }
