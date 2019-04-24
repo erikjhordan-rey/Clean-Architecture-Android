@@ -16,14 +16,17 @@
 
 package com.example.jhordan.euro_cleanarchitecture.view.adapter;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

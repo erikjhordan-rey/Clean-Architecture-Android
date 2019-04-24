@@ -19,11 +19,12 @@ package com.example.jhordan.euro_cleanarchitecture.view.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import android.support.v4.content.ContextCompat;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
-import butterknife.BindView;
+
+import androidx.core.content.ContextCompat;
+
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
@@ -31,7 +32,10 @@ import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamDetailPrese
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.widget.HeaderView;
 import com.squareup.picasso.Picasso;
+
 import javax.inject.Inject;
+
+import butterknife.BindView;
 
 public class TeamDetailsActivity extends BaseActivity implements TeamDetailPresenter.View {
 

@@ -37,9 +37,9 @@ android {
 
 dependencies {
 
-  implementation supportDependencies.appCompat
-  implementation supportDependencies.design
-  implementation supportDependencies.supportAnnotation
+  implementation androidXdependencies.appCompat
+  implementation androidXdependencies.material
+  implementation androidXdependencies.annotation
 
   implementation             daggerDependencies.dagger
   annotationProcessor daggerDependencies.daggerCompiler

@@ -15,13 +15,16 @@
  */
 package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
-import io.reactivex.observers.DisposableObserver;
+
 import javax.inject.Inject;
+
+import io.reactivex.observers.DisposableObserver;
 
 public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 

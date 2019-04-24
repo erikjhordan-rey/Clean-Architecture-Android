@@ -18,21 +18,27 @@ package com.example.jhordan.euro_cleanarchitecture.view.activity;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
-import butterknife.BindView;
+
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.adapter.TeamsAdapter;
 import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+
 import java.util.List;
+
 import javax.inject.Inject;
+
+import butterknife.BindView;
 
 public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
 
@@ -105,8 +111,7 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
 
   private void initializeRecyclerView() {
     teamList.setLayoutManager(new LinearLayoutManager(this));
-    teamList.addItemDecoration(new android.support.v7.widget.DividerItemDecoration(this,
-        android.support.v7.widget.DividerItemDecoration.VERTICAL));
+    teamList.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
     teamList.setHasFixedSize(true);
     teamList.setAdapter(adapter);
   }

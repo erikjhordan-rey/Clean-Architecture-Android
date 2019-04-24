@@ -1,11 +1,14 @@
 package com.example.jhordan.euro_cleanarchitecture.view.base.view;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import butterknife.ButterKnife;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.example.jhordan.euro_cleanarchitecture.R;
+
+import butterknife.ButterKnife;
 
 /**
  * <p>
@@ -38,7 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity {
    * layout this will be configured
    */
   public void setupToolbar() {
-    mToolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+    mToolbar = findViewById(R.id.toolbar);
     if (mToolbar != null) {
       setSupportActionBar(mToolbar);
     }
@@ -51,7 +54,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     ButterKnife.bind(this);
   }
 
-  @Nullable public Toolbar getToolbar() {
+  @Nullable
+  public Toolbar getToolbar() {
     return mToolbar;
   }
 
