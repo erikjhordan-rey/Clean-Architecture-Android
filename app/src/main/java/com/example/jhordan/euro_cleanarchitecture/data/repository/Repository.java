@@ -17,12 +17,14 @@
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
+
 import io.reactivex.Observable;
+
 import java.util.List;
 
 public interface Repository {
 
-  Observable<List<Team>> teamList();
+    Observable<List<Team>> teamList();
 
-  Observable<Team> team(final String flag);
+    Observable<Team> team(String flag);
 }

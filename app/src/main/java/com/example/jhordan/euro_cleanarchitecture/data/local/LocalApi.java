@@ -17,12 +17,14 @@
 package com.example.jhordan.euro_cleanarchitecture.data.local;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
+
 import io.reactivex.Observable;
+
 import java.util.List;
 
 public interface LocalApi {
 
-  Observable<List<TeamEntity>> teamEntityList();
+    Observable<List<TeamEntity>> teamEntityList();
 
-  Observable<TeamEntity> teamEntity(final String flag);
+    Observable<TeamEntity> teamEntity(String flag);
 }

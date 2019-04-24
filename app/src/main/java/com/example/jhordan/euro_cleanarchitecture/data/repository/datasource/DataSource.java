@@ -24,7 +24,7 @@ import io.reactivex.Observable;
 
 public interface DataSource {
 
-  Observable<List<TeamEntity>> teamEntityList();
+    Observable<List<TeamEntity>> teamEntityList();
 
-  Observable<TeamEntity> teamEntity(final String flag);
+    Observable<TeamEntity> teamEntity(String flag);
 }
