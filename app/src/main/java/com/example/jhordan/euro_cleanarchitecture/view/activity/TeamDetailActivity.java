@@ -30,7 +30,6 @@ import com.example.jhordan.euro_cleanarchitecture.databinding.ActivityTeamDetail
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamDetailPresenter;
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.PicassoProvider;
 import java.util.Objects;
 import javax.inject.Inject;
 
