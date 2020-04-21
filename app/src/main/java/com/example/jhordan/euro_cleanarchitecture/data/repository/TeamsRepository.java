@@ -34,11 +34,10 @@ public class TeamsRepository {
     }
 
     public Observable<List<Team>> getTeamList() {
-        return teamsLocalDataSource.teamEntityList().map(teamEntityToTeamMapper::reverseMap);
+        return teamsLocalDataSource.teamEntityList().map(teamEntityToTeamMapper::map);
     }
 
     public Observable<Team> getTeam(String flag) {
-        return teamsLocalDataSource.teamEntity(flag).map(teamEntityToTeamMapper::reverseMap);
+        return teamsLocalDataSource.teamEntity(flag).map(teamEntityToTeamMapper::map);
     }
-
 }
