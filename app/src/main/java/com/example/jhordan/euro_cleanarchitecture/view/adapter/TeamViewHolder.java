@@ -59,6 +59,6 @@ class TeamViewHolder extends RecyclerView.ViewHolder {
     }
 
     private void getImage(String photo, ImageView photoImageView) {
-        Picasso.with(photoImageView.getContext()).load(photo).fit().centerCrop().into(photoImageView);
+        Picasso.get().load(photo).fit().centerCrop().into(photoImageView);
     }
 }

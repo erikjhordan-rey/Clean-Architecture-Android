@@ -30,6 +30,7 @@ import com.example.jhordan.euro_cleanarchitecture.databinding.ActivityTeamDetail
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamDetailPresenter;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.PicassoProvider;
 import java.util.Objects;
 import javax.inject.Inject;
 
@@ -101,7 +102,7 @@ public class TeamDetailActivity extends AppCompatActivity implements TeamDetailP
     }
 
     private void getImage(String photo, ImageView photoImageView) {
-        Picasso.with(photoImageView.getContext()).load(photo).fit().centerCrop().into(photoImageView);
+        Picasso.get().load(photo).fit().centerCrop().into(photoImageView);
     }
 
     private void initializeToolbar() {
