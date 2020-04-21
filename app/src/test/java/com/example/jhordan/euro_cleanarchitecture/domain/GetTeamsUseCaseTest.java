@@ -18,38 +18,42 @@ package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamsUseCase;
-import io.reactivex.schedulers.Schedulers;
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.MatcherAssert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
-
-import static org.hamcrest.CoreMatchers.instanceOf;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
+import org.mockito.runners.MockitoJUnitRunner;
 
-@RunWith(MockitoJUnitRunner.class) public class GetTeamsUseCaseTest {
+@RunWith(MockitoJUnitRunner.class)
+public class GetTeamsUseCaseTest {
 
-  @Mock private TeamsRepository repository;
-  private GetTeamsUseCase getTeamsUseCase;
+    @Mock
+    private TeamsRepository repository;
+    private GetTeamsUseCase getTeamsUseCase;
 
-  @Before public void setUp() {
-    getTeamsUseCase = givenATeamListUseCase();
-  }
+    @Before
+    public void setUp() {
+        getTeamsUseCase = givenATeamListUseCase();
+    }
 
-  @Test public void givenAConcreteUseCaseOfGetEuroTeam() {
-    assertThat(getTeamsUseCase, instanceOf(GetTeamsUseCase.class));
-  }
+    @Test
+    public void givenAConcreteUseCaseOfGetEuroTeam() {
+        assertThat(getTeamsUseCase, instanceOf(GetTeamsUseCase.class));
+    }
 
-  @Test public void getTeamListObservableFromRepository() {
-    getTeamsUseCase.createObservableUseCase();
-    verify(repository).getTeamList();
-    verifyNoMoreInteractions(repository);
-  }
+    @Test
+    public void getTeamListObservableFromRepository() {
+        getTeamsUseCase.getTeamList();
 
-  private GetTeamsUseCase givenATeamListUseCase() {
-    return new GetTeamsUseCase(Schedulers.trampoline(), Schedulers.trampoline(), repository);
-  }
+        verify(repository).getTeamList();
+        verifyNoMoreInteractions(repository);
+    }
+
+    private GetTeamsUseCase givenATeamListUseCase() {
+        return new GetTeamsUseCase(repository);
+    }
 }

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.euro_cleanarchitecture.data.entity.mapper;
+package com.example.jhordan.euro_cleanarchitecture.data;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
-import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
+import com.example.jhordan.euro_cleanarchitecture.fake.FakeTeamLocalAPI;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import org.junit.Before;
@@ -31,27 +31,32 @@ import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@RunWith(MockitoJUnitRunner.class) public class TeamEntityToTeamMapperTest {
+@RunWith(MockitoJUnitRunner.class)
+public class TeamEntityToTeamMapperTest {
 
-  private final static String FAKE_TEAM_FLAG = "ALB";
-  private final static String FAKE_TEAM_NAME = "Albania";
-  @Rule public ExpectedException expectedException = ExpectedException.none();
-  private TeamEntityToTeamMapper teamEntityToTeamMapper;
+    private final static String FAKE_TEAM_FLAG = "ALB";
+    private final static String FAKE_TEAM_NAME = "Albania";
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
+    private TeamEntityToTeamMapper teamEntityToTeamMapper;
 
-  @Before public void setUp() {
-    teamEntityToTeamMapper = new TeamEntityToTeamMapper();
-  }
+    @Before
+    public void setUp() {
+        teamEntityToTeamMapper = new TeamEntityToTeamMapper();
+    }
 
-  @Test public void givenTransformTeamEntityToTeam() throws Exception {
-    TeamEntity teamEntity = FakeTeamLocalAPI.getFakeTeamEntity();
-    Team team = teamEntityToTeamMapper.reverseMap(teamEntity);
-    assertThat(team, is(instanceOf(Team.class)));
-    assertThat(team.getFlag(), is(FAKE_TEAM_FLAG));
-    assertThat(team.getName(), is(FAKE_TEAM_NAME));
-  }
+    @Test
+    public void givenTransformTeamEntityToTeam() throws Exception {
+        TeamEntity teamEntity = FakeTeamLocalAPI.getFakeTeamEntity();
+        Team team = teamEntityToTeamMapper.map(teamEntity);
+        assertThat(team, is(instanceOf(Team.class)));
+        assertThat(team.getFlag(), is(FAKE_TEAM_FLAG));
+        assertThat(team.getName(), is(FAKE_TEAM_NAME));
+    }
 
-  @Test public void givenExpectedExceptionTransformUserEntityCollectionNotValidResponse() {
-    expectedException.expect(UnsupportedOperationException.class);
-    teamEntityToTeamMapper.map(new Team());
-  }
+    @Test
+    public void givenExpectedExceptionTransformUserEntityCollectionNotValidResponse() {
+        expectedException.expect(UnsupportedOperationException.class);
+        teamEntityToTeamMapper.reverseMap(new Team());
+    }
 }

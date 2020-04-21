@@ -17,21 +17,24 @@
 package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import androidx.annotation.NonNull;
-
 import com.example.jhordan.euro_cleanarchitecture.core.presenter.Presenter;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamsUseCase;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.model.mapper.TeamToTeamUiMapper;
-
-import java.util.List;
-
-import javax.inject.Inject;
-
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Action;
+import io.reactivex.functions.Function;
 import io.reactivex.observers.DisposableObserver;
+import io.reactivex.schedulers.Schedulers;
+import java.util.List;
+import javax.inject.Inject;
 
 public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
 
+    private final CompositeDisposable compositeDisposable = new CompositeDisposable();
     private final GetTeamsUseCase getTeamsUseCase;
     private final TeamToTeamUiMapper teamToTeamUiMapper;
 
@@ -45,25 +48,13 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     public void initialize() {
         super.initialize();
         getView().showLoading();
-        getTeamsUseCase.execute(new DisposableObserver<List<Team>>() {
-
-            @Override
-            public void onNext(List<Team> teams) {
-                final List<TeamUi> teamUis = teamToTeamUiMapper.map(teams);
-                getView().showEuroTeams(teamUis);
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                getView().hideLoading();
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onComplete() {
-                getView().hideLoading();
-            }
-        });
+        Disposable disposable = getTeamsUseCase.getTeamList()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .map(teamToTeamUiMapper::map)
+                .doOnTerminate(() -> getView().hideLoading())
+                .subscribe(teamUiList -> getView().showEuroTeams(teamUiList), Throwable::printStackTrace);
+        compositeDisposable.add(disposable);
     }
 
     public void onTeamClicked(TeamUi team) {
@@ -71,7 +62,7 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
     }
 
     public void destroy() {
-        getTeamsUseCase.dispose();
+        compositeDisposable.dispose();
         setView(null);
     }
 

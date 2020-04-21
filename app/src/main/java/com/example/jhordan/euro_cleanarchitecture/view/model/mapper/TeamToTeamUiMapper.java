@@ -24,7 +24,7 @@ import javax.inject.Inject;
 public class TeamToTeamUiMapper extends Mapper<Team, TeamUi> {
 
     @Inject
-    TeamToTeamUiMapper() {
+    public TeamToTeamUiMapper() {
     }
 
     @Override

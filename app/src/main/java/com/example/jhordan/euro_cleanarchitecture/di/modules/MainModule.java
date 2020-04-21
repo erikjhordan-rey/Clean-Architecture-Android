@@ -19,17 +19,13 @@ package com.example.jhordan.euro_cleanarchitecture.di.modules;
 import android.content.Context;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApi;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApiToTeamEntityMapper;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
 import com.google.gson.Gson;
 import dagger.Module;
 import dagger.Provides;
-import io.reactivex.Scheduler;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
-import javax.inject.Named;
 import javax.inject.Singleton;
 
 @Module
@@ -70,17 +66,5 @@ public class MainModule {
     @Singleton
     TeamsRepository provideRepository(TeamsLocalDataSource teamsLocalDataSource, TeamEntityToTeamMapper teamEntityToTeamMapper) {
         return new TeamsRepository(teamsLocalDataSource, teamEntityToTeamMapper);
-    }
-
-    @Provides
-    @Named("executor_thread")
-    Scheduler provideExecutorThread() {
-        return Schedulers.io();
-    }
-
-    @Provides
-    @Named("ui_thread")
-    Scheduler provideUiThread() {
-        return AndroidSchedulers.mainThread();
     }
 }

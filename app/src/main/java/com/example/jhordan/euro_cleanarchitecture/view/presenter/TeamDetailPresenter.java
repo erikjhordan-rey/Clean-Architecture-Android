@@ -16,19 +16,19 @@
 package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import androidx.annotation.NonNull;
-
 import com.example.jhordan.euro_cleanarchitecture.core.presenter.Presenter;
-import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamUseCase;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.model.mapper.TeamToTeamUiMapper;
-
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 import javax.inject.Inject;
-
-import io.reactivex.observers.DisposableObserver;
 
 public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 
+    private final CompositeDisposable compositeDisposable = new CompositeDisposable();
     private final GetTeamUseCase getTeamUseCase;
     private final TeamToTeamUiMapper teamToTeamUiMapper;
     private String teamFlag;
@@ -40,33 +40,23 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
         this.teamToTeamUiMapper = teamToTeamUiMapper;
     }
 
-    @Override
-    public void initialize() {
-        super.initialize();
-        getTeamUseCase.searchTeamByFlag(teamFlag);
-        getTeamUseCase.execute(new DisposableObserver<Team>() {
-            @Override
-            public void onComplete() {
-            }
-
-            @Override
-            public void onError(Throwable e) {
-            }
-
-            @Override
-            public void onNext(Team team) {
-                TeamUi teamUi = teamToTeamUiMapper.map(team);
-                getView().showTeam(teamUi);
-            }
-        });
-    }
-
     public void setTeamFlag(String teamFlag) {
         this.teamFlag = teamFlag;
     }
 
+    @Override
+    public void initialize() {
+        super.initialize();
+        Disposable disposable = getTeamUseCase.getTeam(teamFlag)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .map(teamToTeamUiMapper::map)
+                .subscribe(teamUi -> getView().showTeam(teamUi), Throwable::printStackTrace);
+        compositeDisposable.add(disposable);
+    }
+
     public void destroy() {
-        getTeamUseCase.dispose();
+        compositeDisposable.dispose();
         setView(null);
     }
 
