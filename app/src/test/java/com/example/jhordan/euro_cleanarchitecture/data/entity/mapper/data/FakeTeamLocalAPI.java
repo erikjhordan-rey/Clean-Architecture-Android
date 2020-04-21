@@ -244,7 +244,7 @@ public class FakeTeamLocalAPI {
     return JSON_RESPONSE_TEAM_COLLECTION;
   }
 
-  public static List<ImageEntity> getJsonResponseImages() {
+  private static List<ImageEntity> getJsonResponseImages() {
     List<ImageEntity> imageEntities = new ArrayList<>();
     ImageEntity imageEntity = new ImageEntity();
     imageEntity.setImageFlag("http://www.nationsonline.org/flags_big/Belgium_lgflag.gif");
@@ -265,7 +265,6 @@ public class FakeTeamLocalAPI {
     teamEntity.setTeamFlag(FAKE_TEAM_FLAG);
     teamEntity.setTeamName(FAKE_TEAM_NAME);
     teamEntity.setImages(FakeTeamLocalAPI.getJsonResponseImages());
-    //you can try set each attribute is possible
     return teamEntity;
   }
 }
