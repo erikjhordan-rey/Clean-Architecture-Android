@@ -17,40 +17,39 @@
 package com.example.jhordan.euro_cleanarchitecture.domain;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamsUseCase;
 import io.reactivex.schedulers.Schedulers;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
 
-@RunWith(MockitoJUnitRunner.class) public class GetEuroTeamByFlagTest {
+@RunWith(MockitoJUnitRunner.class) public class GetTeamsUseCaseTest {
 
-  private static final String ANY_FLAG_OF_EURO_TEAMS = "ESP";
   @Mock private TeamsRepository repository;
-  private GetEuroTeamByFlag getEuroTeamByFlag;
+  private GetTeamsUseCase getTeamsUseCase;
 
-  @Before public void setup() {
-    getEuroTeamByFlag = givenATeamByFlagUseCase();
+  @Before public void setUp() {
+    getTeamsUseCase = givenATeamListUseCase();
   }
 
-  @Test public void givenAConcreteUseCaseOfGetEuroTeamByFlag() {
-    assertThat(getEuroTeamByFlag, instanceOf(GetEuroTeamByFlag.class));
+  @Test public void givenAConcreteUseCaseOfGetEuroTeam() {
+    assertThat(getTeamsUseCase, instanceOf(GetTeamsUseCase.class));
   }
 
-  @Test public void getTeamByFlagObservableFromRepository() {
-    getEuroTeamByFlag.searchTeamByFlag(ANY_FLAG_OF_EURO_TEAMS);
-    getEuroTeamByFlag.createObservableUseCase();
-    Mockito.verify(repository).team(ANY_FLAG_OF_EURO_TEAMS);
-    Mockito.verifyNoMoreInteractions(repository);
+  @Test public void getTeamListObservableFromRepository() {
+    getTeamsUseCase.createObservableUseCase();
+    verify(repository).getTeamList();
+    verifyNoMoreInteractions(repository);
   }
 
-  private GetEuroTeamByFlag givenATeamByFlagUseCase() {
-    return new GetEuroTeamByFlag(Schedulers.trampoline(), Schedulers.trampoline(), repository);
+  private GetTeamsUseCase givenATeamListUseCase() {
+    return new GetTeamsUseCase(Schedulers.trampoline(), Schedulers.trampoline(), repository);
   }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper;
+package com.example.jhordan.euro_cleanarchitecture.core;
 
 import java.util.ArrayList;
 import java.util.List;

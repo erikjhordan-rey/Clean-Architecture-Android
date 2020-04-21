@@ -17,36 +17,28 @@
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
 import androidx.annotation.NonNull;
-
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.DataSource;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamDataSourceFactory;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-
+import io.reactivex.Observable;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+public class TeamsRepository {
 
-import io.reactivex.Observable;
+    private final TeamsLocalDataSource teamsLocalDataSource;
+    private final TeamEntityToTeamMapper teamEntityToTeamMapper;
 
-@Singleton public class TeamsRepository implements Repository {
+    public TeamsRepository(@NonNull TeamsLocalDataSource teamsLocalDataSource, @NonNull TeamEntityToTeamMapper teamEntityToTeamMapper) {
+        this.teamsLocalDataSource = teamsLocalDataSource;
+        this.teamEntityToTeamMapper = teamEntityToTeamMapper;
+    }
 
-  private final TeamToTeamEntityMapper teamToTeamEntityMapper;
-  private final DataSource dataSource;
+    public Observable<List<Team>> getTeamList() {
+        return teamsLocalDataSource.teamEntityList().map(teamEntityToTeamMapper::reverseMap);
+    }
 
-  @Inject TeamsRepository(@NonNull TeamDataSourceFactory teamDataSourceFactory,
-      @NonNull TeamToTeamEntityMapper teamToTeamEntityMapper) {
-    this.teamToTeamEntityMapper = teamToTeamEntityMapper;
-    this.dataSource = teamDataSourceFactory.createDataSource();
-  }
-
-  @Override public Observable<List<Team>> teamList() {
-    return dataSource.teamEntityList().map(teamToTeamEntityMapper::reverseMap);
-  }
-
-  @Override public Observable<Team> team(String flag) {
-    return dataSource.teamEntity(flag).map(teamToTeamEntityMapper::reverseMap);
-  }
+    public Observable<Team> getTeam(String flag) {
+        return teamsLocalDataSource.teamEntity(flag).map(teamEntityToTeamMapper::reverseMap);
+    }
 
 }

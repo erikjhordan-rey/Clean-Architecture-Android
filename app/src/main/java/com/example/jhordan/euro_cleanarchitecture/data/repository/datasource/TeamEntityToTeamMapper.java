@@ -14,16 +14,17 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper;
+package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 
+import com.example.jhordan.euro_cleanarchitecture.core.Mapper;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-@Singleton public class TeamToTeamEntityMapper extends Mapper<Team, TeamEntity> {
+@Singleton public class TeamEntityToTeamMapper extends Mapper<Team, TeamEntity> {
 
-  @Inject public TeamToTeamEntityMapper() {
+  @Inject public TeamEntityToTeamMapper() {
   }
 
   @Override public TeamEntity map(Team value) {
@@ -44,12 +45,12 @@ import javax.inject.Singleton;
     team.setLeadingScorer(value.getLeadingScorer());
     team.setNickName(value.getNickName());
     team.setStadium(value.getStadium());
-    team.setDescriptionPart1(value.getGetdescription1());
+    team.setDescriptionPart1(value.getFirstDescription());
     team.setMatchesPlayed(value.getMatchesPlayed());
     team.setOverall(value.getTeamOverall());
     team.setFinalTournament(value.getFinalTournament());
-    team.setDescriptionPart2(value.getGetDescription2());
-    team.setDescriptionPart3(value.getGetDescription3());
+    team.setDescriptionPart2(value.getSecondDescription());
+    team.setDescriptionPart3(value.getThirdDescription());
     return team;
   }
 }

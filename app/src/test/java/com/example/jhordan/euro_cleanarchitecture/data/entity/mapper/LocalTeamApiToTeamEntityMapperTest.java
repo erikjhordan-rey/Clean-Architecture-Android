@@ -18,7 +18,7 @@ package com.example.jhordan.euro_cleanarchitecture.data.entity.mapper;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamEntityJsonMapper;
+import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApiToTeamEntityMapper;
 import com.google.gson.JsonSyntaxException;
 import java.util.Collection;
 import org.junit.Before;
@@ -29,20 +29,20 @@ import org.junit.rules.ExpectedException;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class TeamEntityJsonMapperTest {
+public class LocalTeamApiToTeamEntityMapperTest {
 
   @Rule public ExpectedException expectedException = ExpectedException.none();
-  private TeamEntityJsonMapper teamEntityJsonMapper;
+  private LocalTeamApiToTeamEntityMapper localTeamApiToTeamEntityMapper;
 
   @Before public void setUp() {
-    teamEntityJsonMapper = new TeamEntityJsonMapper();
+    localTeamApiToTeamEntityMapper = new LocalTeamApiToTeamEntityMapper();
   }
 
   @Test public void givenTransformCollectionTeamEntityCorrectly() {
     final String FAKE_JSON_RESPONSE_TEAM_COLLECTION =
         FakeTeamLocalAPI.getJsonResponseTeamCollection();
     Collection<TeamEntity> teamEntities =
-        teamEntityJsonMapper.transformTeamEntityCollection(FAKE_JSON_RESPONSE_TEAM_COLLECTION);
+        localTeamApiToTeamEntityMapper.transformTeamEntityCollection(FAKE_JSON_RESPONSE_TEAM_COLLECTION);
     final TeamEntity teamEntityOne = ((TeamEntity) teamEntities.toArray()[0]);
     final TeamEntity teamEntityTwo = ((TeamEntity) teamEntities.toArray()[1]);
     final TeamEntity teamEntityThree = ((TeamEntity) teamEntities.toArray()[2]);
@@ -54,7 +54,7 @@ public class TeamEntityJsonMapperTest {
 
   @Test public void givenTransformTeamEntityCorrectly() {
     final String FAKE_JSON_RESPONSE_TEAM = FakeTeamLocalAPI.getJsonResponseTeam();
-    TeamEntity teamEntity = teamEntityJsonMapper.transformTeamEntity(FAKE_JSON_RESPONSE_TEAM);
+    TeamEntity teamEntity = localTeamApiToTeamEntityMapper.transformTeamEntity(FAKE_JSON_RESPONSE_TEAM);
     assertThat(teamEntity.getTeamFlag(), is("ALB"));
     assertThat(teamEntity.getTeamName(), is("Albania"));
     //you can try test each attribute is possible
@@ -62,11 +62,11 @@ public class TeamEntityJsonMapperTest {
 
   @Test public void givenExpectedExceptionTransformUserEntityCollectionNotValidResponse() {
     expectedException.expect(JsonSyntaxException.class);
-    teamEntityJsonMapper.transformTeamEntityCollection("Expects a json array like response");
+    localTeamApiToTeamEntityMapper.transformTeamEntityCollection("Expects a json array like response");
   }
 
   @Test public void givenExpectedExceptionTransformUserEntityNotValidResponse() {
     expectedException.expect(JsonSyntaxException.class);
-    teamEntityJsonMapper.transformTeamEntity("Expects a json object like response");
+    localTeamApiToTeamEntityMapper.transformTeamEntity("Expects a json object like response");
   }
 }

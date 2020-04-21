@@ -17,8 +17,7 @@
 package com.example.jhordan.euro_cleanarchitecture.data.repository;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
-import com.example.jhordan.euro_cleanarchitecture.data.local.LocalApi;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalApiDataSource;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
 import io.reactivex.Observable;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,10 +36,10 @@ import static org.mockito.Mockito.verify;
 
   @Mock private LocalApi localApi;
 
-  private TeamsLocalApiDataSource localApiDataSource;
+  private TeamsLocalDataSource localApiDataSource;
 
   @Before public void setUp() {
-    localApiDataSource = new TeamsLocalApiDataSource(localApi);
+    localApiDataSource = new TeamsLocalDataSource(localApi);
   }
 
   @Test public void givenATeamEntityListFromLocalApi() {

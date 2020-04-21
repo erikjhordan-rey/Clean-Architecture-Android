@@ -30,12 +30,12 @@ public class TeamEntity {
   @SerializedName("leading_scorer") private String leadingScorer;
   @SerializedName("nick_name") private String nickName;
   @SerializedName("stadium") private String stadium;
-  @SerializedName("description_part_1") private String getdescription1;
+  @SerializedName("description_part_1") private String firstDescription;
   @SerializedName("matches_played") private String matchesPlayed;
   @SerializedName("overall") private String teamOverall;
   @SerializedName("final_tournament") private String finalTournament;
-  @SerializedName("description_part_2") private String getDescription2;
-  @SerializedName("description_part_3") private String getDescription3;
+  @SerializedName("description_part_2") private String secondDescription;
+  @SerializedName("description_part_3") private String thirdDescription;
 
   public String getTeamFlag() {
     return teamFlag;
@@ -85,8 +85,8 @@ public class TeamEntity {
     return stadium;
   }
 
-  public String getGetdescription1() {
-    return getdescription1;
+  public String getFirstDescription() {
+    return firstDescription;
   }
 
   public String getMatchesPlayed() {
@@ -101,11 +101,11 @@ public class TeamEntity {
     return finalTournament;
   }
 
-  public String getGetDescription2() {
-    return getDescription2;
+  public String getSecondDescription() {
+    return secondDescription;
   }
 
-  public String getGetDescription3() {
-    return getDescription3;
+  public String getThirdDescription() {
+    return thirdDescription;
   }
 }

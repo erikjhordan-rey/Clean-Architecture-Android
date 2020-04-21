@@ -18,8 +18,12 @@ package com.example.jhordan.euro_cleanarchitecture.di.modules;
 
 import android.content.Context;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.Repository;
+import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApi;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
+import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApiToTeamEntityMapper;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
+import com.google.gson.Gson;
 import dagger.Module;
 import dagger.Provides;
 import io.reactivex.Scheduler;
@@ -28,27 +32,55 @@ import io.reactivex.schedulers.Schedulers;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
-@Module public class MainModule {
+@Module
+public class MainModule {
 
-  private final EuroApplication euroApplication;
+    private final EuroApplication euroApplication;
 
-  public MainModule(EuroApplication euroApplication) {
-    this.euroApplication = euroApplication;
-  }
+    public MainModule(EuroApplication euroApplication) {
+        this.euroApplication = euroApplication;
+    }
 
-  @Provides @Singleton Context provideApplicationContext() {
-    return euroApplication;
-  }
+    @Provides
+    @Singleton
+    Context provideApplicationContext() {
+        return euroApplication;
+    }
 
-  @Provides @Singleton Repository provideRepository(TeamsRepository teamsRepository) {
-    return teamsRepository;
-  }
+    @Provides
+    @Singleton
+    Gson provideGson() {
+        return new Gson();
+    }
 
-  @Provides @Named("executor_thread") Scheduler provideExecutorThread() {
-    return Schedulers.io();
-  }
+    @Provides
+    @Singleton
+    LocalTeamApi provideLocalTeamApi(Context context) {
+        return new LocalTeamApi(context);
+    }
 
-  @Provides @Named("ui_thread") Scheduler provideUiThread() {
-    return AndroidSchedulers.mainThread();
-  }
+    @Provides
+    @Singleton
+    TeamsLocalDataSource provideTeamsLocalDataSource(LocalTeamApi localTeamApi,
+                                                     LocalTeamApiToTeamEntityMapper localTeamApiToTeamEntityMapper) {
+        return new TeamsLocalDataSource(localTeamApi, localTeamApiToTeamEntityMapper);
+    }
+
+    @Provides
+    @Singleton
+    TeamsRepository provideRepository(TeamsLocalDataSource teamsLocalDataSource, TeamEntityToTeamMapper teamEntityToTeamMapper) {
+        return new TeamsRepository(teamsLocalDataSource, teamEntityToTeamMapper);
+    }
+
+    @Provides
+    @Named("executor_thread")
+    Scheduler provideExecutorThread() {
+        return Schedulers.io();
+    }
+
+    @Provides
+    @Named("ui_thread")
+    Scheduler provideUiThread() {
+        return AndroidSchedulers.mainThread();
+    }
 }

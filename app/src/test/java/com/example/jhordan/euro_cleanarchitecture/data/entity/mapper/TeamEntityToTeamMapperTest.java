@@ -18,7 +18,7 @@ package com.example.jhordan.euro_cleanarchitecture.data.entity.mapper;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.mapper.data.FakeTeamLocalAPI;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamToTeamEntityMapper;
+import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import org.junit.Before;
 import org.junit.Rule;
@@ -31,20 +31,20 @@ import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-@RunWith(MockitoJUnitRunner.class) public class TeamToTeamEntityMapperTest {
+@RunWith(MockitoJUnitRunner.class) public class TeamEntityToTeamMapperTest {
 
   private final static String FAKE_TEAM_FLAG = "ALB";
   private final static String FAKE_TEAM_NAME = "Albania";
   @Rule public ExpectedException expectedException = ExpectedException.none();
-  private TeamToTeamEntityMapper teamToTeamEntityMapper;
+  private TeamEntityToTeamMapper teamEntityToTeamMapper;
 
   @Before public void setUp() {
-    teamToTeamEntityMapper = new TeamToTeamEntityMapper();
+    teamEntityToTeamMapper = new TeamEntityToTeamMapper();
   }
 
   @Test public void givenTransformTeamEntityToTeam() throws Exception {
     TeamEntity teamEntity = FakeTeamLocalAPI.getFakeTeamEntity();
-    Team team = teamToTeamEntityMapper.reverseMap(teamEntity);
+    Team team = teamEntityToTeamMapper.reverseMap(teamEntity);
     assertThat(team, is(instanceOf(Team.class)));
     assertThat(team.getFlag(), is(FAKE_TEAM_FLAG));
     assertThat(team.getName(), is(FAKE_TEAM_NAME));
@@ -52,6 +52,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
   @Test public void givenExpectedExceptionTransformUserEntityCollectionNotValidResponse() {
     expectedException.expect(UnsupportedOperationException.class);
-    teamToTeamEntityMapper.map(new Team());
+    teamEntityToTeamMapper.map(new Team());
   }
 }

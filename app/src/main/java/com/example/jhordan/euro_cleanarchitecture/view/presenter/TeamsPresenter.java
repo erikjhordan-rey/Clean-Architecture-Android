@@ -19,7 +19,7 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 import androidx.annotation.NonNull;
 
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeams;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamsUseCase;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
 
@@ -31,19 +31,19 @@ import io.reactivex.observers.DisposableObserver;
 
 public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
 
-  private GetEuroTeams getEuroTeams;
+  private GetTeamsUseCase getTeamsUseCase;
   private TeamViewModelToTeamMapper mapper;
 
-  @Inject public TeamsPresenter(@NonNull GetEuroTeams getEuroTeams,
+  @Inject public TeamsPresenter(@NonNull GetTeamsUseCase getTeamsUseCase,
       @NonNull TeamViewModelToTeamMapper mapper) {
-    this.getEuroTeams = getEuroTeams;
+    this.getTeamsUseCase = getTeamsUseCase;
     this.mapper = mapper;
   }
 
   @SuppressWarnings("unchecked") @Override public void initialize() {
     super.initialize();
     getView().showLoading();
-    getEuroTeams.execute(new DisposableObserver<List<Team>>() {
+    getTeamsUseCase.execute(new DisposableObserver<List<Team>>() {
 
       @Override public void onNext(List<Team> teams) {
         List<TeamViewModel> teamViewModels = mapper.reverseMap(teams);
@@ -66,7 +66,7 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
   }
 
   public void destroy() {
-    this.getEuroTeams.dispose();
+    this.getTeamsUseCase.dispose();
     setView(null);
   }
 

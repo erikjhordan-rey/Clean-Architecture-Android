@@ -18,7 +18,7 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 import androidx.annotation.NonNull;
 
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetEuroTeamByFlag;
+import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamUseCase;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
 import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
 
@@ -28,21 +28,21 @@ import io.reactivex.observers.DisposableObserver;
 
 public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
 
-  private final GetEuroTeamByFlag getEuroTeamByFlag;
+  private final GetTeamUseCase getTeamUseCase;
   private final TeamViewModelToTeamMapper mapper;
   private String teamFlag;
 
-  @Inject public TeamDetailPresenter(@NonNull GetEuroTeamByFlag getEuroTeamByFlag,
+  @Inject public TeamDetailPresenter(@NonNull GetTeamUseCase getTeamUseCase,
       @NonNull TeamViewModelToTeamMapper mapper) {
-    this.getEuroTeamByFlag = getEuroTeamByFlag;
+    this.getTeamUseCase = getTeamUseCase;
     this.mapper = mapper;
   }
 
   @SuppressWarnings("unchecked") @Override public void initialize() {
     super.initialize();
     getView().showLoading();
-    getEuroTeamByFlag.searchTeamByFlag(teamFlag);
-    getEuroTeamByFlag.execute(new DisposableObserver<Team>() {
+    getTeamUseCase.searchTeamByFlag(teamFlag);
+    getTeamUseCase.execute(new DisposableObserver<Team>() {
       @Override public void onComplete() {
         getView().hideLoading();
       }
@@ -63,7 +63,7 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
   }
 
   public void destroy() {
-    this.getEuroTeamByFlag.dispose();
+    this.getTeamUseCase.dispose();
     setView(null);
   }
 

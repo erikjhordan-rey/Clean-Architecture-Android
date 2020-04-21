@@ -14,34 +14,24 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.euro_cleanarchitecture.data.local;
-
-import android.content.Context;
-
-import androidx.annotation.NonNull;
+package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
-import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.mapper.TeamEntityJsonMapper;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApi;
+import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApiToTeamEntityMapper;
+import io.reactivex.Observable;
 import java.util.List;
 
-import io.reactivex.Observable;
+public class TeamsLocalDataSource {
 
-public class LocalImpl implements LocalApi {
+    private final LocalTeamApi localTeamApi;
+    private final LocalTeamApiToTeamEntityMapper localTeamApiToTeamEntityMapper;
 
-    private final Context context;
-    private final TeamEntityJsonMapper teamEntityJsonMapper;
-
-    public LocalImpl(@NonNull Context context, @NonNull TeamEntityJsonMapper teamEntityJsonMapper) {
-        this.context = context;
-        this.teamEntityJsonMapper = teamEntityJsonMapper;
+    public TeamsLocalDataSource(LocalTeamApi localTeamApi, LocalTeamApiToTeamEntityMapper localTeamApiToTeamEntityMapper) {
+        this.localTeamApi = localTeamApi;
+        this.localTeamApiToTeamEntityMapper = localTeamApiToTeamEntityMapper;
     }
 
-    @Override
     public Observable<List<TeamEntity>> teamEntityList() {
         return Observable.create(emitter -> {
             List<TeamEntity> teamEntityList = getAll();
@@ -55,8 +45,7 @@ public class LocalImpl implements LocalApi {
         });
     }
 
-    @Override
-    public Observable<TeamEntity> teamEntity(final String flag) {
+    public Observable<TeamEntity> teamEntity(String flag) {
         return Observable.create(emitter -> {
             TeamEntity teamEntity = getByFlag(flag);
             if (teamEntity != null) {
@@ -70,7 +59,7 @@ public class LocalImpl implements LocalApi {
     }
 
     private List<TeamEntity> getAll() {
-        return teamEntityJsonMapper.transformTeamEntityCollection(getResponseFromLocalJson());
+        return localTeamApiToTeamEntityMapper.transformTeamEntityCollection(localTeamApi.readEuroDataJson());
     }
 
     private TeamEntity getByFlag(String flag) {
@@ -82,24 +71,5 @@ public class LocalImpl implements LocalApi {
             }
         }
         return result;
-    }
-
-    private String getResponseFromLocalJson() {
-        final String EURO_DATA_FILE = "euro_data.json";
-        String str = "";
-        try {
-            StringBuilder builder = new StringBuilder();
-            InputStream json = context.getAssets().open(EURO_DATA_FILE);
-            BufferedReader in = new BufferedReader(new InputStreamReader(json));
-
-            while ((str = in.readLine()) != null) {
-                builder.append(str);
-            }
-            in.close();
-            str = builder.toString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return str;
     }
 }
