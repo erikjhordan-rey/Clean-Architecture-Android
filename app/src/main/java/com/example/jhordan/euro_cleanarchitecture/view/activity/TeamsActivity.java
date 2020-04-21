@@ -30,9 +30,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.adapter.TeamsAdapter;
-import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
+import com.example.jhordan.euro_cleanarchitecture.core.view.BaseActivity;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 
 import java.util.List;
 
@@ -86,12 +86,12 @@ public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
     return super.onOptionsItemSelected(item);
   }
 
-  @Override public void showEuroTeams(List<TeamViewModel> teamList) {
+  @Override public void showEuroTeams(List<TeamUi> teamList) {
     adapter.addAll(teamList);
     adapter.notifyDataSetChanged();
   }
 
-  @Override public void openTeamScreen(TeamViewModel team) {
+  @Override public void openTeamScreen(TeamUi team) {
     TeamDetailsActivity.open(TeamsActivity.this, team.getFlag());
   }
 

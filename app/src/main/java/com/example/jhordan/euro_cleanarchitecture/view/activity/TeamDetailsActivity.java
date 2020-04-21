@@ -27,9 +27,9 @@ import androidx.core.content.ContextCompat;
 
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
-import com.example.jhordan.euro_cleanarchitecture.view.base.view.BaseActivity;
+import com.example.jhordan.euro_cleanarchitecture.core.view.BaseActivity;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamDetailPresenter;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.widget.HeaderView;
 import com.squareup.picasso.Picasso;
 
@@ -101,24 +101,24 @@ public class TeamDetailsActivity extends BaseActivity implements TeamDetailPrese
     return getIntent().getExtras().getString(TEAM_FLAG_KEY);
   }
 
-  @Override public void showTeam(TeamViewModel teamViewModel) {
+  @Override public void showTeam(TeamUi teamUi) {
 
     if (getToolbar() != null) {
-      getToolbar().setTitle(teamViewModel.getName());
+      getToolbar().setTitle(teamUi.getName());
     }
-    detailHeader.initializeHeader(teamViewModel.getDisclaimer(), teamViewModel.getNickName());
-    getImage(teamViewModel.getPictureOfDetail(), imageDetailHistory);
-    labelBestResult.setText(teamViewModel.getBestResult());
-    labelCoach.setText(teamViewModel.getCoach());
-    labelLeadingScorer.setText(teamViewModel.getLeadingScorer());
-    labelStadium.setText(teamViewModel.getStadium());
-    labelDescription1.setText(teamViewModel.getDescriptionPart1());
-    labelMatchesPlayed.setText(teamViewModel.getMatchesPlayed());
-    labelOverall.setText(teamViewModel.getOverall());
-    labelFinalTournament.setText(teamViewModel.getFinalTournament());
-    getImage(teamViewModel.getPictureOfProfile(), imageDetailProfile);
-    labelDescription2.setText(teamViewModel.getDescriptionPart2());
-    labelDescription3.setText(teamViewModel.getDescriptionPart3());
+    detailHeader.initializeHeader(teamUi.getDisclaimer(), teamUi.getNickName());
+    getImage(teamUi.getPictureOfDetail(), imageDetailHistory);
+    labelBestResult.setText(teamUi.getBestResult());
+    labelCoach.setText(teamUi.getCoach());
+    labelLeadingScorer.setText(teamUi.getLeadingScorer());
+    labelStadium.setText(teamUi.getStadium());
+    labelDescription1.setText(teamUi.getDescriptionPart1());
+    labelMatchesPlayed.setText(teamUi.getMatchesPlayed());
+    labelOverall.setText(teamUi.getOverall());
+    labelFinalTournament.setText(teamUi.getFinalTournament());
+    getImage(teamUi.getPictureOfProfile(), imageDetailProfile);
+    labelDescription2.setText(teamUi.getDescriptionPart2());
+    labelDescription3.setText(teamUi.getDescriptionPart3());
   }
 
   private void getImage(String photo, ImageView photoImageView) {

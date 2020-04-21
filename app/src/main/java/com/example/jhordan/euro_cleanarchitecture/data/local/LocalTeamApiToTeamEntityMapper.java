@@ -37,7 +37,7 @@ public class LocalTeamApiToTeamEntityMapper {
 
     public TeamEntity transformTeamEntity(String teamJsonResponse) throws JsonSyntaxException {
         try {
-            Type typeTeamEntity = new TypeToken<TeamEntity>() {
+            final Type typeTeamEntity = new TypeToken<TeamEntity>() {
             }.getType();
             return gson.fromJson(teamJsonResponse, typeTeamEntity);
         } catch (JsonSyntaxException exception) {
@@ -48,7 +48,7 @@ public class LocalTeamApiToTeamEntityMapper {
 
     public List<TeamEntity> transformTeamEntityCollection(String teamListJsonResponse) throws JsonSyntaxException {
         try {
-            Type typeTeamEntityList = new TypeToken<List<TeamEntity>>() {
+            final Type typeTeamEntityList = new TypeToken<List<TeamEntity>>() {
             }.getType();
             return gson.fromJson(teamListJsonResponse, typeTeamEntityList);
         } catch (JsonSyntaxException exception) {

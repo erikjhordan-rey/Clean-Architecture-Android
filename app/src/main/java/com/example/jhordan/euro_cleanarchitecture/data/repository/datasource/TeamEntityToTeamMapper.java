@@ -16,7 +16,7 @@
 
 package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 
-import com.example.jhordan.euro_cleanarchitecture.core.Mapper;
+import com.example.jhordan.euro_cleanarchitecture.core.mapper.Mapper;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import javax.inject.Inject;
@@ -31,7 +31,7 @@ public class TeamEntityToTeamMapper extends Mapper<TeamEntity, Team> {
 
     @Override
     public Team map(TeamEntity value) {
-        Team team = new Team();
+        final Team team = new Team();
         team.setFlag(value.getTeamFlag());
         team.setName(value.getTeamName());
         team.setImageFlag(value.getImages().get(0).getImageFlag());

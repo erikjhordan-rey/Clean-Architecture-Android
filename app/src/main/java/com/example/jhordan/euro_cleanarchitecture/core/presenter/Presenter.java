@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.jhordan.euro_cleanarchitecture.view.presenter;
+package com.example.jhordan.euro_cleanarchitecture.core.presenter;
 
 public class Presenter<T extends Presenter.View> {
 

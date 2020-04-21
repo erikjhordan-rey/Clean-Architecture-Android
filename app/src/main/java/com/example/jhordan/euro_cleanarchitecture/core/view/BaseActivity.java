@@ -1,4 +1,4 @@
-package com.example.jhordan.euro_cleanarchitecture.view.base.view;
+package com.example.jhordan.euro_cleanarchitecture.core.view;
 
 import android.os.Bundle;
 

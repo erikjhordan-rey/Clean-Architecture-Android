@@ -25,7 +25,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -33,31 +33,34 @@ import java.util.List;
 
 public class TeamsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-  private final TeamsPresenter presenter;
-  private final List<TeamViewModel> teamList;
+    private final TeamsPresenter presenter;
+    private final List<TeamUi> teamList;
 
-  public TeamsAdapter(@NonNull TeamsPresenter presenter) {
-    this.presenter = presenter;
-    teamList = new ArrayList<>();
-  }
+    public TeamsAdapter(@NonNull TeamsPresenter presenter) {
+        this.presenter = presenter;
+        teamList = new ArrayList<>();
+    }
 
-  @NonNull
-  @Override public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.team_row, parent, false);
-    return new TeamViewHolder(view, presenter);
-  }
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.team_row, parent, false);
+        return new TeamViewHolder(view, presenter);
+    }
 
-  @Override public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-    TeamViewHolder teamViewHolder = (TeamViewHolder) holder;
-    TeamViewModel team = teamList.get(position);
-    teamViewHolder.render(team);
-  }
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        TeamViewHolder teamViewHolder = (TeamViewHolder) holder;
+        TeamUi team = teamList.get(position);
+        teamViewHolder.render(team);
+    }
 
-  @Override public int getItemCount() {
-    return teamList.size();
-  }
+    @Override
+    public int getItemCount() {
+        return teamList.size();
+    }
 
-  public void addAll(Collection<TeamViewModel> collection) {
-    teamList.addAll(collection);
-  }
+    public void addAll(Collection<TeamUi> collection) {
+        teamList.addAll(collection);
+    }
 }

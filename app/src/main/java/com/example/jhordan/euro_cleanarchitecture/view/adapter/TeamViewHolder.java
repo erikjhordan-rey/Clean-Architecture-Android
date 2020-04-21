@@ -26,7 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
+import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
@@ -46,15 +46,15 @@ class TeamViewHolder extends RecyclerView.ViewHolder {
     ButterKnife.bind(this, itemView);
   }
 
-  void render(TeamViewModel team) {
+  void render(TeamUi team) {
     onItemClick(team);
     renderTeamHeaderImage(team.getPictureOfHeader());
     renderTeamFlagImage(team.getPictureOfFlag());
     renderTeamName(team.getName());
   }
 
-  private void onItemClick(final TeamViewModel teamViewModel) {
-    itemView.setOnClickListener(v -> teamsPresenter.onTeamClicked(teamViewModel));
+  private void onItemClick(final TeamUi teamUi) {
+    itemView.setOnClickListener(v -> teamsPresenter.onTeamClicked(teamUi));
   }
 
   private void renderTeamHeaderImage(String urlHeaderImage) {

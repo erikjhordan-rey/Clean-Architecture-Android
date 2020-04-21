@@ -23,34 +23,34 @@ import io.reactivex.observers.DisposableObserver;
 
 abstract class UseCase<T> {
 
-  private final CompositeDisposable compositeDisposable;
-  private final Scheduler executorThread;
-  private final Scheduler uiThread;
+    private final CompositeDisposable compositeDisposable;
+    private final Scheduler executorThread;
+    private final Scheduler uiThread;
 
-  UseCase(Scheduler executorThread, Scheduler uiThread) {
-    this.executorThread = executorThread;
-    this.uiThread = uiThread;
-    compositeDisposable = new CompositeDisposable();
-  }
-
-  public void execute(DisposableObserver<T> disposableObserver) {
-
-    if (disposableObserver == null) {
-      throw new IllegalArgumentException("disposableObserver must not be null");
+    UseCase(Scheduler executorThread, Scheduler uiThread) {
+        this.executorThread = executorThread;
+        this.uiThread = uiThread;
+        compositeDisposable = new CompositeDisposable();
     }
 
-    final Observable<T> observable =
-        this.createObservableUseCase().subscribeOn(executorThread).observeOn(uiThread);
+    public void execute(DisposableObserver<T> disposableObserver) {
 
-    DisposableObserver observer = observable.subscribeWith(disposableObserver);
-    compositeDisposable.add(observer);
-  }
+        if (disposableObserver == null) {
+            throw new IllegalArgumentException("disposableObserver must not be null");
+        }
 
-  public void dispose() {
-    if (!compositeDisposable.isDisposed()) {
-      compositeDisposable.dispose();
+        final Observable<T> observable =
+                this.createObservableUseCase().subscribeOn(executorThread).observeOn(uiThread);
+
+        DisposableObserver observer = observable.subscribeWith(disposableObserver);
+        compositeDisposable.add(observer);
     }
-  }
 
-  protected abstract Observable<T> createObservableUseCase();
+    public void dispose() {
+        if (!compositeDisposable.isDisposed()) {
+            compositeDisposable.dispose();
+        }
+    }
+
+    protected abstract Observable<T> createObservableUseCase();
 }

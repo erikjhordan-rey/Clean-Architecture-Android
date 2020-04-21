@@ -18,10 +18,11 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import androidx.annotation.NonNull;
 
+import com.example.jhordan.euro_cleanarchitecture.core.presenter.Presenter;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamsUseCase;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.TeamViewModel;
-import com.example.jhordan.euro_cleanarchitecture.view.viewmodel.mapper.TeamViewModelToTeamMapper;
+import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
+import com.example.jhordan.euro_cleanarchitecture.view.model.mapper.TeamToTeamUiMapper;
 
 import java.util.List;
 
@@ -31,49 +32,53 @@ import io.reactivex.observers.DisposableObserver;
 
 public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
 
-  private GetTeamsUseCase getTeamsUseCase;
-  private TeamViewModelToTeamMapper mapper;
+    private final GetTeamsUseCase getTeamsUseCase;
+    private final TeamToTeamUiMapper teamToTeamUiMapper;
 
-  @Inject public TeamsPresenter(@NonNull GetTeamsUseCase getTeamsUseCase,
-      @NonNull TeamViewModelToTeamMapper mapper) {
-    this.getTeamsUseCase = getTeamsUseCase;
-    this.mapper = mapper;
-  }
+    @Inject
+    public TeamsPresenter(@NonNull GetTeamsUseCase getTeamsUseCase, @NonNull TeamToTeamUiMapper teamToTeamUiMapper) {
+        this.getTeamsUseCase = getTeamsUseCase;
+        this.teamToTeamUiMapper = teamToTeamUiMapper;
+    }
 
-  @SuppressWarnings("unchecked") @Override public void initialize() {
-    super.initialize();
-    getView().showLoading();
-    getTeamsUseCase.execute(new DisposableObserver<List<Team>>() {
+    @Override
+    public void initialize() {
+        super.initialize();
+        getView().showLoading();
+        getTeamsUseCase.execute(new DisposableObserver<List<Team>>() {
 
-      @Override public void onNext(List<Team> teams) {
-        List<TeamViewModel> teamViewModels = mapper.reverseMap(teams);
-        getView().showEuroTeams(teamViewModels);
-      }
+            @Override
+            public void onNext(List<Team> teams) {
+                final List<TeamUi> teamUis = teamToTeamUiMapper.map(teams);
+                getView().showEuroTeams(teamUis);
+            }
 
-      @Override public void onError(Throwable e) {
-        getView().hideLoading();
-        e.printStackTrace();
-      }
+            @Override
+            public void onError(Throwable e) {
+                getView().hideLoading();
+                e.printStackTrace();
+            }
 
-      @Override public void onComplete() {
-        getView().hideLoading();
-      }
-    });
-  }
+            @Override
+            public void onComplete() {
+                getView().hideLoading();
+            }
+        });
+    }
 
-  public void onTeamClicked(TeamViewModel team) {
-    getView().openTeamScreen(team);
-  }
+    public void onTeamClicked(TeamUi team) {
+        getView().openTeamScreen(team);
+    }
 
-  public void destroy() {
-    this.getTeamsUseCase.dispose();
-    setView(null);
-  }
+    public void destroy() {
+        getTeamsUseCase.dispose();
+        setView(null);
+    }
 
-  public interface View extends Presenter.View {
+    public interface View extends Presenter.View {
 
-    void showEuroTeams(List<TeamViewModel> teamList);
+        void showEuroTeams(List<TeamUi> teamList);
 
-    void openTeamScreen(TeamViewModel team);
-  }
+        void openTeamScreen(TeamUi team);
+    }
 }

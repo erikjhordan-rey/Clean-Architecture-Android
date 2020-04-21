@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.jhordan.euro_cleanarchitecture.view.viewmodel;
+package com.example.jhordan.euro_cleanarchitecture.view.model;
 
-public class TeamViewModel {
+public class TeamUi {
 
   private String flag;
   private String name;
