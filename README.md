@@ -1,7 +1,7 @@
 # Clean Architecture on Android. (EUROCUP 2016) [![Build Status](https://travis-ci.org/erikjhordan-rey/Clean-Architecture-Android.svg?branch=master)](https://travis-ci.org/erikjhordan-rey/Clean-Architecture-Android)
 
 Example Android Clean Architecture used to explain how to use this architecture (rules) in our android applications.
-This example was created to support an article explanation that I have written about how to architect android application using the Uncle Bob's clean architecture. [Aplicando Clean Architecture en Android][1] (spanish).
+This example was created to support an article explaining that I have written about how to architect an android application using Uncle Bob's clean architecture. [Aplicando Clean Architecture en Android][1] (Spanish).
 
 ![](./art/euro.png)
 
@@ -12,21 +12,17 @@ Libraries used on the sample project
 * [Dagger 2][4]
 * [Junit][5]
 * [Mockito][6]
-* [Robolectric][8]
-* [Hamcrest][9]
 
 
 # Demo
 ![](./art/Telecine_2016-04-11-09-46-01.gif)
 
-[1]: https://erikcaffrey.github.io/ANDROID-clean-architecture/
+[1]: https://erikjhordan-rey.github.io/blog/2016/01/27/ANDROID-clean-architecture.html
 [2]: http://developer.android.com/intl/es/tools/support-library/index.html
 [3]: https://github.com/ReactiveX/RxAndroid
 [4]: https://github.com/google/dagger
 [5]: http://developer.android.com/intl/es/reference/junit/framework/package-summary.html
 [6]: http://mockito.org/
-[8]: http://robolectric.org/
-[9]: http://hamcrest.org/
 
 ## Inspiring 
 
@@ -46,7 +42,7 @@ Feel free to report or add any useful feature, I will be glad to improve it with
 Developed By
 ------------
 
-* Erik Jhordan Rey  - <erikjhordan.rey@gmail.com>
+* Erik Jhordan Rey - <erikjhordan.rey@gmail.com>
 
 License
 -------
