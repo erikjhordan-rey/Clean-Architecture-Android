@@ -1,9 +1,8 @@
 package com.example.jhordan.euro_cleanarchitecture;
 
-import io.reactivex.Scheduler;
-import io.reactivex.functions.Function;
-import io.reactivex.plugins.RxJavaPlugins;
-import io.reactivex.schedulers.Schedulers;
+
+import io.reactivex.rxjava3.plugins.RxJavaPlugins;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
@@ -22,7 +21,7 @@ public class RXJavaRule implements TestRule {
         };
     }
 
-    protected void hookSchedulers() {
+    void hookSchedulers() {
         RxJavaPlugins.reset();
         RxJavaPlugins.setIoSchedulerHandler(scheduler -> Schedulers.trampoline());
         RxJavaPlugins.setComputationSchedulerHandler(scheduler -> Schedulers.trampoline());
@@ -30,7 +29,7 @@ public class RXJavaRule implements TestRule {
         RxJavaPlugins.setSingleSchedulerHandler(scheduler -> Schedulers.trampoline());
     }
 
-    protected void restoreSchedulers() {
+    void restoreSchedulers() {
         RxJavaPlugins.reset();
     }
 }

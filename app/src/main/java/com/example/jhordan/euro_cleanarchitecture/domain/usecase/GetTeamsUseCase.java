@@ -18,7 +18,7 @@ package com.example.jhordan.euro_cleanarchitecture.domain.usecase;
 
 import com.example.jhordan.euro_cleanarchitecture.data.repository.TeamsRepository;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import java.util.List;
 import javax.inject.Inject;
 

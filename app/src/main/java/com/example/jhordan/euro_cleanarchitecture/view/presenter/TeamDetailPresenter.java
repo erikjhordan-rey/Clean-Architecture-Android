@@ -20,10 +20,10 @@ import com.example.jhordan.euro_cleanarchitecture.core.presenter.Presenter;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamUseCase;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.model.mapper.TeamToTeamUiMapper;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import javax.inject.Inject;
 
 public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {

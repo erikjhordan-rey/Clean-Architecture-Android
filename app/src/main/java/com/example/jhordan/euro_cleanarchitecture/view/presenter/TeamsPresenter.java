@@ -18,17 +18,13 @@ package com.example.jhordan.euro_cleanarchitecture.view.presenter;
 
 import androidx.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.core.presenter.Presenter;
-import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
 import com.example.jhordan.euro_cleanarchitecture.domain.usecase.GetTeamsUseCase;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.model.mapper.TeamToTeamUiMapper;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Action;
-import io.reactivex.functions.Function;
-import io.reactivex.observers.DisposableObserver;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import java.util.List;
 import javax.inject.Inject;
 

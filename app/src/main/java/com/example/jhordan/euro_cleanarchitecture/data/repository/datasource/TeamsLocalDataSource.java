@@ -19,7 +19,7 @@ package com.example.jhordan.euro_cleanarchitecture.data.repository.datasource;
 import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApi;
 import com.example.jhordan.euro_cleanarchitecture.data.local.LocalTeamApiToTeamEntityMapper;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import java.util.List;
 
 public class TeamsLocalDataSource {

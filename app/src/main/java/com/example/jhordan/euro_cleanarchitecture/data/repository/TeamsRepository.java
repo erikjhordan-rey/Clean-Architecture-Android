@@ -20,7 +20,8 @@ import androidx.annotation.NonNull;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import io.reactivex.Observable;
+
+import io.reactivex.rxjava3.core.Observable;
 import java.util.List;
 
 public class TeamsRepository {

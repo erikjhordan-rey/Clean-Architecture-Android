@@ -1,7 +1,7 @@
 package com.example.jhordan.euro_cleanarchitecture;
 
-import io.reactivex.android.plugins.RxAndroidPlugins;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.android.plugins.RxAndroidPlugins;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 

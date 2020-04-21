@@ -19,7 +19,7 @@ package com.example.jhordan.euro_cleanarchitecture.data.repository;
 import com.example.jhordan.euro_cleanarchitecture.fake.FakeTeamLocalAPI;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import com.example.jhordan.euro_cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
-import io.reactivex.Observable;
+import io.reactivex.rxjava3.core.Observable;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
