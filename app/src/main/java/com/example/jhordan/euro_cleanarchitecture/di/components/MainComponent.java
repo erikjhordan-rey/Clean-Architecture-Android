@@ -18,7 +18,7 @@ package com.example.jhordan.euro_cleanarchitecture.di.components;
 
 import android.content.Context;
 import com.example.jhordan.euro_cleanarchitecture.di.modules.MainModule;
-import com.example.jhordan.euro_cleanarchitecture.view.activity.TeamDetailsActivity;
+import com.example.jhordan.euro_cleanarchitecture.view.activity.TeamDetailActivity;
 import com.example.jhordan.euro_cleanarchitecture.view.activity.TeamsActivity;
 import dagger.Component;
 import javax.inject.Singleton;
@@ -27,7 +27,7 @@ import javax.inject.Singleton;
 
   void inject(TeamsActivity activity);
 
-  void inject(TeamDetailsActivity activity);
+  void inject(TeamDetailActivity activity);
 
   Context context();
 }

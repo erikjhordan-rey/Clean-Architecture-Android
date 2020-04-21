@@ -43,17 +43,14 @@ public class TeamDetailPresenter extends Presenter<TeamDetailPresenter.View> {
     @Override
     public void initialize() {
         super.initialize();
-        getView().showLoading();
         getTeamUseCase.searchTeamByFlag(teamFlag);
         getTeamUseCase.execute(new DisposableObserver<Team>() {
             @Override
             public void onComplete() {
-                getView().hideLoading();
             }
 
             @Override
             public void onError(Throwable e) {
-                getView().hideLoading();
             }
 
             @Override

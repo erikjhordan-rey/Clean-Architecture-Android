@@ -18,120 +18,115 @@ package com.example.jhordan.euro_cleanarchitecture.view.activity;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ProgressBar;
-
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
 import com.example.jhordan.euro_cleanarchitecture.R;
+import com.example.jhordan.euro_cleanarchitecture.databinding.ActivityTeamsBinding;
 import com.example.jhordan.euro_cleanarchitecture.view.adapter.TeamsAdapter;
-import com.example.jhordan.euro_cleanarchitecture.core.view.BaseActivity;
-import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
-
+import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import java.util.List;
-
 import javax.inject.Inject;
 
-import butterknife.BindView;
+public class TeamsActivity extends AppCompatActivity implements TeamsPresenter.View {
 
-public class TeamsActivity extends BaseActivity implements TeamsPresenter.View {
+    private final static String REPOSITORY_URL = "https://github.com/erikjhordan-rey/Clean-Architecture-Android";
+    private final static String BLOG_URL = "https://erikjhordan-rey.github.io/blog/2016/01/27/ANDROID-clean-architecture.html";
 
-  @Inject TeamsPresenter presenter;
-  @BindView(R.id.list_teams) RecyclerView teamList;
-  @BindView(R.id.progress_team) ProgressBar teamProgress;
-  private TeamsAdapter adapter;
+    private ActivityTeamsBinding binding;
+    private TeamsAdapter adapter;
 
-  @Override public void initView() {
-    super.initView();
-    initializeDagger();
-    initializePresenter();
-    disableTitleFromToolbar();
-    initializeAdapter();
-    initializeRecyclerView();
-    presenter.initialize();
-  }
+    @Inject
+    TeamsPresenter presenter;
 
-  @Override protected int getLayoutId() {
-    return R.layout.activity_teams;
-  }
-
-  @Override protected void onDestroy() {
-    super.onDestroy();
-    presenter.destroy();
-  }
-
-  @Override public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.menu_scrolling, menu);
-    return true;
-  }
-
-  @Override public boolean onOptionsItemSelected(MenuItem item) {
-
-    int id = item.getItemId();
-
-    if (id == R.id.action_code) {
-      final String repositoryURL = "https://github.com/erikcaffrey/Clean-Architecture-Android";
-      startActivityActionView(repositoryURL);
-    } else {
-      String blogURL = "https://erikcaffrey.github.io/ANDROID-clean-architecture/";
-      startActivityActionView(blogURL);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityTeamsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        initializeToolbar();
+        initializeDagger();
+        initializePresenter();
+        initializeAdapter();
+        initializeRecyclerView();
+        presenter.initialize();
     }
 
-    return super.onOptionsItemSelected(item);
-  }
-
-  @Override public void showEuroTeams(List<TeamUi> teamList) {
-    adapter.addAll(teamList);
-    adapter.notifyDataSetChanged();
-  }
-
-  @Override public void openTeamScreen(TeamUi team) {
-    TeamDetailsActivity.open(TeamsActivity.this, team.getFlag());
-  }
-
-  @Override public void showLoading() {
-    teamProgress.setVisibility(View.VISIBLE);
-    teamList.setVisibility(View.GONE);
-  }
-
-  @Override public void hideLoading() {
-    teamProgress.setVisibility(View.GONE);
-    teamList.setVisibility(View.VISIBLE);
-  }
-
-  private void initializeAdapter() {
-    adapter = new TeamsAdapter(presenter);
-  }
-
-  private void initializeRecyclerView() {
-    teamList.setLayoutManager(new LinearLayoutManager(this));
-    teamList.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
-    teamList.setHasFixedSize(true);
-    teamList.setAdapter(adapter);
-  }
-
-  private void initializeDagger() {
-    EuroApplication app = (EuroApplication) getApplication();
-    app.getMainComponent().inject(this);
-  }
-
-  private void initializePresenter() {
-    presenter.setView(this);
-  }
-
-  private void disableTitleFromToolbar() {
-    if (getSupportActionBar() != null) {
-      getSupportActionBar().setDisplayShowTitleEnabled(false);
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        presenter.destroy();
     }
-  }
 
-  private void startActivityActionView(String url) {
-    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
-  }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        startActivityActionView((R.id.action_code == item.getItemId()) ? REPOSITORY_URL : BLOG_URL);
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void showEuroTeams(List<TeamUi> teamList) {
+        adapter.addAll(teamList);
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void openTeamScreen(TeamUi team) {
+        TeamDetailActivity.open(TeamsActivity.this, team.getFlag());
+    }
+
+    @Override
+    public void showLoading() {
+        binding.contentTeams.progressTeam.setVisibility(View.VISIBLE);
+        binding.contentTeams.listTeams.setVisibility(View.GONE);
+    }
+
+    @Override
+    public void hideLoading() {
+        binding.contentTeams.progressTeam.setVisibility(View.GONE);
+        binding.contentTeams.listTeams.setVisibility(View.VISIBLE);
+    }
+
+    private void initializeToolbar() {
+        setSupportActionBar(binding.toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
+    }
+
+    private void initializeDagger() {
+        EuroApplication app = (EuroApplication) getApplication();
+        app.getMainComponent().inject(this);
+    }
+
+    private void initializePresenter() {
+        presenter.setView(this);
+    }
+
+    private void initializeAdapter() {
+        adapter = new TeamsAdapter(presenter);
+    }
+
+    private void initializeRecyclerView() {
+        binding.contentTeams.listTeams.setLayoutManager(new LinearLayoutManager(this));
+        binding.contentTeams.listTeams.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        binding.contentTeams.listTeams.setHasFixedSize(true);
+        binding.contentTeams.listTeams.setAdapter(adapter);
+    }
+
+    private void startActivityActionView(String url) {
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+    }
 }

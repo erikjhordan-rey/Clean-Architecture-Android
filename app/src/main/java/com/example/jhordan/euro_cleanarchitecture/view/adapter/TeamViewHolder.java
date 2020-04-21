@@ -16,64 +16,49 @@
 
 package com.example.jhordan.euro_cleanarchitecture.view.adapter;
 
-import android.content.Context;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.jhordan.euro_cleanarchitecture.R;
-import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
+import com.example.jhordan.euro_cleanarchitecture.databinding.TeamRowBinding;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
+import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.squareup.picasso.Picasso;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import de.hdodenhof.circleimageview.CircleImageView;
 
 class TeamViewHolder extends RecyclerView.ViewHolder {
 
-  private final TeamsPresenter teamsPresenter;
-  @BindView(R.id.image_header) ImageView headerImage;
-  @BindView(R.id.image_flag) CircleImageView flagImage;
-  @BindView(R.id.label_name) TextView nameLabel;
+    private final TeamsPresenter teamsPresenter;
+    private final TeamRowBinding teamRowBinding;
 
-  TeamViewHolder(@NonNull View itemView, @NonNull TeamsPresenter teamsPresenter) {
-    super(itemView);
-    this.teamsPresenter = teamsPresenter;
-    ButterKnife.bind(this, itemView);
-  }
+    TeamViewHolder(@NonNull TeamRowBinding binding, @NonNull TeamsPresenter teamsPresenter) {
+        super(binding.getRoot());
+        this.teamRowBinding = binding;
+        this.teamsPresenter = teamsPresenter;
+    }
 
-  void render(TeamUi team) {
-    onItemClick(team);
-    renderTeamHeaderImage(team.getPictureOfHeader());
-    renderTeamFlagImage(team.getPictureOfFlag());
-    renderTeamName(team.getName());
-  }
+    void render(TeamUi teamUi) {
+        renderTeamHeaderImage(teamUi.getPictureOfHeader());
+        renderTeamFlagImage(teamUi.getPictureOfFlag());
+        renderTeamName(teamUi.getName());
+        onItemClick(teamUi);
+    }
 
-  private void onItemClick(final TeamUi teamUi) {
-    itemView.setOnClickListener(v -> teamsPresenter.onTeamClicked(teamUi));
-  }
+    private void renderTeamHeaderImage(String urlHeaderImage) {
+        getImage(urlHeaderImage, teamRowBinding.imageHeader);
+    }
 
-  private void renderTeamHeaderImage(String urlHeaderImage) {
-    getImage(urlHeaderImage, headerImage);
-  }
+    private void renderTeamFlagImage(String urlFlagImage) {
+        getImage(urlFlagImage, teamRowBinding.imageFlag);
+    }
 
-  private void renderTeamFlagImage(String urlFlagImage) {
-    getImage(urlFlagImage, flagImage);
-  }
+    private void renderTeamName(String name) {
+        teamRowBinding.labelName.setText(name);
+    }
 
-  private void renderTeamName(String name) {
-    nameLabel.setText(name);
-  }
+    private void onItemClick(final TeamUi teamUi) {
+        itemView.setOnClickListener(v -> teamsPresenter.onTeamClicked(teamUi));
+    }
 
-  private void getImage(String photo, ImageView photoImageView) {
-    Picasso.with(getContext()).load(photo).fit().centerCrop().into(photoImageView);
-  }
-
-  private Context getContext() {
-    return itemView.getContext();
-  }
+    private void getImage(String photo, ImageView photoImageView) {
+        Picasso.with(photoImageView.getContext()).load(photo).fit().centerCrop().into(photoImageView);
+    }
 }

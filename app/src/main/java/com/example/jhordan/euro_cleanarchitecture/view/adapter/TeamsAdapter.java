@@ -17,13 +17,12 @@
 package com.example.jhordan.euro_cleanarchitecture.view.adapter;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.jhordan.euro_cleanarchitecture.R;
+import com.example.jhordan.euro_cleanarchitecture.databinding.TeamRowBinding;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamsPresenter;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 
@@ -34,33 +33,31 @@ import java.util.List;
 public class TeamsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private final TeamsPresenter presenter;
-    private final List<TeamUi> teamList;
+    private final List<TeamUi> teamUiList;
 
     public TeamsAdapter(@NonNull TeamsPresenter presenter) {
         this.presenter = presenter;
-        teamList = new ArrayList<>();
+        teamUiList = new ArrayList<>();
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.team_row, parent, false);
-        return new TeamViewHolder(view, presenter);
+        return new TeamViewHolder(TeamRowBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false), presenter);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        TeamViewHolder teamViewHolder = (TeamViewHolder) holder;
-        TeamUi team = teamList.get(position);
-        teamViewHolder.render(team);
+        final TeamViewHolder teamViewHolder = (TeamViewHolder) holder;
+        teamViewHolder.render(teamUiList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return teamList.size();
+        return teamUiList.size();
     }
 
     public void addAll(Collection<TeamUi> collection) {
-        teamList.addAll(collection);
+        teamUiList.addAll(collection);
     }
 }

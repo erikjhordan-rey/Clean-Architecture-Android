@@ -19,19 +19,12 @@ package com.example.jhordan.euro_cleanarchitecture.view.widget;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import com.example.jhordan.euro_cleanarchitecture.R;
+import com.example.jhordan.euro_cleanarchitecture.databinding.HeaderDetailBinding;
 
 public class HeaderView extends LinearLayout {
 
-    @BindView(R.id.txt_header_title)
-    TextView titleLabel;
-    @BindView(R.id.txt_header_subtitle)
-    TextView subTitleLabel;
+    private HeaderDetailBinding binding;
 
     public HeaderView(Context context) {
         super(context);
@@ -48,12 +41,11 @@ public class HeaderView extends LinearLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        View view = LayoutInflater.from(getContext()).inflate(R.layout.header_detail, this, true);
-        ButterKnife.bind(view);
+        binding = HeaderDetailBinding.inflate(LayoutInflater.from(getContext()), this, true);
     }
 
     public void initializeHeader(String disclaimer, String nickName) {
-        titleLabel.setText(disclaimer);
-        subTitleLabel.setText(nickName);
+        binding.txtHeaderTitle.setText(disclaimer);
+        binding.txtHeaderSubtitle.setText(nickName);
     }
 }

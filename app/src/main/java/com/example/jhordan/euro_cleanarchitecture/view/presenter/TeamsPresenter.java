@@ -80,5 +80,9 @@ public class TeamsPresenter extends Presenter<TeamsPresenter.View> {
         void showEuroTeams(List<TeamUi> teamList);
 
         void openTeamScreen(TeamUi team);
+
+        void showLoading();
+
+        void hideLoading();
     }
 }
