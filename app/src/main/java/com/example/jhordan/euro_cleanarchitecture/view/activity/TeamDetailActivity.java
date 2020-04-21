@@ -23,7 +23,9 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import com.example.jhordan.euro_cleanarchitecture.EuroApplication;
+import com.example.jhordan.euro_cleanarchitecture.R;
 import com.example.jhordan.euro_cleanarchitecture.databinding.ActivityTeamDetailBinding;
 import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
 import com.example.jhordan.euro_cleanarchitecture.view.presenter.TeamDetailPresenter;
@@ -103,9 +105,11 @@ public class TeamDetailActivity extends AppCompatActivity implements TeamDetailP
     }
 
     private void initializeToolbar() {
+        setSupportActionBar(binding.toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimaryDark));
     }
 
     public static void open(Context context, String superHeroName) {
