@@ -36,7 +36,7 @@ I created my own implementation of Clean Architecture and I want to thank you ho
 Do you want to contribute?
 --------------------------
 
-Feel free to report or add any useful feature, I will be glad to improve it with your help, before submitting your code please check the [codestyle](https://github.com/square/java-code-styles).
+Feel free to report or add any useful feature, I will be glad to improve it with your help.
 
 
 Developed By
