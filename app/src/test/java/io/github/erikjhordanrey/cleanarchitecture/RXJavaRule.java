@@ -1,4 +1,4 @@
-package com.example.jhordan.euro_cleanarchitecture;
+package io.github.erikjhordanrey.cleanarchitecture;
 
 
 import io.reactivex.rxjava3.plugins.RxJavaPlugins;

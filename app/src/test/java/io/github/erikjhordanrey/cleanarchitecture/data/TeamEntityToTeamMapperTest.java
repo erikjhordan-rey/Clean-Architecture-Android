@@ -17,7 +17,7 @@
 package io.github.erikjhordanrey.cleanarchitecture.data;
 
 import io.github.erikjhordanrey.cleanarchitecture.data.entity.TeamEntity;
-import com.example.jhordan.euro_cleanarchitecture.fake.FakeTeamLocalAPI;
+import io.github.erikjhordanrey.cleanarchitecture.fake.FakeTeamLocalAPI;
 import io.github.erikjhordanrey.cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import io.github.erikjhordanrey.cleanarchitecture.domain.model.Team;
 import org.junit.Before;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.jhordan.euro_cleanarchitecture.fake;
+package io.github.erikjhordanrey.cleanarchitecture.fake;
 
 import io.github.erikjhordanrey.cleanarchitecture.data.entity.ImageEntity;
 import io.github.erikjhordanrey.cleanarchitecture.data.entity.TeamEntity;

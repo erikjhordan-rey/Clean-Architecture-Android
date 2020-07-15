@@ -1,8 +1,8 @@
-package com.example.jhordan.euro_cleanarchitecture.ui;
+package io.github.erikjhordanrey.cleanarchitecture.ui;
 
-import com.example.jhordan.euro_cleanarchitecture.RxAndroidRule;
+import io.github.erikjhordanrey.cleanarchitecture.RxAndroidRule;
 import io.github.erikjhordanrey.cleanarchitecture.domain.usecase.GetTeamsUseCase;
-import com.example.jhordan.euro_cleanarchitecture.fake.FakeTeamLocalAPI;
+import io.github.erikjhordanrey.cleanarchitecture.fake.FakeTeamLocalAPI;
 import io.github.erikjhordanrey.cleanarchitecture.view.model.mapper.TeamToTeamUiMapper;
 import io.github.erikjhordanrey.cleanarchitecture.view.presenter.TeamsPresenter;
 

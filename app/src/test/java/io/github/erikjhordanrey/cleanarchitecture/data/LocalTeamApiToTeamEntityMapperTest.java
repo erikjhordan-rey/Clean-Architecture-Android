@@ -17,7 +17,7 @@
 package io.github.erikjhordanrey.cleanarchitecture.data;
 
 import io.github.erikjhordanrey.cleanarchitecture.data.entity.TeamEntity;
-import com.example.jhordan.euro_cleanarchitecture.fake.FakeTeamLocalAPI;
+import io.github.erikjhordanrey.cleanarchitecture.fake.FakeTeamLocalAPI;
 import io.github.erikjhordanrey.cleanarchitecture.data.local.LocalTeamApiToTeamEntityMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;

@@ -16,7 +16,7 @@
 
 package io.github.erikjhordanrey.cleanarchitecture.data.repository;
 
-import com.example.jhordan.euro_cleanarchitecture.fake.FakeTeamLocalAPI;
+import io.github.erikjhordanrey.cleanarchitecture.fake.FakeTeamLocalAPI;
 import io.github.erikjhordanrey.cleanarchitecture.data.repository.datasource.TeamEntityToTeamMapper;
 import io.github.erikjhordanrey.cleanarchitecture.data.repository.datasource.TeamsLocalDataSource;
 import io.reactivex.rxjava3.core.Observable;
