@@ -15,17 +15,6 @@ allprojects {
     jcenter()
     google()
   }
-
-  apply plugin: 'checkstyle'
-
-  task checkstyle(type: Checkstyle) {
-    configFile file("${project.rootDir}/config/checkstyle.xml")
-    source 'src'
-    include '**/*.java'
-    exclude '**/gen/**'
-
-    classpath = files()
-  }
 }
 
 task clean(type: Delete) {
