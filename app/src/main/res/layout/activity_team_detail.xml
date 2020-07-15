@@ -19,7 +19,7 @@
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-        <com.example.jhordan.euro_cleanarchitecture.view.widget.HeaderView
+        <io.github.erikjhordanrey.cleanarchitecture.view.widget.HeaderView
             android:id="@+id/header_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                 android:scaleType="fitXY" />
 
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:text="@string/text_best_result" />
 
@@ -56,7 +56,7 @@
                 android:id="@+id/label_best_result"
                 style="@style/AppTheme.TextViewValue" />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:text="@string/text_coach" />
 
@@ -64,7 +64,7 @@
                 android:id="@+id/label_coach"
                 style="@style/AppTheme.TextViewValue" />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:text="@string/text_leading_scorer" />
 
@@ -73,7 +73,7 @@
                 style="@style/AppTheme.TextViewValue" />
 
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:text="@string/text_stadium" />
 
@@ -89,17 +89,17 @@
 
                 />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:layout_marginTop="@dimen/spacing_large"
                 android:text="@string/text_history" />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:layout_marginTop="@dimen/spacing_medium"
                 android:text="@string/text_matches" />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:layout_marginTop="@dimen/spacing_large"
                 android:text="@string/text_matches_played" />
@@ -108,7 +108,7 @@
                 android:id="@+id/label_matches_played"
                 style="@style/AppTheme.TextViewValue" />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:text="@string/text_overall" />
 
@@ -116,7 +116,7 @@
                 android:id="@+id/label_overall"
                 style="@style/AppTheme.TextViewValue" />
 
-            <com.example.jhordan.euro_cleanarchitecture.view.widget.CustomFontTextView
+            <io.github.erikjhordanrey.cleanarchitecture.view.widget.CustomFontTextView
                 style="@style/AppTheme.TextViewTitle"
                 android:text="@string/text_final_tournament" />
 

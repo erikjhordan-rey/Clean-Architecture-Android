@@ -15,10 +15,10 @@
  */
 package com.example.jhordan.euro_cleanarchitecture.fake;
 
-import com.example.jhordan.euro_cleanarchitecture.data.entity.ImageEntity;
-import com.example.jhordan.euro_cleanarchitecture.data.entity.TeamEntity;
-import com.example.jhordan.euro_cleanarchitecture.domain.model.Team;
-import com.example.jhordan.euro_cleanarchitecture.view.model.TeamUi;
+import io.github.erikjhordanrey.cleanarchitecture.data.entity.ImageEntity;
+import io.github.erikjhordanrey.cleanarchitecture.data.entity.TeamEntity;
+import io.github.erikjhordanrey.cleanarchitecture.domain.model.Team;
+import io.github.erikjhordanrey.cleanarchitecture.view.model.TeamUi;
 import java.util.ArrayList;
 import java.util.List;
 

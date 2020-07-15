@@ -4,7 +4,7 @@ android {
   compileSdkVersion 28
 
   defaultConfig {
-    applicationId "com.example.jhordan.euro_cleanarchitecture"
+    applicationId "io.github.erikjhordanrey.cleanarchitecture"
     minSdkVersion 21
     targetSdkVersion 28
     versionCode 1
