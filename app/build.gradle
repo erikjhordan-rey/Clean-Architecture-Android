@@ -34,8 +34,8 @@ android {
     abortOnError false
   }
 
-  viewBinding {
-    enabled = true
+  buildFeatures {
+    viewBinding = true
   }
 }
 
